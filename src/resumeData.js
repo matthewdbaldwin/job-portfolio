@@ -3,7 +3,6 @@ let resumeData = {
     "name": "Matthew Baldwin",
     "role": "Frontend Developer and Marketer",
     "linkedinId":"matthewdbaldwin",
-    "skypeid": "Your skypeid",
     "roleDescription": " I like dabbling in various parts of frontend development and like to learn about new technologies, make creative designs, and manage campaigns.",
     "socialLinks":[
         {
@@ -45,10 +44,18 @@ let resumeData = {
     ],
     "work":[
       {
+        "CompanyName":"Profound Logic",
+        "specialization":"Full Stack Worpress Developer",
+        "MonthOfLeaving":"",
+        "YearOfLeaving":"Present",
+        "Achievements":`Develop Profoundlogic.com utilizing AWS Lightsail Bitnami Wordpress instance. Manage frontend development using CSS, HTML, Javascript and PHP. Oversee creation of pages and management of plugins for Wordpress platform. Deploy full stack projects in AWS for testing of Wordpress Bitnami platfrorm. Develop Profoundjs.com frontend design on GitHub using Node.js. Consult the Marketing team for the creation of various landing pages, images and email newsletters on HubSpot. 
+        `
+      },
+      {
         "CompanyName":"IQVIA",
         "specialization":"Marketing Manager",
         "MonthOfLeaving":"",
-        "YearOfLeaving":"Present",
+        "YearOfLeaving":"2020",
         "Achievements":`Develop OneKeyData.com utilizing ExpressionEngine to publish content and development. Lead site development with Nodejs, and tracked through Beanstalk and GitHub using HTML, CSS, Javascript, JSON, ECMA 5 & 6 and PHP. Collaborate with 3rd party development team Lucid Fusion. Utilize Microsoft Sharepoint CMS and SQL for U.S. marketing on IQVIA.com to create product pages and campaign landing pages. Lead identification of KPI's through Google suite of products.
         `
       },
@@ -81,7 +88,12 @@ let resumeData = {
     ],
     "portfolio":[
       {
-        "name":"OneKeyData.com",
+        "name":"Profoundlogic.com",
+        "description":"website",
+        "imgurl":"images/portfolio/phone.jpg"
+      },
+      {
+        "name":"Profoundjs.com",
         "description":"website",
         "imgurl":"images/portfolio/phone.jpg"
       },
@@ -98,13 +110,14 @@ let resumeData = {
     ],
     "testimonials":[
       {
-        "description":"Matt has a lot of technical skills",
-        "name":"Mattias Huber"
-      },
-      {
-        "description":"Phenomenal to work with.",
-        "name":"Kenneth Hope"
+        "description":"Thank you for all your hard work.",
+        "name":"Miranda VanHorn, Marketing Manager, Profound Logic Software"
       }
+      {
+        "description":"Matt has a lot of technical skills",
+        "name":"Mattias Huber, Software Engineer, Qualcomm Innovation"
+      },
+      
     ]
   }
   
