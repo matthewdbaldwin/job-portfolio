@@ -95,7 +95,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #0e68b7; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -117,7 +117,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #0e68b7; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -130,7 +130,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
+   font: 16px 'opensans-bold', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
@@ -146,7 +146,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 #nav-wrap > a.mobile-btn { display: none; }
 
 ul#nav {
-   min-height: 48px;
+   min-height: 68px;
    width: auto;
 
    /* center align the menu */
@@ -155,18 +155,18 @@ ul#nav {
 ul#nav li {
    position: relative;
    list-style: none;
-   height: 48px;
+   height: 68px;
    display: inline-block;
 }
 
 /* Links */
 ul#nav li a {
 
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+/* 10px padding top + 10px padding bottom + 48px line-height = 68px */
 
    display: inline-block;
-   padding: 8px 13px;
-   line-height: 32px;
+   padding: 10px 13px;
+   line-height: 48px;
 	text-decoration: none;
    text-align: left;
    color: #fff;
@@ -179,7 +179,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #0e68b7; }
 
 
 /* ------------------------------------------------------------------ */
@@ -194,7 +194,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #0e68b7; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -242,7 +242,7 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #0e68b7; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -251,7 +251,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #0e68b7;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -326,27 +326,27 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .photoshop {
-  	width: 60%;
+  	width: 70%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
 .illustrator {
-  	width: 55%;
+  	width: 65%;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
 .wordpress {
-  	width: 50%;
+  	width: 75%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
-.css {
-  	width: 90%;
+.css3 {
+  	width: 80%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 80%;
+  	width: 90%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
@@ -354,6 +354,16 @@ ul#nav li.current a { color: #F06000; }
   	width: 50%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
+}
+.javascript{
+   width: 70%;
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
+}
+.react{
+   width: 60%;
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
 }
 
 @-moz-keyframes photoshop {
@@ -689,7 +699,7 @@ call-to-action .button {
 }
 #testimonials blockquote cite {
    display: block;
-   font-size: 12px;
+   font-size: 16px;
    font-style: normal;
    line-height: 18px;
    color: #fff;
@@ -795,7 +805,7 @@ call-to-action .button {
 }
 #contact .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #11ABB0; }
+#contact a, #contact a:visited  { color: #0e68b7; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
@@ -856,7 +866,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: #0e68b7;
 }
 #contact button.submit {
 	text-transform: uppercase;
@@ -875,7 +885,7 @@ call-to-action .button {
 	background: #fff;
 }
 #contact span.required {
-	color: #11ABB0;
+	color: #0e68b7;
 	font-size: 13px;
 }
 #message-warning, #message-success {
@@ -887,7 +897,7 @@ call-to-action .button {
    margin-left: 26%;
 }
 #message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
+#message-success { color: #0e68b7; }
 
 #message-warning i,
 #message-success i {

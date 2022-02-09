@@ -56,7 +56,7 @@ let resumeData = {
         "specialization":"Marketing Manager",
         "MonthOfLeaving":"",
         "YearOfLeaving":"2020",
-        "Achievements":`Develop OneKeyData.com utilizing ExpressionEngine to publish content and development. Lead site development with Nodejs, and tracked through Beanstalk and GitHub using HTML, CSS, Javascript, JSON, ECMA 5 & 6 and PHP. Collaborate with 3rd party development team Lucid Fusion. Utilize Microsoft Sharepoint CMS and SQL for U.S. marketing on IQVIA.com to create product pages and campaign landing pages. Lead identification of KPI's through Google suite of products.
+        "Achievements":`Develop OneKeyData.com utilizing ExpressionEngine to publish content and development. Lead site development with Nodejs, and tracked through Beanstalk and GitHub using HTML, CSS, Javascript, JSON, ECMA 5 & 6 and PHP. Collaborate with 3rd party development team Lucid Fusion. Utilize Microsoft Sharepoint CMS and SQL for U.S. marketing on IQVIA.com to create product pages and campaign landing pages. Lead identification of KPI's through the Google suite of products.
         `
       },
       {
@@ -68,7 +68,7 @@ let resumeData = {
 
         Created product pages and campaign landing pages for US marketing on cegedimrm.com. Updated and maintained websites with Microsoft Sharepoint using Javascript, PHP and HTML.
         
-        Designed layouts for print and digital media including brochures, fact sheets, count sheets, banners, newsletters, advertiesments, and other sales collateral with Photoshop and Illustrator.`
+        Designed layouts for print and digital media including brochures, fact sheets, count sheets, banners, newsletters, advertisements, and other sales collateral with Photoshop and Illustrator.`
       }
     ],
     "skillsDescription":"Your skills here",
@@ -77,46 +77,56 @@ let resumeData = {
         "skillname":"HTML5"
       },
       {
+        "skillname":"Wordpress"
+      },
+      {
         "skillname":"CSS3"
+      },
+      {
+        "skillname":"Photoshop"
       },
       {
         "skillname":"JavaScript"
       },
       {
-        "skillname":"React.js"
+        "skillname":"React"
       }
     ],
     "portfolio":[
       {
         "name":"Profoundlogic.com",
         "description":"website",
-        "imgurl":"images/portfolio/phone.jpg"
+        "imgurl":"images/portfolio/plcom.png"
       },
       {
         "name":"Profoundjs.com",
         "description":"website",
-        "imgurl":"images/portfolio/phone.jpg"
+        "imgurl":"images/portfolio/pjscom.png"
       },
       {
         "name":"winwinbrewery.com",
         "description":"website",
-        "imgurl":"images/portfolio/project.jpg"
+        "imgurl":"images/portfolio/winwin.png"
       },
       {
         "name":"matthewdbaldwin.com",
         "description":"website",  
-        "imgurl":"images/portfolio/project2.png"
+        "imgurl":"images/portfolio/sweet-corner.png"
       }
     ],
     "testimonials":[
       {
         "description":"Thank you for all your hard work.",
-        "name":"Miranda VanHorn, Marketing Manager, Profound Logic Software"
-      }
-      {
-        "description":"Matt has a lot of technical skills",
-        "name":"Mattias Huber, Software Engineer, Qualcomm Innovation"
+        "name":"Miranda VanHorn",
+        "role":"Marketing Manager",
+        "company":"Profound Logic Software"
       },
+      {
+        "description":"Matt has a lot of technical skills.",
+        "name":"Mattias Huber",
+        "role":"Software Engineer",
+        "company":"Qualcomm Innovation"
+      }
       
     ]
   }

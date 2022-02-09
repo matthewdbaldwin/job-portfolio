@@ -59,7 +59,6 @@ export default  class Resume extends Component {
             </div> 
          </div>
 
-
          <div className="row skill">
 
             <div className="three columns header-col">
