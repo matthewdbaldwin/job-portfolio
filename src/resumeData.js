@@ -96,16 +96,19 @@ let resumeData = {
       {
         "name":"Profoundlogic.com",
         "description":"website",
+        "url":"https://www.profoundlogic.com",
         "imgurl":"images/portfolio/plcom.png"
       },
       {
         "name":"Profoundjs.com",
         "description":"website",
+        "url":"https://www.profoundjs.com"
         "imgurl":"images/portfolio/pjscom.png"
       },
       {
         "name":"winwinbrewery.com",
         "description":"website",
+        "url":"https://winwinbrewery.com"
         "imgurl":"images/portfolio/winwin.png"
       },
       {
