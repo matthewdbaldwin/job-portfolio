@@ -45,7 +45,7 @@ let resumeData = {
     "work":[
       {
         "CompanyName":"Profound Logic",
-        "specialization":"Full Stack Worpress Developer",
+        "specialization":"Full Stack Wordpress Developer",
         "MonthOfLeaving":"",
         "YearOfLeaving":"Present",
         "Achievements":`Develop Profoundlogic.com utilizing AWS Lightsail Bitnami Wordpress instance. Manage frontend development using CSS, HTML, Javascript and PHP. Oversee creation of pages and management of plugins for Wordpress platform. Deploy full stack projects in AWS for testing of Wordpress Bitnami platfrorm. Develop Profoundjs.com frontend design on GitHub using Node.js. Consult the Marketing team for the creation of various landing pages, images and email newsletters on HubSpot. 
