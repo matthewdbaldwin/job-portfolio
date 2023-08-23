@@ -97,24 +97,28 @@ let resumeData = {
         "name":"Profoundlogic.com",
         "description":"website",
         "url":"https://www.profoundlogic.com",
-        "imgurl":"images/portfolio/plcom.png"
+        "imgurl":"images/portfolio/plcom.png",
+        "alt":"profoundlogic.com"
       },
       {
         "name":"Profoundjs.com",
         "description":"website",
         "url":"https://www.profoundjs.com",
-        "imgurl":"images/portfolio/pjscom.png"
+        "imgurl":"images/portfolio/pjscom.png",
+        "alt":"profoundjs.com"
       },
       {
         "name":"winwinbrewery.com",
         "description":"website",
         "url":"https://winwinbrewery.com",
-        "imgurl":"images/portfolio/winwin.png"
+        "imgurl":"images/portfolio/winwin.png",
+        "alt":"Win Win Brewery"
       },
       {
         "name":"matthewdbaldwin.com",
         "description":"website",  
-        "imgurl":"images/portfolio/sweet-corner.png"
+        "imgurl":"images/portfolio/sweet-corner.png",
+        "alt":"sweet-corner"
       }
     ],
     "testimonials":[
