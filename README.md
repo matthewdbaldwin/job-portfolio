@@ -5,7 +5,7 @@
 A simple SPA Portfolio template for developer/designers built with React. Use it to showcase your work, testimonials and other information to clients. Updated for my own purposes.
 
 ## Preview
-![Preview](https://matthewdbaldwin.com/images/profilepic.webp)
+![Preview](https://matthewdbaldwin.com/images/preview.jpg)
 
 ## How to use
 1. Clone/Download the repo.
