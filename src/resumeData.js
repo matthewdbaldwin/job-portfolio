@@ -17,13 +17,13 @@ let resumeData = {
         },
 
       ],
-    "aboutme": `I’m Matthew Baldwin, a full-stack web developer. I am passionate about programming and using new development tools and technology. For the past seven years I have worked in a corporate healthcare data industry involved in digital marketing campaigns.
-    
-    My previous experiences included analyzing customer experiences through website landing pages, content creation and email automation tools such as Pardot and Eloqua. I have over a decade of experience with Adobe Suite creating content in Photoshop, Illustrator and InDesign. I have managed websites as part of my marketing duties and developed them using HTML, CSS, PHP, Javascript and managing CMS platforms. This allowed me to create a passion for coding and developing websites and their technologies. I was fortunate to take on more responsibility coding and developing these corporate websites and learned more about JavaScript and project management platforms. 
-    
-    I needed a way to learn more and enrolled at LearningFuze, and take night classes while still holding my job. While at Learning Fuze I was given challenging programming problems to solve. Engaging me and exposing me to more technologies such as JavaScript, jQuery, React and NodeJs. My knowledge grew as a front end developer as I worked on several React applications. NodeJs and Express exposed me to working as a back-end developer as I edited databases and made even more progress. 
-    
-    My experience managing campaigns for customer experiences combined with my skills as a Web Developer would make me a fantastic asset to your team. I would love the opportunity to bring my passion and dedication to web development to your company.`,
+    "aboutme": `I’m Matthew Baldwin, a full-stack web developer and experienced marketer. I'm passionate about programming and constantly exploring new development tools and technologies. For the past seven years, I’ve worked in the corporate healthcare data industry, primarily within digital marketing — but it was in that space that I discovered my deeper interest in coding and web development.`,
+    "aboutme2": `
+    Early in my career, I focused on optimizing customer experiences through website landing pages, content creation, and marketing automation platforms like Pardot and Eloqua. I also drew on over a decade of experience with Adobe Creative Suite — Photoshop, Illustrator, and InDesign — to build high-quality creative assets. As my responsibilities expanded, I found myself managing corporate websites, diving into front-end code using HTML, CSS, JavaScript, and PHP, and working with various CMS platforms. This blend of creativity and technical work sparked a lasting passion for web development.`,
+    "aboutme3": `
+    As I began taking on more coding responsibilities, I realized I wanted to go deeper. To challenge myself and accelerate my learning, I enrolled at LearningFuze — attending intensive night classes while continuing to work full-time. There, I tackled complex programming challenges and gained hands-on experience with JavaScript, jQuery, React, and Node.js. I built several front-end applications in React, and expanded into back-end development with Node.js, Express, and database management. That immersive experience solidified my identity as a developer.`,
+    "aboutme4": `
+    Today, I bring a rare combination of skills: a background in digital marketing and customer engagement, paired with hands-on experience in web development and programming. I thrive in cross-functional environments and love building solutions that are both technically sound and user-centered. I'd be excited to bring this passion, dedication, and hybrid skill set to your team.`,
     "address":"Orange County, CA",
     "website":"https://github.com/matthewdbaldwin",
     "education":[
@@ -97,35 +97,43 @@ let resumeData = {
         "name":"Profoundlogic.com",
         "description":"website",
         "url":"https://www.profoundlogic.com",
-        "imgurl":"images/portfolio/plcom.png",
+        "imgurl":"images/portfolio/plcom.webp",
         "alt":"profoundlogic.com"
       },
       {
         "name":"Profoundjs.com",
         "description":"website",
         "url":"https://www.profoundjs.com",
-        "imgurl":"images/portfolio/pjscom.png",
+        "imgurl":"images/portfolio/pjscom.webp",
         "alt":"profoundjs.com"
       },
       {
         "name":"winwinbrewery.com",
         "description":"website",
         "url":"https://winwinbrewery.com",
-        "imgurl":"images/portfolio/winwin.png",
+        "imgurl":"images/portfolio/winwin.webp",
         "alt":"Win Win Brewery"
       },
       {
-        "name":"matthewdbaldwin.com",
-        "description":"website",  
-        "imgurl":"images/portfolio/sweet-corner.png",
-        "alt":"sweet-corner"
+        "name":"onekeydata.com",
+        "description":"website",
+        "url":"https://onekeydata.com",
+        "imgurl":"images/portfolio/onekey.webp",
+        "alt":"onekeydata.com"
+      },
+      {
+        "name":"neverforgottengravecare.com",
+        "description":"website",
+        "url":"https://neverforgottengravecare.com",
+        "imgurl":"images/portfolio/nf.webp",
+        "alt":"Neverforgotten"
       }
     ],
     "testimonials":[
       {
         "description":"Thank you for all your hard work.",
         "name":"Miranda VanHorn",
-        "role":"Marketing Manager",
+        "role":"Marketing Director",
         "company":"Profound Logic Software"
       },
       {
