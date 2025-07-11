@@ -324,35 +324,40 @@ ul#nav li.current a { color: #0e68b7; }
    border-radius: 3px 0 0 3px;
 }
 
-.automation {
-  	width: 80%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
-.adobe {
-  	width: 65%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
 .wordpress {
   	width: 75%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
+
+.automation {
+  	width: 80%;
+  	-moz-animation: automation 2s ease;
+  	-webkit-animation: automation 2s ease;
+}
+
+.adobe {
+  	width: 65%;
+  	-moz-animation: adobe 2s ease;
+  	-webkit-animation: adobe 2s ease;
+}
+
 .digital {
   	width: 80%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	-moz-animation: digital 2s ease;
+  	-webkit-animation: digital 2s ease;
 }
-.content {
+
+.marketing {
   	width: 75%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	-moz-animation: marketing 2s ease;
+  	-webkit-animation: marketing 2s ease;
 }
-.websites{
+
+.website {
    width: 70%;
-   -moz-animation: jquery 2s ease;
-   -webkit-animation: jquery 2s ease;
+   -moz-animation: website 2s ease;
+   -webkit-animation: website 2s ease;
 }
 
 @-moz-keyframes photoshop {

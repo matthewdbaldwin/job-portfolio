@@ -91,7 +91,7 @@ let resumeData = {
         "skillname":"Digital Marketing"
       },
       {
-        "id":"Content",
+        "id":"Marketing",
         "skillname":"Content Marketing"
       },
       {
