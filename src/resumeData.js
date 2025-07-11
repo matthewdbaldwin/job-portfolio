@@ -19,7 +19,7 @@ let resumeData = {
         },
 
       ],
-    "aboutme": `I’m Matthew Baldwin, a full-stack web developer and experienced marketer. I'm passionate about programming and constantly exploring new development tools and technologies. For the past seven years, I’ve worked in the corporate healthcare data industry, primarily within digital marketing — but it was in that space that I discovered my deeper interest in coding and web development.`,
+    "aboutme": `With 15 years of experience in the marketing field, Matthew brings deep expertise in marketing automation, web development, and campaign execution. His skill set spans creative design, copy editing, social media strategy, and email marketing—making him a versatile asset across digital channels. Beyond the tools and tactics, Matthew is a dependable leader known for his positive attitude and commitment to collaboration, always ensuring stakeholders are supported and deadlines are met with care.`,
       "aboutme2": `
       Early in my career, I focused on optimizing customer experiences through website landing pages, content creation, and marketing automation platforms like Pardot and Eloqua. I also drew on over a decade of experience with Adobe Creative Suite — Photoshop, Illustrator, and InDesign — to build high-quality creative assets. As my responsibilities expanded, I found myself managing corporate websites, diving into front-end code using HTML, CSS, JavaScript, and PHP, and working with various CMS platforms. This blend of creativity and technical work sparked a lasting passion for web development.`,
       "aboutme3": `
@@ -35,7 +35,7 @@ let resumeData = {
         "specialization":"Business Administration",
         "MonthOfPassing":"June",
         "YearOfPassing":"2008",
-        "Achievements":"Brand Management"
+        "Achievements":"Marketing"
       },
       {
         "id":"LF",
@@ -53,57 +53,54 @@ let resumeData = {
         "specialization":"Marketing Developer",
         "MonthOfLeaving":"",
         "YearOfLeaving":"Present",
-        "Achievements":`Develop Profoundlogic.com utilizing AWS Lightsail Bitnami Wordpress instance. Manage frontend development using CSS, HTML, Javascript and PHP. Oversee creation of pages and management of plugins for Wordpress platform. Deploy full stack projects in AWS for testing of Wordpress Bitnami platfrorm. Develop Profoundjs.com frontend design on GitHub using Node.js. Consult the Marketing team for the creation of various landing pages, images and email newsletters on HubSpot. Leverage Wordpress Front End Development(Javascript, HTML, PHP) to enhance UI/UX engagement metrics by 37%. 
-        `
+        "Bullet1":`• Strategize and launch high-impact Go-To-Market and account-based campaigns in HubSpot, with timely performance reporting to drive data-informed decisions.`,
+        "Bullet2":`• Act as a key liaison between the web development team and cross-functional stakeholders in marketing, sales, and product, ensuring digital initiatives align with KPIs and deliver measurable value in HubSpot.`,
+        "Bullet3":`• Partner with sales and marketing teams to continuously track and optimize the sales funnel, aligning web strategies in WordPress UX/UI achieving lead generation and conversion objectives.`
+
       },
       {
         "id":"IQVIA",
         "CompanyName":"IQVIA",
         "specialization":"Marketing Manager",
-        "MonthOfLeaving":"",
+        "MonthOfLeaving":"October",
         "YearOfLeaving":"2020",
-        "Achievements":`Developed and automated responsive html email content marketing campaigns 
-        through Pardot and SalesForce totaling over 50 million deployments in 2019. Develop OneKeyData.com utilizing ExpressionEngine to publish content and development. Lead site development with Nodejs, and tracked through Beanstalk and GitHub using HTML, CSS, Javascript, JSON, ECMA 5 & 6 and PHP. Collaborate with 3rd party development team Lucid Fusion. Utilize Microsoft Sharepoint CMS and SQL for U.S. marketing on IQVIA.com to create product pages and campaign landing pages. Lead identification of KPI's through the Google suite of products.
-        `
+        "Bullet1":`Developed and deployed responsive HTML email campaigns via Pardot and Salesforce Eloqua Engage, totaling 50M+ sends in 2019.
+        `,
+        "Bullet2":`Supported Marketing and Sales Ops by managing campaign data, materials, and communications for 6,000+ team.`,
+        "Bullet3":`Managed customer databases in Salesforce and Pardot, handling segmentation, reporting, opt-outs, and extractions for targeted deployments.`
       },
       {
         "id":"Cegedim",
-        "CompanyName":"Cegedim",
-        "specialization":"Marketing Specialist",
+        "CompanyName":"Ricoh(formerly AnaJet)",
+        "specialization":"Online Marketing Specialist",
         "MonthOfLeaving":"April",
         "YearOfLeaving":"2015",
-        "Achievements":`Designed and deployed email campaigns through Marketo.
-
-        Created product pages and campaign landing pages for US marketing on cegedimrm.com. Updated and maintained websites with Microsoft Sharepoint using Javascript, PHP and HTML.
-        
-        Designed layouts for print and digital media including brochures, fact sheets, count sheets, banners, newsletters, advertisements, and other sales collateral with Photoshop and Illustrator.`
+        "Bullet1":`Designed and deployed email campaigns through Marketo.`,
+        "Bullet2":`Increased website lead flow by 425% and traffic by 150% year-over-year through custom WordPress development and PHP/MySQL management.`,
+        "Bullet3":`Led AdWords campaigns with keyword management and a monthly PPC budget of over $10,500.`
       }
     ],
     "skillsDescription":"Your skills here",
     "skills":[
       {
-        "id":"HTML5",
-        "skillname":"HTML5"
+        "id":"Automation",
+        "skillname":"Marketing Automation"
+      },
+      {
+        "id":"Digital",
+        "skillname":"Digital Marketing"
+      },
+      {
+        "id":"Content",
+        "skillname":"Content Marketing"
       },
       {
         "id":"Wordpress",
         "skillname":"Wordpress"
       },
       {
-        "id":"CSS3",
-        "skillname":"CSS3"
-      },
-      {
-        "id":"Photoshop",
-        "skillname":"Photoshop"
-      },
-      {
-        "id":"JavaScript",
-        "skillname":"JavaScript"
-      },
-      {
-        "id":"React",
-        "skillname":"React"
+        "id":"Adobe",
+        "skillname":"Adobe Creative Cloud"
       }
     ],
     "portfolio":[
