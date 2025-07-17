@@ -53,9 +53,9 @@ let resumeData = {
         "specialization":"Marketing Developer",
         "MonthOfLeaving":"",
         "YearOfLeaving":"Present",
-        "Bullet1":`• Strategize and launch high-impact Go-To-Market and account-based campaigns in HubSpot, with timely performance reporting to drive data-informed decisions.`,
-        "Bullet2":`• Act as a key liaison between the web development team and cross-functional stakeholders in marketing, sales, and product, ensuring digital initiatives align with KPIs and deliver measurable value in HubSpot.`,
-        "Bullet3":`• Partner with sales and marketing teams to continuously track and optimize the sales funnel, aligning web strategies in WordPress UX/UI achieving lead generation and conversion objectives.`
+        "Bullet1":`Strategize and launch high-impact Go-To-Market and account-based campaigns in HubSpot, with timely performance reporting to drive data-informed decisions.`,
+        "Bullet2":`Act as a key liaison between the web development team and cross-functional stakeholders in marketing, sales, and product, ensuring digital initiatives align with KPIs and deliver measurable value in HubSpot.`,
+        "Bullet3":`Partner with sales and marketing teams to continuously track and optimize the sales funnel, aligning web strategies in WordPress UX/UI achieving lead generation and conversion objectives.`
 
       },
       {
