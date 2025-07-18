@@ -19,7 +19,7 @@ let resumeData = {
         },
 
       ],
-    "aboutme": `With 15 years of experience in the marketing field, Matthew brings deep expertise in marketing automation, web development, and campaign execution. His skill set spans creative design, copy editing, social media strategy, and email marketing—making him a versatile asset across digital channels. Beyond the tools and tactics, Matthew is a dependable leader known for his positive attitude and commitment to collaboration, always ensuring stakeholders are supported and deadlines are met with care.`,
+      "aboutme": `With 15 years of experience in the marketing field, Matthew brings deep expertise in marketing automation, web development, and campaign execution. His skill set spans creative design, copy editing, social media strategy, and email marketing—making him a versatile asset across digital channels. Beyond the tools and tactics, Matthew is a dependable leader known for his positive attitude and commitment to collaboration, always ensuring stakeholders are supported and deadlines are met with care.`,
       "aboutme2": `
       Early in my career, I focused on optimizing customer experiences through website landing pages, content creation, and marketing automation platforms like Pardot and Eloqua. I also drew on over a decade of experience with Adobe Creative Suite — Photoshop, Illustrator, and InDesign — to build high-quality creative assets. As my responsibilities expanded, I found myself managing corporate websites, diving into front-end code using HTML, CSS, JavaScript, and PHP, and working with various CMS platforms. This blend of creativity and technical work sparked a lasting passion for web development.`,
       "aboutme3": `
