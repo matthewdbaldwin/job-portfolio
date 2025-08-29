@@ -148,6 +148,72 @@ let resumeData = {
         "alt":"Neverforgotten"
       }
     ],
+    "portfolio0":[
+      {
+        "id":"Profoundlogic1",
+        "name":"Profoundlogic.com redesign 2020",
+        "description":"website",
+        "url":"https://web.archive.org/web/20210808202810/https:/www.profoundlogic.com/",
+        "imgurl":"images/portfolio/Profoundlogic1.webp",
+        "alt":"profoundlogic.com-2020"
+      },
+            {
+        "id":"Profoundlogic1",
+        "name":"Profoundlogic.com redesign 2022",
+        "description":"website",
+        "url":"images/portfolio/Profoundlogic2-large.webp",
+        "imgurl":"images/portfolio/Profoundlogic2.webp",
+        "alt":"profoundlogic.com-2022"
+      },
+                  {
+        "id":"Profoundlogic1",
+        "name":"Profoundlogic.com redesign 2022",
+        "description":"website",
+        "url":"images/portfolio/Profoundlogic2-1-large.webp",
+        "imgurl":"images/portfolio/Profoundlogic2.webp",
+        "alt":"profoundlogic.com-blog"
+      },
+                  {
+        "id":"Profoundlogic1",
+        "name":"Profoundlogic.com Blog Post",
+        "description":"website",
+        "url":"images/portfolio/Profoundlogic2-2-large.webp",
+        "imgurl":"images/portfolio/Profoundlogic2.webp",
+        "alt":"profoundlogic.com-blogpost"
+      },
+                  {
+        "id":"Profoundlogic1",
+        "name":"Profoundlogic.com Whitepaper",
+        "description":"website",
+        "url":"https://www.profoundlogic.com",
+        "imgurl":"images/portfolio/Profoundlogic-whitepaper.webp",
+        "alt":"profoundlogic.com-whitepaper"
+      },
+      {
+        "id":"IVQIA1",
+        "name":"Prescriber Credentials",
+        "description":"sample",
+        "url":"https://iqvia.com",
+        "imgurl":"images/portfolio/IQVIA1.webp",
+        "alt":"prescriber-credentials"
+      },
+            {
+        "id":"IVQIA2",
+        "name":"Email Header Healthcare Leaders",
+        "description":"sample",
+        "url":"https://iqvia.com",
+        "imgurl":"images/portfolio/IQVIA2.webp",
+        "alt":"healthcare-leaders"
+      },
+            {
+        "id":"IVQIA3",
+        "name":"IDN Whitepaper",
+        "description":"sample",
+        "url":"https://iqvia.com",
+        "imgurl":"images/portfolio/IQVIA3.webp",
+        "alt":"whitepaper"
+      }
+    ],
     "testimonials":[
       {
         "id":"PL",
