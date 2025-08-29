@@ -424,7 +424,8 @@ ul#nav li.current a { color: #0e68b7; }
 }
 
 /* Portfolio Content */
-
+.portfolio-item a { display: block; }
+.portfolio-item .link-icon { position: absolute; z-index: 2; }
 #portfolio-grid-0 .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
@@ -437,6 +438,7 @@ ul#nav li.current a { color: #0e68b7; }
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
 #portfolio-grid-1 .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
