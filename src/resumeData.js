@@ -16,7 +16,7 @@ let resumeData = {
           "name":"github",
           "url":"https://github.com/matthewdbaldwin",
           "className":"fa fa-github"
-        },
+        }
 
       ],
       "aboutme": `With 15 years of experience in the marketing field, Matthew brings deep expertise in marketing automation, web development, and campaign execution. His skill set spans creative design, copy editing, social media strategy, and email marketing—making him a versatile asset across digital channels. Beyond the tools and tactics, Matthew is a dependable leader known for his positive attitude and commitment to collaboration, always ensuring stakeholders are supported and deadlines are met with care.`,
