@@ -1,9 +1,9 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Data-Driven Digital Marketing Leader Driving Growth Through Automation, SEO, and Analytics",
+    "role": "Digital Marketing Leader Driving Growth",
     "linkedinId":"matthewdbaldwin",
-    "roleDescription": "Experienced digital marketing leader specializing in campaign automation, SEO, and analytics, driving measurable growth through strategic execution and collaboration.",
+    "roleDescription": "Experienced digital marketer specializing in campaign automation, SEO, and analytics, driving measurable growth through strategic execution and collaboration.",
     "socialLinks":[
         {
           "id":"linkedin",
@@ -83,7 +83,7 @@ let resumeData = {
         "Bullet3":`Led AdWords campaigns with keyword management and a monthly PPC budget of over $10,500.`
       }
     ],
-    "skillsDescription":"Your skills here",
+    "skillsDescription":"",
     "skills":[
       {
         "id":"Automation",
