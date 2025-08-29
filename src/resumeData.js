@@ -1,9 +1,9 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Frontend Developer and Marketer",
+    "role": "Data-Driven Digital Marketing Leader Driving Growth Through Automation, SEO, and Analytics",
     "linkedinId":"matthewdbaldwin",
-    "roleDescription": " I like dabbling in various parts of frontend development and like to learn about new technologies, make creative designs, and manage campaigns.",
+    "roleDescription": "Experienced digital marketing leader specializing in campaign automation, SEO, and analytics, driving measurable growth through strategic execution and collaboration.",
     "socialLinks":[
         {
           "id":"linkedin",
