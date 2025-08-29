@@ -51,6 +51,7 @@ let resumeData = {
         "id":"Profound Logic",
         "CompanyName":"Profound Logic",
         "specialization":"Marketing Developer",
+        "dateStarted":"October 2020",
         "MonthOfLeaving":"",
         "YearOfLeaving":"Present",
         "Bullet1":`Strategize and launch high-impact Go-To-Market and account-based campaigns in HubSpot, with timely performance reporting to drive data-informed decisions.`,
@@ -62,6 +63,7 @@ let resumeData = {
         "id":"IQVIA",
         "CompanyName":"IQVIA",
         "specialization":"Marketing Manager",
+        "dateStarted":"April 2013",
         "MonthOfLeaving":"October",
         "YearOfLeaving":"2020",
         "Bullet1":`Developed and deployed responsive HTML email campaigns via Pardot and Salesforce Eloqua Engage, totaling 50M+ sends in 2019.
@@ -73,8 +75,9 @@ let resumeData = {
         "id":"Cegedim",
         "CompanyName":"Ricoh(formerly AnaJet)",
         "specialization":"Online Marketing Specialist",
+        "dateStarted":"May 2010",
         "MonthOfLeaving":"April",
-        "YearOfLeaving":"2015",
+        "YearOfLeaving":"2013",
         "Bullet1":`Designed and deployed email campaigns through Marketo.`,
         "Bullet2":`Increased website lead flow by 425% and traffic by 150% year-over-year through custom WordPress development and PHP/MySQL management.`,
         "Bullet3":`Led AdWords campaigns with keyword management and a monthly PPC budget of over $10,500.`
