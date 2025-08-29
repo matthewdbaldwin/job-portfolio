@@ -193,7 +193,7 @@ let resumeData = {
         "id":"IVQIA1",
         "name":"Prescriber Credentials",
         "description":"sample",
-        "url":"https://iqvia.com",
+        "url":"images/portfolio/IQVIA1-large.webp",
         "imgurl":"images/portfolio/IQVIA1.webp",
         "alt":"prescriber-credentials"
       },
@@ -201,7 +201,7 @@ let resumeData = {
         "id":"IVQIA2",
         "name":"Email Header Healthcare Leaders",
         "description":"sample",
-        "url":"https://iqvia.com",
+        "url":"images/portfolio/IQVIA2-large.webp",
         "imgurl":"images/portfolio/IQVIA2.webp",
         "alt":"healthcare-leaders"
       },
@@ -209,7 +209,7 @@ let resumeData = {
         "id":"IVQIA3",
         "name":"IDN Whitepaper",
         "description":"sample",
-        "url":"https://iqvia.com",
+        "url":"images/portfolio/IQVIA3-large.webp",
         "imgurl":"images/portfolio/IQVIA3.webp",
         "alt":"whitepaper"
       }
