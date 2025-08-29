@@ -151,7 +151,7 @@ let resumeData = {
     "portfolio0":[
       {
         "id":"Profoundlogic1",
-        "name":"Profoundlogic.com redesign 2020",
+        "name":"Profoundlogic.com Redesign 2020",
         "description":"website",
         "url":"https://web.archive.org/web/20210808202810/https:/www.profoundlogic.com/",
         "imgurl":"images/portfolio/Profoundlogic1.webp",
@@ -159,7 +159,7 @@ let resumeData = {
       },
             {
         "id":"Profoundlogic1",
-        "name":"Profoundlogic.com redesign 2022",
+        "name":"Profoundlogic.com Redesign 2022",
         "description":"website",
         "url":"images/portfolio/Profoundlogic2-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2.webp",
@@ -167,7 +167,7 @@ let resumeData = {
       },
                   {
         "id":"Profoundlogic1",
-        "name":"Profoundlogic.com redesign 2022",
+        "name":"Profoundlogic.com Redesign Blog",
         "description":"website",
         "url":"images/portfolio/Profoundlogic2-1-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2.webp",
@@ -185,7 +185,7 @@ let resumeData = {
         "id":"Profoundlogic1",
         "name":"Profoundlogic.com Whitepaper",
         "description":"website",
-        "url":"https://www.profoundlogic.com",
+        "url":"images/portfolio/Profoundlogic-whitepaper-large.webp",
         "imgurl":"images/portfolio/Profoundlogic-whitepaper.webp",
         "alt":"profoundlogic.com-whitepaper"
       },
