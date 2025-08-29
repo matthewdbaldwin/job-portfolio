@@ -5,8 +5,19 @@ import 'react-image-lightbox/style.css';
 export default class Portfolio extends Component {
   state = { isOpen: false, photoIndex: 0 };
 
-  openLightbox = (photoIndex, e) => {
+  // GA helper (safe if GA hasn't loaded yet)
+  track = (eventName, params = {}) => {
+    if (window.gtag) window.gtag('event', eventName, params);
+  };
+
+  openLightbox = (photoIndex, e, meta) => {
     if (e) e.preventDefault();
+    this.track('portfolio_lightbox_open', {
+      section: 'Samples of Work',
+      index: photoIndex,
+      id: meta?.id,
+      name: meta?.name,
+    });
     this.setState({ isOpen: true, photoIndex });
   };
 
@@ -14,10 +25,10 @@ export default class Portfolio extends Component {
     const { resumeData } = this.props;
     const { isOpen, photoIndex } = this.state;
 
-    const listA = resumeData.portfolio0 || []; // Samples of Work
-    const listB = resumeData.portfolio || [];  // Websites
+    const listA = resumeData.portfolio0 || []; // Samples of Work (lightbox)
+    const listB = resumeData.portfolio || [];  // Websites (external links)
 
-    // Only images from listA will be in the lightbox
+    // Only listA is in the lightbox gallery
     const images   = listA.map(i => i.imgurl);
     const titles   = listA.map(i => i.name);
     const captions = listA.map(i => i.description);
@@ -38,7 +49,7 @@ export default class Portfolio extends Component {
                   key={item.id}
                   href={item.imgurl}
                   title={item.name}
-                  onClick={(e) => this.openLightbox(i, e)}
+                  onClick={(e) => this.openLightbox(i, e, { id: item.id, name: item.name })}
                 >
                   <div className="columns portfolio-item">
                     <div className="item-wrap">
@@ -69,6 +80,14 @@ export default class Portfolio extends Component {
                   title={item.name}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    this.track('portfolio_visit_site', {
+                      section: 'Websites',
+                      id: item.id,
+                      name: item.name,
+                      url: item.url,
+                    })
+                  }
                 >
                   <div className="columns portfolio-item">
                     <div className="item-wrap">
@@ -92,9 +111,32 @@ export default class Portfolio extends Component {
             mainSrc={images[photoIndex]}
             nextSrc={images[nextIndex(photoIndex)]}
             prevSrc={images[prevIndex(photoIndex)]}
-            onCloseRequest={() => this.setState({ isOpen: false })}
-            onMovePrevRequest={() => this.setState({ photoIndex: prevIndex(photoIndex) })}
-            onMoveNextRequest={() => this.setState({ photoIndex: nextIndex(photoIndex) })}
+            onCloseRequest={() => {
+              this.track('portfolio_lightbox_close', {
+                section: 'Samples of Work',
+                index: photoIndex,
+                name: titles[photoIndex],
+              });
+              this.setState({ isOpen: false });
+            }}
+            onMovePrevRequest={() => {
+              const to = prevIndex(photoIndex);
+              this.track('portfolio_lightbox_nav', {
+                direction: 'prev',
+                to_index: to,
+                name: titles[to],
+              });
+              this.setState({ photoIndex: to });
+            }}
+            onMoveNextRequest={() => {
+              const to = nextIndex(photoIndex);
+              this.track('portfolio_lightbox_nav', {
+                direction: 'next',
+                to_index: to,
+                name: titles[to],
+              });
+              this.setState({ photoIndex: to });
+            }}
             imageTitle={titles[photoIndex]}
             imageCaption={captions[photoIndex]}
             enableZoom

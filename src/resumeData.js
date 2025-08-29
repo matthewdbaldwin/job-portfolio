@@ -110,7 +110,7 @@ let resumeData = {
       {
         "id":"Profoundlogic",
         "name":"Profoundlogic.com",
-        "description":"website",
+        "description":"Profound Logic Software main site.",
         "url":"https://www.profoundlogic.com",
         "imgurl":"images/portfolio/plcom.webp",
         "alt":"profoundlogic.com"
@@ -118,7 +118,7 @@ let resumeData = {
       {
         "id":"Profoundjs",
         "name":"Profoundjs.com",
-        "description":"website",
+        "description":"The ProfoundJs website I helped edit and developed the software in GitHub.",
         "url":"https://www.profoundjs.com",
         "imgurl":"images/portfolio/pjscom.webp",
         "alt":"profoundjs.com"
@@ -126,7 +126,7 @@ let resumeData = {
       {
         "id":"winwin",
         "name":"winwinbrewery.com",
-        "description":"website",
+        "description":"My hobby homebrew website where I track my recipes.",
         "url":"https://winwinbrewery.com",
         "imgurl":"images/portfolio/winwin.webp",
         "alt":"Win Win Brewery"
@@ -134,7 +134,7 @@ let resumeData = {
       {
         "id":"onekeydata",
         "name":"onekeydata.com",
-        "description":"website",
+        "description":"Onkey website in IQVIA.",
         "url":"https://onekeydata.com",
         "imgurl":"images/portfolio/onekey.webp",
         "alt":"onekeydata.com"
@@ -142,7 +142,7 @@ let resumeData = {
       {
         "id":"neverforgotten",
         "name":"neverforgottengravecare.com",
-        "description":"website",
+        "description":"Client Website in Gutenberg using free images.",
         "url":"https://neverforgottengravecare.com",
         "imgurl":"images/portfolio/nf.webp",
         "alt":"Neverforgotten"
@@ -152,7 +152,7 @@ let resumeData = {
       {
         "id":"Profoundlogic1",
         "name":"Profoundlogic.com Redesign 2020",
-        "description":"website",
+        "description":"Sample of Profoundlogic.com website redesign in 2020.",
         "url":"https://web.archive.org/web/20210808202810/https:/www.profoundlogic.com/",
         "imgurl":"images/portfolio/Profoundlogic1.webp",
         "alt":"profoundlogic.com-2020"
@@ -160,7 +160,7 @@ let resumeData = {
             {
         "id":"Profoundlogic2",
         "name":"Profoundlogic.com Redesign 2022",
-        "description":"website",
+        "description":"Sample of Profoundlogic.com website redesign in 2022",
         "url":"images/portfolio/Profoundlogic2-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2.webp",
         "alt":"profoundlogic.com-2022"
@@ -168,7 +168,7 @@ let resumeData = {
                   {
         "id":"Profoundlogic3",
         "name":"Profoundlogic.com Redesign Blog",
-        "description":"website",
+        "description":"Sample of Profoundlogic.com Blog redesign completed in 2022",
         "url":"images/portfolio/Profoundlogic2-1-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2-1.webp",
         "alt":"profoundlogic.com-blog"
@@ -176,7 +176,7 @@ let resumeData = {
                   {
         "id":"Profoundlogic4",
         "name":"Profoundlogic.com Blog Post",
-        "description":"website",
+        "description":"Sample of Profoundlogic.com Blog Post redesign completed in 2022",
         "url":"images/portfolio/Profoundlogic2-2-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2-2.webp",
         "alt":"profoundlogic.com-blogpost"
@@ -184,7 +184,7 @@ let resumeData = {
                   {
         "id":"Profoundlogic5",
         "name":"Profoundlogic.com Whitepaper",
-        "description":"website",
+        "description":"Sample Whitepaper from Profound Logic Software",
         "url":"images/portfolio/Profoundlogic-whitepaper-large.webp",
         "imgurl":"images/portfolio/Profoundlogic-whitepaper.webp",
         "alt":"profoundlogic.com-whitepaper"
@@ -192,7 +192,7 @@ let resumeData = {
       {
         "id":"IVQIA1",
         "name":"Prescriber Credentials",
-        "description":"sample",
+        "description":"IQVIA email sample",
         "url":"images/portfolio/IQVIA1-large.webp",
         "imgurl":"images/portfolio/IQVIA1.webp",
         "alt":"prescriber-credentials"
@@ -200,7 +200,7 @@ let resumeData = {
             {
         "id":"IVQIA2",
         "name":"Email Header Healthcare Leaders",
-        "description":"sample",
+        "description":"IQVIA Email header sample",
         "url":"images/portfolio/IQVIA2-large.webp",
         "imgurl":"images/portfolio/IQVIA2.webp",
         "alt":"healthcare-leaders"
@@ -208,7 +208,7 @@ let resumeData = {
             {
         "id":"IVQIA3",
         "name":"IDN Whitepaper",
-        "description":"sample",
+        "description":"IQVIA Whitepaper sample",
         "url":"images/portfolio/IQVIA3-large.webp",
         "imgurl":"images/portfolio/IQVIA3.webp",
         "alt":"whitepaper"
