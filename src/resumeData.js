@@ -48,6 +48,7 @@ let resumeData = {
       {
         "id":"Profound Logic",
         "CompanyName":"Profound Logic",
+        "CompanyWeb":"https://profoundlogic.com/",
         "specialization":"Marketing Developer",
         "dateStarted":"October 2020",
         "MonthOfLeaving":"",
@@ -60,6 +61,7 @@ let resumeData = {
       {
         "id":"IQVIA",
         "CompanyName":"IQVIA",
+        "CompanyWeb":"https://iqvia.com/",
         "specialization":"Marketing Manager",
         "dateStarted":"April 2013",
         "MonthOfLeaving":"October",
@@ -72,6 +74,7 @@ let resumeData = {
       {
         "id":"Cegedim",
         "CompanyName":"Ricoh(formerly AnaJet)",
+        "CompanyWeb":"https://ricohdtg.com/",
         "specialization":"Online Marketing Specialist",
         "dateStarted":"May 2010",
         "MonthOfLeaving":"April",
