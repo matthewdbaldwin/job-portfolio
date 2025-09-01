@@ -135,7 +135,7 @@ let resumeData = {
       {
         "id":"onekeydata",
         "name":"onekeydata.com",
-        "description":"Onkey website in IQVIA.",
+        "description":"Onkey website at IQVIA.com.",
         "url":"https://onekeydata.com",
         "imgurl":"images/portfolio/onekey.webp",
         "alt":"onekeydata.com"

@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 /*
-/* Init JS (surgical fixes: plugin guards + flexslider on window.load)
+/* Init JS (guards + mobile nav toggle + reveal + flexslider)
 /*
 -----------------------------------------------------------------------------------*/
 
@@ -10,6 +10,23 @@ jQuery(document).ready(function ($) {
   var hasWaypoints  = !!$.fn.waypoint;
   var hasMagnific   = !!$.fn.magnificPopup;
   var hasFlexslider = !!$.fn.flexslider;
+
+  /*----------------------------------------------------*/
+  /* Mobile nav toggle                                  */
+  /*----------------------------------------------------*/
+  var $navWrap = $('#nav-wrap');
+  var $navList = $('#nav');
+
+  $navWrap.on('click', 'a.mobile-btn', function (e) {
+    e.preventDefault();
+    $navWrap.toggleClass('open')
+            .attr('aria-expanded', $navWrap.hasClass('open') ? 'true' : 'false');
+  });
+
+  // collapse after clicking a link (mobile)
+  $navList.on('click', 'a', function () {
+    if ($navWrap.hasClass('open')) $navWrap.removeClass('open').attr('aria-expanded', 'false');
+  });
 
   /*----------------------------------------------------*/
   /* FitText Settings (guarded)                         */
@@ -33,18 +50,12 @@ jQuery(document).ready(function ($) {
     var $target = $(target);
     if (!$target.length) return;
 
-    $('html, body')
-      .stop()
-      .animate(
-        {
-          scrollTop: $target.offset().top,
-        },
-        800,
-        'swing',
-        function () {
-          window.location.hash = target;
-        }
-      );
+    $('html, body').stop().animate(
+      { scrollTop: $target.offset().top },
+      800,
+      'swing',
+      function () { window.location.hash = target; }
+    );
   });
 
   /*----------------------------------------------------*/
@@ -54,19 +65,16 @@ jQuery(document).ready(function ($) {
   var $navLinks = $('#nav-wrap a');
 
   if (hasWaypoints && $sections.length && $navLinks.length) {
-    $sections.waypoint(
-      {
-        handler: function (event, direction) {
-          var $active = $(this);
-          if (direction === 'up') $active = $active.prev();
-
-          var $activeLink = $('#nav-wrap a[href="#' + $active.attr('id') + '"]');
-          $navLinks.parent().removeClass('current');
-          $activeLink.parent().addClass('current');
-        },
-        offset: '35%',
-      }
-    );
+    $sections.waypoint({
+      handler: function (event, direction) {
+        var $active = $(this);
+        if (direction === 'up') $active = $active.prev();
+        var $activeLink = $('#nav-wrap a[href="#' + $active.attr('id') + '"]');
+        $navLinks.parent().removeClass('current');
+        $activeLink.parent().addClass('current');
+      },
+      offset: '35%',
+    });
   }
 
   /*----------------------------------------------------*/
@@ -100,6 +108,9 @@ jQuery(document).ready(function ($) {
         }
       }
     });
+
+    // set initial state
+    $(window).trigger('scroll');
   }
 
   /*----------------------------------------------------*/
@@ -121,11 +132,36 @@ jQuery(document).ready(function ($) {
   }
 
   /*----------------------------------------------------*/
-  /* Flexslider (moved to window.load + guarded)        */
+  /* Reveal on scroll (IO with Waypoints fallback)      */
+  /*----------------------------------------------------*/
+  (function(){
+    var $targets = $('section, .portfolio-item, .flexslider, .bars').addClass('reveal');
+
+    function inViewIO(){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+      $targets.each(function(){ io.observe(this); });
+    }
+
+    if('IntersectionObserver' in window){ inViewIO(); }
+    else if ($.fn.waypoint){
+      $targets.waypoint(function(){ $(this.element).addClass('in'); this.destroy(); }, { offset: '80%' });
+    } else {
+      $targets.addClass('in'); // last resort
+    }
+  })();
+
+  /*----------------------------------------------------*/
+  /* Flexslider (window.load + guarded)                 */
   /*----------------------------------------------------*/
   $(window).on('load', function () {
     if (!hasFlexslider) return;
-    $('.flexslider').flexslider({
+    var $fx = $('.flexslider');
+    if (!$fx.length) return;
+    $fx.flexslider({
       namespace: 'flex-',
       controlsContainer: '.flex-container',
       animation: 'slide',
@@ -150,32 +186,24 @@ jQuery(document).ready(function ($) {
     var contactMessage = $('#contactForm #contactMessage').val();
 
     var data =
-      'contactName=' +
-      contactName +
-      '&contactEmail=' +
-      contactEmail +
-      '&contactSubject=' +
-      contactSubject +
-      '&contactMessage=' +
-      contactMessage;
+      'contactName=' + contactName +
+      '&contactEmail=' + contactEmail +
+      '&contactSubject=' + contactSubject +
+      '&contactMessage=' + contactMessage;
 
     $.ajax({
       type: 'POST',
       url: 'inc/sendEmail.php',
       data: data,
       success: function (msg) {
-        // Message was sent
         if (msg == 'OK') {
           $('#image-loader').fadeOut();
           $('#message-warning').hide();
           $('#contactForm').fadeOut();
           $('#message-success').fadeIn();
-        }
-        // There was an error
-        else {
+        } else {
           $('#image-loader').fadeOut();
-          $('#message-warning').html(msg);
-          $('#message-warning').fadeIn();
+          $('#message-warning').html(msg).fadeIn();
         }
       },
     });

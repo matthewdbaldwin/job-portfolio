@@ -14,7 +14,7 @@ export default  class Resume extends Component {
                   return(
                     <div key={item.id} className="row item">
                        <div className="twelve columns">
-                          <h3><a href={item.CompanyWeb} target="_blank" rel="noreferrer" >{item.CompanyName}</a></h3>
+                          <h3><a href={item.CompanyWeb} target="_blank" rel="noreferrer" class="shine-link">{item.CompanyName}</a></h3>
                           <p className="info">
                           {item.specialization}
                           <span>&bull;</span> <em className="date">{item.dateStarted} <span>&rarr;</span> {item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
