@@ -49,8 +49,8 @@ header {
    width: 100%;
    background: #161415 url(../images/header-background.webp) no-repeat top center;
    background-size: cover !important;
-   background-attachment: fixed;      /* parallax-style scroll like #testimonials */
-   background-position: center center; /* align like testimonials */
+   background-attachment: fixed;
+   background-position: center center;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
@@ -159,13 +159,12 @@ header .scrolldown a:hover { color: var(--brand); }
   transition: background .25s ease, box-shadow .25s ease;
 }
 
-/* hide toggle button (mobile overrides live in media-queries.css) */
+/* hide toggle button (mobile overrides in media-queries.css) */
 #nav-wrap > a.mobile-btn { display: none; }
 
 ul#nav {
    min-height: 68px;
    width: auto;
-   /* center align the menu */
    text-align: center;
 }
 ul#nav li {
@@ -177,17 +176,12 @@ ul#nav li {
 
 /* Links */
 ul#nav li a {
-   /* 10px padding top + 10px padding bottom + 48px line-height = 68px */
    display: inline-block;
    padding: 10px 13px;
    line-height: 48px;
 	text-decoration: none;
    text-align: left;
    color: #fff;
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
    position: relative; /* for underline effect */
 }
@@ -333,7 +327,7 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
    color: var(--ink);
 }
 
-/* Portfolio Content (deduped & consistent) */
+/* Portfolio Content */
 #portfolio-grid-0 .columns,
 #portfolio-grid-1 .columns { margin-bottom: 36px; }
 
@@ -343,12 +337,8 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
    background: #fff;
    overflow: hidden;
    position: relative;
-   border-radius: 12px;                 /* modern polish */
-   box-shadow: var(--shadow-soft);      /* modern polish */
-   -webkit-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-   -o-transition: all 0.3s ease-in-out;
-   -ms-transition: all 0.3s ease-in-out;
+   border-radius: 12px;
+   box-shadow: var(--shadow-soft);
    transition: all 0.3s ease-in-out;
 }
 .portfolio-item .item-wrap img {
@@ -356,7 +346,7 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
    width: 100%;
    height: auto;
    display: block;
-   transition: transform .5s cubic-bezier(.2,.65,.3,1); /* modern polish */
+   transition: transform .5s cubic-bezier(.2,.65,.3,1);
 }
 
 /* overlay */
@@ -364,35 +354,26 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
    position: absolute;
    left: 0; top: 0; width: 100%; height: 100%;
 	opacity: 0;
-	filter:alpha(opacity=0);
-   -webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
+   transition: opacity 0.3s ease-in-out;
    background: url(../images/overlay-bg.png) repeat;
-   backdrop-filter: blur(2px);               /* modern polish */
+   backdrop-filter: blur(2px);
    -webkit-backdrop-filter: blur(2px);
 }
 .portfolio-item .item-wrap .link-icon {
-   display: block;
-   color: #fff;
+   display: block; color: #fff;
    height: 30px; width: 30px; font-size: 18px; line-height: 30px; text-align: center;
-   opacity: 0;
-   -webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
+   opacity: 0; transition: opacity 0.3s ease-in-out;
    position: absolute; top: 50%; left: 50%; margin-left: -15px; margin-top: -15px;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 { font: 14px/21px 'arial', sans-serif; color: #fff; }
 .portfolio-item .portfolio-item-meta p { font: 12px/18px 'arial', sans-serif; color: #c6c7c7; margin-bottom: 0; }
 
-/* on hover (modern polish) */
+/* on hover */
 .portfolio-item:hover .item-wrap{ box-shadow: var(--shadow); }
 .portfolio-item:hover .item-wrap img{ transform: scale(1.05); }
-.portfolio-item:hover .overlay { opacity: 1; filter:alpha(opacity=100); }
-.portfolio-item:hover .link-icon { opacity: 1; filter:alpha(opacity=100); }
+.portfolio-item:hover .overlay { opacity: 1; }
+.portfolio-item:hover .link-icon { opacity: 1; }
 
 /* popup modal */
 .popup-modal {
@@ -416,10 +397,6 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
 /* fadein/fadeout effect for modal popup */
 .mfp-fade.mfp-wrap .mfp-content .popup-modal {
    opacity: 0;
-   -webkit-transition: all 200ms ease-in-out;
-	-moz-transition: all 200ms ease-in-out;
-	-o-transition: all 200ms ease-in-out;
-	-ms-transition: all 200ms ease-in-out;
    transition: all 200ms ease-in-out;
 }
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal { opacity: 1; }
@@ -489,57 +466,57 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
 }
 
 /*	Blockquotes */
-#testimonials blockquote { margin: 0 0px 30px 0px; padding-left: 0; position: relative; text-shadow: 0px 1px 3px rgba(0, 0, 0, 1); }
+#testimonials blockquote { margin: 0 0 30px 0; padding-left: 0; position: relative; text-shadow: 0 1px 3px rgba(0, 0, 0, 1); }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p { font-family: 'opensans-regular', sans-serif; padding: 0; font-size: 24px; line-height: 48px; color: #fff }
 #testimonials blockquote cite { display: block; font-size: 16px; font-style: normal; line-height: 18px; color: #fff; }
 #testimonials blockquote cite:before { content: "\2014 \0020"; }
 #testimonials blockquote cite a, #testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
-/* Flex Slider */
-/* Reset */
+/* Flex Slider (structure/reset) */
 .flexslider a:active, .flexslider a:focus  { outline: none; }
 .slides, .flex-control-nav, .flex-direction-nav { margin: 0; padding: 0; list-style: none; }
 .slides li { margin: 0; padding: 0;}
-/* Necessary Styles */
 .flexslider { position: relative; zoom: 1; margin: 0; padding: 0; }
 .flexslider .slides { zoom: 1; }
 .flexslider .slides > li { position: relative; }
-/* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-/* Suggested container */
 .flex-container { zoom: 1; position: relative; }
-/* Clearfix */
 .slides:before, .slides:after { content: " "; display: table; }
 .slides:after { clear: both; }
-/* No JavaScript Fallback */
 .no-js .slides > li:first-child { display: block; }
-/* Slider Styles */
 .slides { zoom: 1; }
 .slides > li { overflow: hidden; }
 
-/* Modern dot styling (overrides) */
-.flex-control-nav{
-  width:100%; position:absolute; bottom:-20px; text-align:left;
+/* Pager as dots (ID-scoped) */
+#testimonials .flex-control-nav.flex-control-paging{
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
-.flex-control-paging li a{
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
+#testimonials .flex-control-nav.flex-control-paging li{ display: inline-block; }
+#testimonials .flex-control-nav.flex-control-paging li a{
+  display: block;
+  width: 10px; height: 10px; border-radius: 999px;
   background: rgba(255,255,255,.35);
-  box-shadow: none;
+  text-indent: -9999px; overflow: hidden; line-height: 0; font-size: 0; color: transparent;
   transition: transform .2s ease, background .2s ease;
-
-  /* hide default numbers */
-  text-indent: -9999px;
-  overflow: hidden;
-  line-height: 0;
 }
-.flex-control-paging li a:hover{ transform: scale(1.2); }
-.flex-control-paging li a.flex-active{
-  background: var(--white);
-  transform: none;
+#testimonials .flex-control-nav.flex-control-paging li a:hover{ transform: scale(1.2); }
+#testimonials .flex-control-nav.flex-control-paging li a.flex-active{
+  background: #fff; transform: scale(1.1);
 }
+/* optional halo on hover */
+#testimonials .flex-control-paging li a{ position: relative; }
+#testimonials .flex-control-paging li a::before{
+  content:""; position:absolute; inset:-6px; border-radius:999px;
+  border:2px solid rgba(255,255,255,.25); transform: scale(.5); opacity:0;
+  transition: transform .2s ease, opacity .2s ease;
+}
+#testimonials .flex-control-paging li a:hover::before{ transform: scale(1); opacity:1; }
 
 /* ------------------------------------------------------------------ */
 /* h. Contact Section                                                  */
@@ -615,7 +592,7 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
    display: inline-block;
 	border-radius: 3px;
    margin-left: 26%;
-   transition: transform .12s ease, box-shadow .2s ease, background .2s ease, color .2s ease; /* modern */
+   transition: transform .12s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
    box-shadow: 0 6px 16px rgba(0,0,0,.12);
 }
 #contact button.submit:hover {
@@ -635,63 +612,101 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
 }
 #message-warning { color: #D72828; }
 #message-success { color: var(--brand); }
-
 #message-warning i, #message-success i { margin-right: 10px; }
 #image-loader { display: none; position: relative; left: 18px; top: 17px; }
 
-/* Twitter Feed */
-#twitter { margin-top: 12px; padding: 0; }
-#twitter li { margin: 6px 0px 12px 0; line-height: 30px; }
-#twitter li span { display: block; }
-#twitter li b a { font: 13px/36px 'opensans-regular', Sans-serif; color: #474747 !important; border: none; }
-
-/* ------------------------------------------------------------------ */
-/* i. Footer                                                           */
-/* ------------------------------------------------------------------ */
-
-footer {
-   padding-top: 48px;
-   margin-bottom: 48px;
-   color: #2B2B2B;
-   font-size: 14px;
-   text-align: center;
-   position: relative;
+/* Contact quick-links (buttons) */
+#contact .contact-links{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
 }
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+#contact .contact-links li{ margin:0; }
+#contact .contact-links li a{
+  display:inline-block;
+  padding:10px 16px;
+  background:#2a2a2a;
+  border-radius:6px;
+  color:#eee;
+  text-decoration:none;
+  transition: background .25s ease, color .25s ease, transform .15s ease;
+}
+#contact .contact-links li a:hover{
+  background: var(--brand);
+  color:#fff;
+  transform: translateY(-1px);
+}
 
-/* copyright */
-footer .copyright { margin: 0; padding: 0; }
-footer .copyright li { display: inline-block; margin: 0; padding: 0; line-height: 24px; }
-.ie footer .copyright li { display: inline; }
-footer .copyright li:before { content: "\2022"; padding: 0 10px; color: var(--brand); }
-footer .copyright  li:first-child:before { display: none; }
+/* ------------------------------------------------------------------ */
+/* i. Footer (unified, dark)                                          */
+/* ------------------------------------------------------------------ */
+
+footer{
+  padding-top:48px;
+  padding-bottom:56px;
+  color:#ccc;
+  background:#111;
+  font-size:14px;
+  text-align:center;
+  position:relative;
+  margin-bottom:0;
+}
+footer a, footer a:visited{ color:#bbb; }
+footer a:hover, footer a:focus{ color:#fff; }
 
 /* social links */
-footer .social-links { margin: 18px 0 30px 0; padding: 0; font-size: 30px; }
-footer .social-links li { display: inline-block; margin: 0 0 0 42px; color: #F06000; }
-footer .social-links li:first-child { margin-left: 0; }
+footer .social-links{
+  margin:18px 0 22px 0;
+  padding:0;
+  font-size:30px;
+  display:flex;
+  justify-content:center;
+  gap:28px;
+  list-style:none;
+}
+footer .social-links li{ margin:0; }
+footer .social-links a{
+  color:#bdbdbd;
+  transition: color .25s ease, transform .15s ease;
+}
+footer .social-links a:hover{ color:#fff; transform: translateY(-2px); }
+
+/* copyright list */
+footer .copyright{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+footer .copyright li{
+  display:inline-block;
+  margin:0 8px;
+  color:#9a9a9a;
+}
 
 /* Go To Top Button */
-#go-top { position: absolute; top: -24px; left: 50%; margin-left: -30px; }
-#go-top a {
-	text-decoration: none;
-	border: 0 none;
-	display: block;
-	width: 60px;
-	height: 60px;
-	background-color: #525252;
-	-webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-   color: #fff;
-   font-size: 21px;
-   line-height: 60px;
- 	border-radius: 100%;
+#go-top{ position:absolute; top:-24px; left:50%; margin-left:-30px; }
+#go-top a{
+  text-decoration:none;
+  border:0 none;
+  display:block;
+  width:60px;
+  height:60px;
+  background-color:#525252;
+  color:#fff;
+  font-size:21px;
+  line-height:60px;
+  border-radius:100%;
+  transition: background .25s ease, transform .2s ease, box-shadow .2s ease;
 }
-#go-top a:hover { background-color: var(--brand); }
+#go-top a:hover{
+  background-color: var(--brand);
+  transform: translateY(-4px) rotate(8deg);
+  box-shadow: 0 12px 26px rgba(0,0,0,.3);
+}
 
 /* ------------------------------------------------------------------ */
 /* z. Modern Tweaks: Entrance, Reveal, A11Y, Social                    */
@@ -744,21 +759,21 @@ header .social li a:hover{
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
-  header{ background-attachment: scroll; } /* reduce parallax jank */
+  header{ background-attachment: scroll; }
 }
 
-/* Hide Flexslider pager numbers, show clean dots */
+/* Hide Flexslider pager numbers, show clean dots (generic) */
 .flexslider .flex-control-nav.flex-control-paging li a{
-  display: block;          /* REQUIRED so text-indent works */
+  display: block;
   width: 10px;
   height: 10px;
   border-radius: 999px;
   background: rgba(255,255,255,.35);
-  text-indent: -9999px;    /* pushes "1/2/3" off-screen */
+  text-indent: -9999px;
   overflow: hidden;
   line-height: 0;
-  font-size: 0;            /* belt & suspenders */
-  color: transparent;      /* just in case */
+  font-size: 0;
+  color: transparent;
 }
 .flexslider .flex-control-nav.flex-control-paging li a.flex-active{
   background: #fff;
@@ -767,43 +782,7 @@ header .social li a:hover{
   transform: scale(1.2);
 }
 
-/* Testimonials: turn Flexslider pager into dots (hide 1/2/3) */
-#testimonials .flex-control-nav.flex-control-paging{
-  list-style: none;           /* kill OL numbering */
-  margin: 12px 0 0;
-  padding: 0;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-#testimonials .flex-control-nav.flex-control-paging li{
-  list-style: none;           /* double-tap just in case */
-  display: inline-block;
-}
-#testimonials .flex-control-nav.flex-control-paging li a{
-  display: block;             /* required so text-indent works */
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.35);
-  text-indent: -9999px !important; /* hide “1/2/3” */
-  overflow: hidden;
-  line-height: 0 !important;
-  font-size: 0 !important;
-  color: transparent !important;
-  transition: transform .2s ease;
-}
-#testimonials .flex-control-nav.flex-control-paging li a:hover{
-  transform: scale(1.2);
-}
-#testimonials .flex-control-nav.flex-control-paging li a.flex-active{
-  background: #fff;
-  transform: scale(1.1);
-}
-
-/* =========================
-   NAV LINKS – slide underline
-   ========================= */
+/* NAV LINKS – slide underline */
 #nav-wrap .nav a{
   position: relative;
   transition: color .2s ease;
@@ -821,9 +800,7 @@ header .social li a:hover{
 #nav-wrap .nav a:hover::after,
 #nav-wrap .nav li.current a::after{ transform: scaleX(1); }
 
-/* =========================
-   SOCIAL ICONS – lift + wiggle
-   ========================= */
+/* SOCIAL ICONS – lift + wiggle */
 header .social li a i{
   display:inline-block;
   transition: transform .25s ease, opacity .2s ease;
@@ -833,10 +810,7 @@ header .social li a:hover i{
   opacity: .95;
 }
 
-/* =========================
-   BUTTONS – lift and shadow
-   (works with your existing .button)
-   ========================= */
+/* BUTTONS – lift and shadow */
 .button{
   transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
   will-change: transform;
@@ -844,9 +818,7 @@ header .social li a:hover i{
 .button:hover{ transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,.28); }
 .button:active{ transform: translateY(0); box-shadow: 0 6px 12px rgba(0,0,0,.22); }
 
-/* =========================
-   PORTFOLIO CARDS – lift, zoom + shine
-   ========================= */
+/* PORTFOLIO CARDS – lift, zoom + shine */
 #portfolio .portfolio-item .item-wrap{
   position: relative;
   overflow: hidden;
@@ -867,7 +839,6 @@ header .social li a:hover i{
   transform: scale(1.06);
   filter: none;
 }
-/* subtle “shine” sweep */
 #portfolio .portfolio-item .item-wrap::after{
   content:"";
   position:absolute;
@@ -883,9 +854,7 @@ header .social li a:hover i{
   opacity: 1;
 }
 
-/* =========================
-   RESUME ITEMS – soft hover card
-   ========================= */
+/* RESUME ITEMS – soft hover card (disabled below) */
 #resume .item{
   border-radius: 10px;
   transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
@@ -896,11 +865,7 @@ header .social li a:hover i{
   background: rgba(255,255,255,.03);
 }
 
-
-/* =========================
-   TESTIMONIAL DOTS – halo on hover
-   (works with the 1/2/3 fix you added)
-   ========================= */
+/* TESTIMONIAL DOTS – halo on hover */
 #testimonials .flex-control-paging li a{
   position: relative;
 }
@@ -919,9 +884,7 @@ header .social li a:hover i{
   opacity: 1;
 }
 
-/* =========================
-   “BACK TO TOP” – tilt + lift
-   ========================= */
+/* “BACK TO TOP” – tilt + lift */
 #go-top a{
   transition: transform .2s ease, box-shadow .2s ease;
 }
@@ -930,9 +893,7 @@ header .social li a:hover i{
   box-shadow: 0 12px 26px rgba(0,0,0,.3);
 }
 
-/* =========================
-   ACCESSIBILITY: nice focus outlines
-   ========================= */
+/* ACCESSIBILITY: nice focus outlines */
 a:focus-visible, button:focus-visible{
   outline: 2px solid #79d1ff;
   outline-offset: 3px;
@@ -944,10 +905,7 @@ a:focus-visible, button:focus-visible{
   *{ animation: none !important; transition: none !important; }
 }
 
-
-/* =========================
-   1) DISABLE HOVER CARDS in Work/Education/Skills
-   ========================= */
+/* 1) DISABLE HOVER CARDS in Work/Education/Skills */
 #resume .item:hover{
   transform: none !important;
   box-shadow: none !important;
@@ -961,21 +919,15 @@ a:focus-visible, button:focus-visible{
   transition: none !important;
 }
 
-/* =========================
-   2) LINK SHINE (no puff/scale)
-   - opt-in with class="shine-link"
-   - works on text links; doesn’t move layout
-   ========================= */
+/* 2) LINK SHINE (opt-in via .shine-link) */
 .shine-link{
   position: relative;
-  text-decoration: none;           /* keep it clean */
+  text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
-  background-size: 100% 1px;       /* thin underline */
+  background-size: 100% 1px;
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
-
-/* sheen sweep */
 .shine-link::after{
   content: "";
   position: absolute;
@@ -991,57 +943,75 @@ a:focus-visible, button:focus-visible{
   transition: transform .6s ease, opacity .25s ease;
   pointer-events: none;
 }
-
 .shine-link:hover::after,
 .shine-link:focus-visible::after{
   transform: translateX(350%) skewX(-20deg);
   opacity: 1;
 }
-
-/* Accessibility: visible focus without movement */
 .shine-link:focus-visible{
   outline: 2px solid #79d1ff;
   outline-offset: 3px;
   border-radius: 4px;
 }
-
-/* Respect motion prefs */
 @media (prefers-reduced-motion: reduce){
   .shine-link::after{ transition: none; }
 }
 
-
-/* keep honeypot in DOM but hidden */
+/* misc helpers */
 .hp-wrap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-
-/* status text + disabled btn */
 .contact-status { margin-top: 8px; font-size: 0.95em; }
-.contact-status.ok { color: #38c172; }     /* green */
-.contact-status.err { color: #ff6b6b; }    /* red */
+.contact-status.ok { color: #38c172; }
+.contact-status.err { color: #ff6b6b; }
 .button.submit[disabled] { opacity: .6; cursor: not-allowed; }
 
-/* subtle “shine” micro-interaction for links (no scale) */
-.shine-link, .btn-shine { position: relative; display: inline-block; overflow: hidden; }
-.shine-link::after, .btn-shine::after {
-  content: "";
-  position: absolute;
-  top: 0; left: -160%;
-  width: 140%; height: 100%;
-  transform: skewX(-20deg);
-  background: linear-gradient(
-    115deg,
-    transparent 0%,
-    rgba(255,255,255,.22) 45%,
-    rgba(255,255,255,.55) 50%,
-    rgba(255,255,255,.22) 55%,
-    transparent 100%
-  );
-  transition: left .65s ease;
-  pointer-events: none;
+
+/* === Solid Blue Skill Bubbles (no shimmer / no cursor light) === */
+.skills-bubbles{
+  display:flex;
+  flex-wrap:wrap;
+  gap: clamp(10px, 2vw, 18px);
+  align-items:center;
 }
-.shine-link:hover::after,
-.shine-link:focus-visible::after,
-.btn-shine:hover::after,
-.btn-shine:focus-visible::after {
-  left: 160%;
+
+.bubble-wrap{ display:block; }
+
+.bubble{
+  --size: 120px;
+  display:grid;
+  place-items:center;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: var(--brand);        /* solid blue */
+  color: #fff;
+  text-decoration: none;
+  box-shadow:
+    0 8px 18px rgba(14,104,183,.26),
+    inset 0 0 0 1px rgba(255,255,255,.08);
+  transform: translateY(0);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
 }
+.bubble:hover,
+.bubble:focus-visible{
+  transform: translateY(-2px);
+  box-shadow:
+    0 14px 28px rgba(14,104,183,.35),
+    inset 0 0 0 1px rgba(255,255,255,.12);
+  filter: brightness(1.03);
+}
+.bubble:active{ transform: translateY(0); }
+
+.bubble__inner{ display:grid; place-items:center; width:100%; height:100%; }
+.bubble__label{
+  text-align:center;
+  line-height:1.15;
+  font-weight:600;
+  padding: 0 8px;
+  font-size: clamp(12px, calc(var(--size) / 9.5), 18px);
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.08);
+}
+
+/* kill any prior shine/cursor effects from earlier rules */
+.bubble::before,
+.bubble::after{ display:none !important; }

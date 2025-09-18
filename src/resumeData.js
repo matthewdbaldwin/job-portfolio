@@ -85,27 +85,33 @@ let resumeData = {
       }
     ],
     "skillsDescription":"",
-    "skills":[
-      {
-        "id":"Automation",
-        "skillname":"Marketing Automation"
-      },
-      {
-        "id":"Digital",
-        "skillname":"Digital Marketing"
-      },
-      {
-        "id":"Marketing",
-        "skillname":"Content Marketing"
-      },
-      {
-        "id":"Wordpress",
-        "skillname":"Wordpress"
-      },
-      {
-        "id":"Adobe",
-        "skillname":"Adobe Creative Cloud"
-      }
+    // In resumeData.js — replace the entire `skills` array with this:
+    "skills": [
+      /* ===== TIER 1 (largest) ===== */
+      { "id": "t1-automation",  "skillname": "Marketing Automation",      "tier": 1 },
+      { "id": "t1-mops",        "skillname": "Marketing Operations",      "tier": 1 },
+      { "id": "t1-email",       "skillname": "Email Marketing",           "tier": 1 },
+      { "id": "t1-campaigns",   "skillname": "Campaign Management",       "tier": 1 },
+      { "id": "t1-seo",         "skillname": "SEO",                       "tier": 1 },
+      { "id": "t1-semppc",      "skillname": "SEM/PPC",                   "tier": 1 },
+      { "id": "t1-ga",          "skillname": "Google Analytics",          "tier": 1 },
+      { "id": "t1-leads",       "skillname": "Lead Generation",           "tier": 1 },
+      { "id": "t1-crm",         "skillname": "CRM",                       "tier": 1 },
+      { "id": "t1-salesforce",  "skillname": "Salesforce",                "tier": 1 },
+      { "id": "t1-hubspot",     "skillname": "HubSpot",                   "tier": 1 },
+      { "id": "t1-pardot",      "skillname": "Pardot",                    "tier": 1 },
+
+      /* ===== TIER 2 (half-size) ===== */
+      { "id": "t2-content",     "skillname": "Content Marketing",         "tier": 2 },
+      { "id": "t2-digital",     "skillname": "Digital Marketing",         "tier": 2 },
+      { "id": "t2-strategy",    "skillname": "Marketing Strategy",        "tier": 2 },
+      { "id": "t2-abm",         "skillname": "Account-Based Marketing (ABM)", "tier": 2 },
+      { "id": "t2-b2b",         "skillname": "B2B",                       "tier": 2 },
+      { "id": "t2-wp",          "skillname": "WordPress",                 "tier": 2 },
+      { "id": "t2-gads",        "skillname": "Google Ads",                "tier": 2 },
+      { "id": "t2-canspam",     "skillname": "CAN-SPAM",                  "tier": 2 },
+      { "id": "t2-ecom",        "skillname": "E-commerce",                "tier": 2 },
+      { "id": "t2-copy",        "skillname": "Copywriting",               "tier": 2 }
     ],
     "portfolio":[
       {
