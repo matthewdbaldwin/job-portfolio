@@ -41,7 +41,7 @@ let resumeData = {
         "specialization":"Full-stack development program is a 12-week intensive that teaches front-end and back-end subjects like JavaScript/jQuery, React, Node.js, PHP, MySQL, HTML, CSS, Amazon Web Services (AWS), Git/GitHub, and others.",
         "MonthOfPassing":"March",
         "YearOfPassing":"2020",
-        "Achievements":"Completed Full-stack development courses"
+        "Achievements":"Completed Full-stack development courses."
       }
     ],
     "work":[
@@ -145,14 +145,6 @@ let resumeData = {
         "url":"https://onekeydata.com",
         "imgurl":"images/portfolio/onekey.webp",
         "alt":"onekeydata.com"
-      },
-      {
-        "id":"neverforgotten",
-        "name":"neverforgottengravecare.com",
-        "description":"Client Website in Gutenberg using free images.",
-        "url":"https://neverforgottengravecare.com",
-        "imgurl":"images/portfolio/nf.webp",
-        "alt":"Neverforgotten"
       }
     ],
     "portfolio0":[

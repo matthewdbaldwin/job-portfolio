@@ -26,7 +26,7 @@ export default class Portfolio extends Component {
     const { isOpen, photoIndex } = this.state;
 
     const listA = resumeData.portfolio0 || []; // Samples of Work (lightbox)
-    const listB = resumeData.portfolio || [];  // Websites (external links)
+    const listB = resumeData.portfolio  || []; // Websites (external links)
 
     // Only listA is in the lightbox gallery
     const images   = listA.map(i => i.imgurl);

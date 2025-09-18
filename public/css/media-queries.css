@@ -33,6 +33,7 @@
       width: 65%;
       margin: 12px auto;
    }
+
    /* nav-wrap */
    #nav-wrap {
       font: 11px 'opensans-bold', sans-serif;
@@ -77,14 +78,10 @@
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
 
    /* Contact quick-links: slightly larger tap targets */
-#contact .contact-links li a {
-  padding: 12px 18px;
-  font-size: 16px;
-}
+   #contact .contact-links li a { padding: 12px 18px; font-size: 16px; }
 
-/* Footer: keep social icons comfy */
-footer .social-links { font-size: 26px; gap: 22px; }
-
+   /* Footer: keep social icons comfy */
+   footer .social-links { font-size: 26px; gap: 22px; }
 }
 
 /* mobile wide/smaller tablets
@@ -169,7 +166,7 @@ footer .social-links { font-size: 26px; gap: 22px; }
       display: block;
       margin: 12px 0;
       padding: 0;
-      line-height: 16px; /* reset from 48px */
+      line-height: 16px;
       border: none;
    }
 
@@ -177,10 +174,10 @@ footer .social-links { font-size: 26px; gap: 22px; }
    section[id]{ scroll-margin-top: 80px; }
 
    /* Header Styles */
-   header { 
-      height: auto;              /* let content define height on mobile */
+   header {
+      height: auto;
       min-height: 520px;
-      background-attachment: scroll; /* reduce jank on mobile */
+      background-attachment: scroll;
    }
    header .banner {
       padding-bottom: 12px;
@@ -286,13 +283,23 @@ footer .social-links { font-size: 26px; gap: 22px; }
    #contact button.submit { margin: 30px 0 24px 0; }
    #message-warning, #message-success { width: 100%; margin-left: 0; }
 
+   /* Contact quick-links: stack full-width on mobile */
+   #contact .contact-links { gap: 10px; }
+   #contact .contact-links li { width: 100%; }
+   #contact .contact-links li a {
+     display: block;
+     width: 100%;
+     padding: 12px 16px;
+     font-size: 16px;
+   }
+
    /* footer */
-   /* copyright */
+   footer { padding-top: 40px; padding-bottom: 48px; }
    footer .copyright li:before { content: none; }
-   footer .copyright li { margin-right: 12px; }
+   footer .copyright li { margin-right: 12px; display:block; margin:6px 0; }
 
    /* social links */
-   footer .social-links { font-size: 22px; }
+   footer .social-links { font-size: 24px; gap: 18px; }
    footer .social-links li { margin-left: 18px; }
 
    /* Go To Top Button */
@@ -303,38 +310,6 @@ footer .social-links { font-size: 26px; gap: 22px; }
       font-size: 18px;
       line-height: 54px;
    }
-
-   /* Contact quick-links: stack full-width on mobile */
-#contact .contact-links { gap: 10px; }
-#contact .contact-links li { width: 100%; }
-#contact .contact-links li a {
-  display: block;
-  width: 100%;
-  padding: 12px 16px;
-  font-size: 16px;
-}
-
-/* Footer spacing and controls */
-footer {
-  padding-top: 40px;
-  padding-bottom: 48px;
-}
-footer .social-links { font-size: 24px; gap: 18px; }
-footer .copyright li {
-  display: block;        /* one per line for small screens */
-  margin: 6px 0;
-}
-
-/* Keep your existing go-top downsized; keep this for consistency */
-#go-top { margin-left: -22px; }
-#go-top a {
-  width: 54px;
-  height: 54px;
-  font-size: 18px;
-  line-height: 54px;
-}
-
-
 }
 
 /* mobile narrow
@@ -360,17 +335,10 @@ footer .copyright li {
    header .social li { margin: 0 6px; }
 
    /* footer - social links */
-   footer .social-links { font-size: 20px; }
+   footer .social-links { font-size: 20px; gap: 14px; }
    footer .social-links li { margin-left: 14px; }
 
    /* Contact quick-links: tighter spacing */
-#contact .contact-links { gap: 8px; }
-#contact .contact-links li a {
-  padding: 12px 14px;
-  font-size: 15px;
-}
-
-/* Footer icons: slightly smaller & tighter gap */
-footer .social-links { font-size: 20px; gap: 14px; }
-
+   #contact .contact-links { gap: 8px; }
+   #contact .contact-links li a { padding: 12px 14px; font-size: 15px; }
 }
