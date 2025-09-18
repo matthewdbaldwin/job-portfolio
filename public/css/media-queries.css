@@ -75,6 +75,16 @@
       line-height: 66px;
    }
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
+
+   /* Contact quick-links: slightly larger tap targets */
+#contact .contact-links li a {
+  padding: 12px 18px;
+  font-size: 16px;
+}
+
+/* Footer: keep social icons comfy */
+footer .social-links { font-size: 26px; gap: 22px; }
+
 }
 
 /* mobile wide/smaller tablets
@@ -293,6 +303,38 @@
       font-size: 18px;
       line-height: 54px;
    }
+
+   /* Contact quick-links: stack full-width on mobile */
+#contact .contact-links { gap: 10px; }
+#contact .contact-links li { width: 100%; }
+#contact .contact-links li a {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+/* Footer spacing and controls */
+footer {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+footer .social-links { font-size: 24px; gap: 18px; }
+footer .copyright li {
+  display: block;        /* one per line for small screens */
+  margin: 6px 0;
+}
+
+/* Keep your existing go-top downsized; keep this for consistency */
+#go-top { margin-left: -22px; }
+#go-top a {
+  width: 54px;
+  height: 54px;
+  font-size: 18px;
+  line-height: 54px;
+}
+
+
 }
 
 /* mobile narrow
@@ -320,4 +362,15 @@
    /* footer - social links */
    footer .social-links { font-size: 20px; }
    footer .social-links li { margin-left: 14px; }
+
+   /* Contact quick-links: tighter spacing */
+#contact .contact-links { gap: 8px; }
+#contact .contact-links li a {
+  padding: 12px 14px;
+  font-size: 15px;
+}
+
+/* Footer icons: slightly smaller & tighter gap */
+footer .social-links { font-size: 20px; gap: 14px; }
+
 }
