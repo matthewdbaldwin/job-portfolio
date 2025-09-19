@@ -12,8 +12,7 @@ export default class ContactUs extends Component {
           <div className="twelve columns">
             <h1><span>Let’s Connect</span></h1>
             <p className="lead">
-              I’m always open to discussing new projects, marketing ops strategy,
-              or creative collaborations.
+              Let’s Talk About How I Can Strengthen Your Marketing Ops & Brand Strategy.
             </p>
 
             <ul className="contact-links">

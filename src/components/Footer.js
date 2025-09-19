@@ -30,8 +30,8 @@ export default class Footer extends Component {
         <div className="row">
           <div className="twelve columns">
             <ul className="copyright">
-              <li>© {year} Matthew Baldwin — {resumeData?.address}</li>
-              <li>No cookies or data are collected on this site.</li>
+              <p>© {year} Matthew Baldwin — {resumeData?.address}</p>
+              <p>No cookies or data are collected on this site. Do not sell my data.</p>
             </ul>
           </div>
         </div>

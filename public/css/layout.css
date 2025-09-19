@@ -1015,3 +1015,25 @@ a:focus-visible, button:focus-visible{
 /* kill any prior shine/cursor effects from earlier rules */
 .bubble::before,
 .bubble::after{ display:none !important; }
+
+/* a11y: visible focus on dot buttons */
+#testimonials .t-dots button:focus-visible{
+  outline:2px solid #79d1ff; outline-offset:3px; border-radius:999px;
+}
+
+/* small hover lift you already use elsewhere */
+#portfolio .portfolio-item .item-wrap{ transition: transform .25s ease, box-shadow .25s ease; }
+#portfolio .portfolio-item .item-wrap:hover{
+  transform: translateY(-6px); box-shadow: 0 16px 36px rgba(0,0,0,.35);
+}
+
+.about-list {
+  margin: 1em 0;
+  padding-left: 1.5em;   /* pushes bullets to the right */
+  list-style-type: disc; /* ensures normal bullet circles */
+  color: #d4d4d4;
+}
+.about-list li {
+  margin-bottom: 0.5em;
+  color: #d4d4d4;
+}

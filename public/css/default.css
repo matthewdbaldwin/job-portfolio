@@ -88,7 +88,7 @@ pre {
 }
 
 blockquote, q { 
-   quotes: &#8220 &#8220; 
+   quotes: "“" "”" "‘" "’";
 }
 
 blockquote:before, blockquote:after,

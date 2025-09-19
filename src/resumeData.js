@@ -1,9 +1,9 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Digital Marketing Manager | SEO, Automation, Campaign Execution",
-    "linkedinId":"matthewdbaldwin",
-    "roleDescription": "Experienced digital marketer specializing in campaign automation, SEO, and analytics, driving measurable growth through strategic execution and collaboration.",
+    "role": "Marketing Operations & Creative Strategy Leader",
+    "linkedinId":"mattdbaldwin",
+    "roleDescription": "I build scalable marketing systems, lead creative teams, and deliver campaigns that turn ideas into measurable growth.",
     "socialLinks":[
         {
           "id":"linkedin",
@@ -19,9 +19,21 @@ let resumeData = {
         }
 
       ],
-      "aboutme": `With 15 years of experience in the marketing field, Matthew brings deep expertise in marketing automation, web development, and campaign execution. His skill set spans creative design, copy editing, social media strategy, campaign execution and email marketing. A versatile asset across digital channels, Matthew is a dependable leader known for his positive attitude and commitment to collaboration. Ensuring stakeholders are supported and deadlines are met with care.`,
+      "aboutme": [
+      "I help organizations streamline marketing operations, elevate brand integrity, and launch go-to-market campaigns that convert. With over a decade of experience across healthcare, SaaS, and technology, I bring a rare blend of HubSpot & Salesforce automation, creative oversight, and cross-functional leadership.", 
+      "My work consistently drives results, including:",
+      "• 425% increase in lead flow through custom WordPress & campaign development",
+
+      "• 150% YoY traffic growth from SEO, PPC, and content strategy",
+
+      "• $12M+ in influenced revenue from multi-channel go-to-market campaigns",
+
+      "• 37% boost in engagement from UX/UI improvements",
+
+      "Colleagues know me as a collaborative leader who simplifies complex systems, supports stakeholders, and ensures campaigns launch on time and on-brand."
+      ] ,
       "aboutme2": `
-      I started my career optimizing digital customer experiences through landing pages, content creation, and marketing automation tools like HubSpot, Eloqua, and Pardot. With over a decade of Adobe Creative Suite expertise, I built engaging creative assets while also managing corporate websites and front-end development in HTML, CSS, JavaScript, and PHP across platforms like WordPress and SharePoint. This mix of marketing execution and technical development gave me a unique ability to bridge creative strategy with web performance. To strengthen my technical depth, I completed advanced training at LearningFuze, where I built React applications and expanded into back-end development with Node.js, Express, and database management. Today, I bring a full-stack perspective to digital marketing, blending campaign strategy, analytics, and technology to deliver measurable growth.`,
+      I started my career optimizing digital customer experiences through landing pages, content creation, and marketing automation tools like HubSpot, Eloqua, and Pardot. With over a decade of Adobe Creative Suite expertise, I built engaging creative assets while also managing corporate websites and front-end development in HTML, CSS, JavaScript, and PHP across platforms like WordPress and SharePoint. This mix of marketing execution, creativity, and technical development gave me a unique ability to bridge creative strategy with web performance. To strengthen my technical depth, I completed advanced training at LearningFuze, where I built React applications and expanded into back-end development with Node.js, Express, and database management. Today, I bring a full-stack perspective to digital marketing, blending campaign strategy, content, analytics, and technology to deliver measurable growth.`,
       "aboutme3": `
       Today, I bring a rare combination of skills: a background in digital marketing and customer engagement, paired with hands-on experience in web development and programming. I thrive in cross-functional environments and love building solutions that are both technically sound and user-centered. I'd be excited to bring this passion, dedication, and hybrid skill set to your team.`,
     "address":"Orange County, CA",
@@ -66,7 +78,7 @@ let resumeData = {
         "dateStarted":"April 2013",
         "MonthOfLeaving":"October",
         "YearOfLeaving":"2020",
-        "Bullet1":`Developed and deployed responsive HTML email campaigns via Pardot and Salesforce Eloqua Engage, totaling 50M+ sends in 2019.
+        "Bullet1":`Developed multi-channel campaigns in Pardot and Eloqua — delivering 50M+ sends in 2019 and supporting $12M revenue.
         `,
         "Bullet2":`Supported Marketing and Sales Ops by managing campaign data, materials, and communications for 6,000+ team.`,
         "Bullet3":`Managed customer databases in Salesforce and Pardot, handling segmentation, reporting, opt-outs, and extractions for targeted deployments.`
@@ -80,7 +92,7 @@ let resumeData = {
         "MonthOfLeaving":"April",
         "YearOfLeaving":"2013",
         "Bullet1":`Designed and deployed email campaigns through Marketo.`,
-        "Bullet2":`Increased website lead flow by 425% and traffic by 150% year-over-year through custom WordPress development and PHP/MySQL management.`,
+        "Bullet2":`Engineered custom WordPress solution that increased lead flow by 425% and traffic by 150% YoY.`,
         "Bullet3":`Led AdWords campaigns with keyword management and a monthly PPC budget of over $10,500.`
       }
     ],

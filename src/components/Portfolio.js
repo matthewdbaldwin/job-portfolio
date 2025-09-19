@@ -53,7 +53,7 @@ export default class Portfolio extends Component {
                 >
                   <div className="columns portfolio-item">
                     <div className="item-wrap">
-                      <img src={item.imgurl} alt={item.alt} className="item-img" />
+                      <img src={item.imgurl} alt={item.alt} className="item-img" loading="lazy" decoding="async"/>
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
