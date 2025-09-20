@@ -1037,3 +1037,15 @@ a:focus-visible, button:focus-visible{
   margin-bottom: 0.5em;
   color: #d4d4d4;
 }
+
+/* Work bullets (override reset) */
+#resume .work .item ul.work-bullets{
+  list-style: disc outside;
+  margin: 12px 0 0 18px;
+  padding-left: 0;
+  color: #363b3f;
+}
+#resume .work .item ul.work-bullets li{
+  margin: 0 0 10px;
+  line-height: 1.7;
+}
