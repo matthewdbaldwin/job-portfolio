@@ -1,7 +1,14 @@
 // src/components/Portfolio.jsx
 import React, { Component } from "react";
 import Lightbox from "yet-another-react-lightbox";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
+// styles
 import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 export default class Portfolio extends Component {
   state = { isOpen: false, photoIndex: 0 };
@@ -11,10 +18,10 @@ export default class Portfolio extends Component {
     const listA = resumeData.portfolio0 || []; // Lightbox gallery ("Samples of Work")
     const listB = resumeData.portfolio  || []; // External sites ("Websites")
 
-    const slides = listA.map(i => ({
-      src: i.imgurl,
-      title: i.name,
-      description: i.description
+    const slides = listA.map(item => ({
+          src: item.imgurl,
+          title: item.name,           // used by Captions plugin
+          description: item.description
     }));
 
     const { isOpen, photoIndex } = this.state;
@@ -66,14 +73,14 @@ export default class Portfolio extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="columns portfolio-item">
+                  <div className="columns portfolio-item ">
                     <div className="item-wrap">
                       <img src={item.imgurl} alt={item.alt} className="item-img" />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
                           <p>{item.description}</p>
-                        </div>
+                        </div> 
                       </div>
                     </div>
                   </div>
@@ -83,13 +90,16 @@ export default class Portfolio extends Component {
           </div>
         </div>
 
-        {isOpen && slides.length > 0 && (
+
+        {isOpen && (
           <Lightbox
             open={isOpen}
             close={() => this.setState({ isOpen: false })}
-            index={photoIndex}
             slides={slides}
-            controller={{ closeOnBackdropClick: true }}
+            plugins={[Captions, Thumbnails, Zoom]}
+            // optional plugin configs:
+            captions={{ showToggle: true }}
+            thumbnails={{ width: 120, height: 80, border: 1 }}
           />
         )}
       </section>

@@ -43,7 +43,9 @@ export default class Header extends Component {
          </div>
 
          <p className="scrolldown">
-            <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+            <a class="smoothscroll" href="#about" aria-label="Scroll to About">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
          </p>
 
       </header>

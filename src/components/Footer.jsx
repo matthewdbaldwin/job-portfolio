@@ -9,7 +9,7 @@ export default class Footer extends Component {
       <footer>
         <div className="row">
           <div className="twelve columns">
-            <ul className="social-links">
+            {/* <ul className="social-links">
               {resumeData.socialLinks && resumeData.socialLinks.map((item, i) => (
                 <li key={i}>
                   <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.name || 'social'}>
@@ -17,12 +17,12 @@ export default class Footer extends Component {
                   </a>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
 
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home" aria-label="Back to top">
-              <i className="icon-up-open" />
+              <i className="fa fa-chevron-up" />
             </a>
           </div>
         </div>
