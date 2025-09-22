@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaQuoteLeft } from "react-icons/fa"; // ← add this
 
 export default function Testimonials({ resumeData }) {
   const testimonials = resumeData?.testimonials || [];
@@ -20,7 +21,8 @@ export default function Testimonials({ resumeData }) {
       <div className="text-container">
         <div className="row">
           <div className="two columns header-col">
-            <h1>
+            <h1 className="with-icon">
+              <FaQuoteLeft className="icon-quote" aria-hidden="true" />
               <span>Client Testimonials</span>
             </h1>
           </div>

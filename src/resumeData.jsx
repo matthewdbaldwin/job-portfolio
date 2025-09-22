@@ -3,6 +3,7 @@ let resumeData = {
     "name": "Matthew Baldwin",
     "role": "Marketing Operations & Creative Strategy Leader",
     "linkedinId":"mattdbaldwin",
+    "email": "hello@matthewdbaldwin.com",
     "roleDescription": "I build scalable marketing systems, lead creative teams, and deliver campaigns that turn ideas into measurable growth.",
     "socialLinks":[
         {

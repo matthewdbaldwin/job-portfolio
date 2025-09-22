@@ -1026,4 +1026,21 @@ properly.
 }
 .shine-link:hover, .shine-link:focus{ color:#313131; background-position: 100% 0; }
 
-header .social a { font-size: 32px; line-height: 1; }
+#testimonials .with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#testimonials .with-icon .icon-quote {
+  width: 48px;
+  height: 48px;
+  opacity: .95;
+  flex: none;
+  color: #fff;              /* pick your color (or var(--brand)) */
+}
+
+/* If your header text is light-on-dark, ensure visibility */
+#testimonials .with-icon span {
+  color: #fff;
+}
