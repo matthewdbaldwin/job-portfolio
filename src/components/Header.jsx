@@ -14,6 +14,14 @@ const ICONS = {
   email: FaEnvelope,
 };
 
+// vanilla example (run once on mount)
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('nav-wrap');
+  if (!nav) return;
+  nav.classList.toggle('opaque', window.scrollY > 10);
+}, { passive: true });
+
+
 export default class Header extends Component {
   render() {
     const resumeData = this.props.resumeData || {};

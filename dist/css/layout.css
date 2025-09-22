@@ -128,79 +128,91 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: var(--brand); }
 
-/* primary navigation
---------------------------------------------------------------------- */
-#nav-wrap ul, #nav-wrap li, #nav-wrap a {
-	 margin: 0;
-	 padding: 0;
-	 border: none;
-	 outline: none;
+/* ==== NAV: cross-browser, flex, crisp ==== */
+#nav-wrap{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 68px;                 /* one source of truth */
+  display: flex;
+  align-items: center;          /* vertical center */
+  justify-content: center;      /* center the menu */
+  padding: 0 clamp(12px, 4vw, 32px);
+  background: rgba(20,20,20,0); /* transparent until scrolled (see .opaque) */
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  z-index: 1000;
+  transition: background .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
+  -webkit-font-smoothing: antialiased; /* avoid Chrome blur over blur */
 }
 
-/* nav-wrap */
-#nav-wrap {
-   font: 16px 'arial', sans-serif;
-   width: 100%;
-   text-transform: uppercase;
-   letter-spacing: 2.5px;
-   margin: 0 auto;
-   z-index: 100;
-   position: fixed;
-   left: 0;
-   top: 0;
-}
-
-/* glass/blur when opaque (modern) */
-.opaque{
-  background: rgba(20,20,20,.7);
+/* Solid/blur when scrolled */
+#nav-wrap.opaque{
+  background: rgba(20,20,20,.72);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   box-shadow: 0 2px 20px rgba(0,0,0,.15);
-  transition: background .25s ease, box-shadow .25s ease;
 }
 
-/* hide toggle button (mobile overrides in media-queries.css) */
-#nav-wrap > a.mobile-btn { display: none; }
+/* Hide legacy mobile buttons on desktop; your media query will re-enable */
+#nav-wrap > a.mobile-btn{ display:none; }
 
-ul#nav {
-   min-height: 68px;
-   width: auto;
-   text-align: center;
-}
-ul#nav li {
-   position: relative;
-   list-style: none;
-   height: 68px;
-   display: inline-block;
+/* Menu list as flex (ditch inline-block quirks) */
+ul#nav{
+  display: flex;
+  align-items: center;
+  gap: 6px 10px;                /* row gap, column gap */
+  flex-wrap: wrap;              /* wrap nicely on narrow widths */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 0;                /* prevent extra vertical space in Chrome */
 }
 
-/* Links */
-ul#nav li a {
-   display: inline-block;
-   padding: 10px 13px;
-   line-height: 48px;
-	text-decoration: none;
-   text-align: left;
-   color: #fff;
-	transition: color .2s ease-in-out;
-   position: relative; /* for underline effect */
+ul#nav li{
+  display: flex;
+  align-items: center;
+  height: auto;                 /* don’t force 68px on the LI */
 }
-ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: var(--brand); }
 
-/* underline slide on hover/current */
+/* Links: actual button box for reliable centering */
+ul#nav li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;                 /* visual button height */
+  padding: 0 14px;
+  line-height: 1;               /* no line-height hacks */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  position: relative;           /* for underline effect */
+  transition: color .2s ease, background .2s ease;
+  will-change: transform;
+}
+
+/* Hover/current underline that won’t jitter in Chrome */
 ul#nav li a::after{
   content:"";
   position:absolute;
-  left:10px; right:10px; bottom:10px;
-  height:2px;
-  background: var(--brand);
+  left: 10px; right: 10px; bottom: 8px;  /* tighter baseline on Chrome */
+  height: 2px;
+  background: var(--brand, #0e68b7);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .25s ease;
 }
 ul#nav li.current a::after,
 ul#nav li a:hover::after{ transform: scaleX(1); }
+
+/* Current link color */
+ul#nav li.current a{ color: var(--brand, #0e68b7); }
+
+/* Make anchor targets not hide under fixed bar */
+section[id]{ scroll-margin-top: 84px; }   /* nav 68px + breathing room */
+
+/* Prevent horizontal scrollbars caused by sub-pixel rounding */
+html, body{ overflow-x: hidden; }
+
 
 /* ------------------------------------------------------------------ */
 /* c. About Section                                                   */
@@ -421,10 +433,10 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
 #call-to-action .header-col h1:before {
 	padding-right: 10px;
 	font-size: 72px;
-  line-height: 72px;
-  text-align: left;
-  float: left;
-  color: #fff;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #fff;
 }
 #call-to-action .action { margin-top: 12px; }
 #call-to-action h2 { font: 28px/36px 'arial', sans-serif; color: #EBEEEE; margin-bottom: 6px; }
@@ -522,7 +534,7 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #636363;
+   color: #ebeeee;
 }
 #contact .section-head { margin-bottom: 42px; }
 
@@ -547,7 +559,7 @@ ul#nav li a:hover::after{ transform: scaleX(1); }
 }
 
 #contact h4 { font: 16px/24px 'arial', sans-serif; color: #EBEEEE; margin-bottom: 6px; }
-#contact p.lead { font: 18px/36px 'opensans-light', sans-serif; padding-right: 3%; }
+#contact p.lead { font: 22px/36px 'opensans-light', sans-serif; text-align: center;}
 #contact .header-col { padding-top: 6px; }
 
 /* contact form */
@@ -1042,4 +1054,70 @@ a:focus-visible, button:focus-visible{
 #resume .work .item ul.work-bullets li{
   margin: 0 0 10px;
   line-height: 1.7;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  list-style: none;
+  margin: 18px 0 22px;
+  padding: 0;
+}
+
+footer .social-links a {
+  display: inline-flex;
+  font-size: 28px;           /* icon size */
+  line-height: 1;
+  color: #bdbdbd;
+  transition: color .25s ease, transform .15s ease;
+}
+footer .social-links a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* optional: match your existing privacy text style */
+footer .privacy { color: #9a9a9a; font-size: 0.9rem; }
+
+
+/* Testimonials – simple rotator (not FlexSlider) */
+#testimonials .t-slides{
+  list-style:none; margin:0; padding:0;
+  position:relative; min-height: 140px;
+}
+#testimonials .t-slide{ display:none; }
+#testimonials .t-slide.is-active{ display:block; }
+
+#testimonials blockquote{
+  margin:0 auto; max-width:700px; text-align:left;
+}
+#testimonials blockquote p{
+  margin:0 0 .75rem 0; line-height:1.6;
+}
+
+/* dots */
+#testimonials .t-dots{
+  display:flex; justify-content:center; gap:10px; margin-top:12px;
+}
+#testimonials .t-dots button{
+  width:10px; height:10px; border-radius:999px; border:0;
+  background: rgba(255,255,255,.35); cursor:pointer;
+}
+#testimonials .t-dots button.is-active{ background:#fff; }
+#testimonials .t-dots button:focus-visible{
+  outline:2px solid #79d1ff; outline-offset:2px;
+}
+
+/* helper to hide text for screen-reader-only content */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+  clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+@media (max-width: 767px){
+  #nav-wrap{
+    justify-content: flex-end;
+    padding-right: 16px;
+  }
 }
