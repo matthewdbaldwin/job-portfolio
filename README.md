@@ -1,4 +1,4 @@
-A simple SPA Portfolio template for developer/designers built with React. Use it to showcase your work, testimonials and other information to clients. Updated for my own purposes.
+A simple SPA Portfolio template for developer/designers built with React and Vite. Use it to showcase your work, testimonials and other information to clients. Updated for my own purposes.
 
 ## Preview
 ![Preview](https://matthewdbaldwin.com/images/preview.jpg)

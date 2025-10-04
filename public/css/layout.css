@@ -1020,7 +1020,8 @@ a:focus-visible, button:focus-visible{
 
 /* kill any prior shine/cursor effects from earlier rules */
 .bubble::before,
-.bubble::after{ display:none !important; }
+.bubble::after{ display:none !important; 
+}
 
 /* a11y: visible focus on dot buttons */
 #testimonials .t-dots button:focus-visible{
