@@ -132,7 +132,7 @@ let resumeData = {
       {
         "id":"Profoundlogic",
         "name":"Profoundlogic.com",
-        "description":"Profound Logic Software main site I redesigned in 2020. UI/UX redesign of the fornt page with fresh icons and a three part layout at the bottom with core features.",
+        "description":"Profound Logic Software main site I redesigned in 2020. UI/UX redesign of the front page with fresh icons and a three part layout at the bottom with core features.",
         "url":"https://www.profoundlogic.com",
         "imgurl":"images/portfolio/plcom.webp",
         "alt":"profoundlogic.com"
@@ -166,7 +166,7 @@ let resumeData = {
       {
         "id":"Profoundlogic1",
         "name":"Profoundlogic.com Redesign 2020",
-        "description":"Profound Logic Software main site I redesigned in 2020. UI/UX redesign of the fornt page with fresh icons and a three part layout at the bottom with core features.",
+        "description":"Profound Logic Software main site I redesigned in 2020. UI/UX redesign of the front page with fresh icons and a three part layout at the bottom with core features.",
         "url":"https://web.archive.org/web/20210808202810/https:/www.profoundlogic.com/",
         "imgurl":"images/portfolio/Profoundlogic1.webp",
         "alt":"profoundlogic.com-2020"

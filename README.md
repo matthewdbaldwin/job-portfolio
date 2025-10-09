@@ -6,7 +6,7 @@ A simple SPA Portfolio template for developer/designers built with React and Vit
 ## How to use
 1. Clone/Download the repo.
 2. Run  ``` npm install ```.
-3. Change the values in ```src/resumeData.js``` to suit your use-case.
-4. Run ```npm start``` to spin the up the local dev server port 3000.(http://localhost:3000).
-5. Make required changes in ```src/resumeData.js``` to suit your needs.
+3. Change the values in ```src/resumeData.jsx``` to suit your use-case.
+4. Run ```npm run dev``` to start the Vite dev server (http://localhost:5173 by default).
+5. Make any additional updates in ```src/resumeData.jsx``` or the components to suit your needs.
 
