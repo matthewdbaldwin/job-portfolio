@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mattdbaldwin.com/#person",
+      "name": "Matthew Baldwin",
+      "alternateName": "Matthew D Baldwin",
+      "url": "https://mattdbaldwin.com/",
+      "image": "https://mattdbaldwin.com/images/profilepic.webp",
+      "jobTitle": "Digital Marketing Manager",
+      "description": "Digital marketer specializing in SEO, content, automation, and campaign execution.",
+      "sameAs": [
+        "https://www.linkedin.com/in/mattdbaldwin/",
+        "https://github.com/matthewdbaldwin"
+      ],
+      "knowsAbout": [
+        "SEO",
+        "Marketing Automation",
+        "Email Marketing",
+        "HubSpot",
+        "Pardot",
+        "Eloqua",
+        "Google Analytics",
+        "WordPress"
+      ],
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Win Win Brewery"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Orange County",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mattdbaldwin.com/#website",
+      "url": "https://mattdbaldwin.com/",
+      "name": "Matthew D Baldwin — Digital Marketing Manager (SEO & Automation)",
+      "publisher": {
+        "@id": "https://mattdbaldwin.com/#person"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mattdbaldwin.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
