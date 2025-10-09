@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import 'react-image-lightbox/style.css';
+import 'yet-another-react-lightbox/styles.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
   
