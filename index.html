@@ -6,6 +6,11 @@
     name="viewport"
     content="width=device-width, initial-scale=1, viewport-fit=cover"
   />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://matthewdbaldwin.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'"
+  />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="robots" content="index,follow" />
   <!-- Primary -->
   <title>Matthew Baldwin — Digital Marketing Manager (SEO & Automation) in Orange County,CA</title>
@@ -50,56 +55,7 @@
   <meta name="twitter:description" content="Matthew D Baldwin is a Digital Marketing Manager specializing in SEO, content, automation, and campaign execution in Orange County." />
   <meta name="twitter:image" content="https://matthewdbaldwin.com/images/og-cover.jpg" />
 
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://mattdbaldwin.com/#person",
-      "name": "Matthew Baldwin",
-      "alternateName": "Matthew D Baldwin",
-      "url": "https://mattdbaldwin.com/",
-      "image": "https://mattdbaldwin.com/images/profilepic.webp",
-      "jobTitle": "Digital Marketing Manager",
-      "description": "Digital marketer specializing in SEO, content, automation, and campaign execution.",
-      "sameAs": [
-        "https://www.linkedin.com/in/mattdbaldwin/",
-        "https://github.com/matthewdbaldwin"
-      ],
-      "knowsAbout": [
-        "SEO", "Marketing Automation", "Email Marketing",
-        "HubSpot", "Pardot", "Eloqua", "Google Analytics", "WordPress"
-      ],
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Win Win Brewery"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Orange County",
-        "addressRegion": "CA",
-        "addressCountry": "US"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://mattdbaldwin.com/#website",
-      "url": "https://mattdbaldwin.com/",
-      "name": "Matthew D Baldwin — Digital Marketing Manager (SEO & Automation)",
-      "publisher": { "@id": "https://mattdbaldwin.com/#person" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://mattdbaldwin.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-  ]
-}
-</script>
-
-
-
+  <script type="application/ld+json" src="/js/structured-data.json"></script>
 
   <!-- Styles -->
   <link rel="stylesheet" href="/css/default.css" />
@@ -108,12 +64,8 @@
   <!-- Removed magnific-popup.css since you switched to react-image-lightbox -->
 
   <!-- Google Analytics 4 (gtag.js) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-L82Y5HVQN1');
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L82Y5HVQN1"></script>
+  <script defer src="/js/gtag.js"></script>
   
 
   <!-- If you still need Modernizr, keep it; otherwise remove to save bytes -->
@@ -123,17 +75,5 @@
   <noscript>You need JavaScript enabled to run this app.</noscript>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-
-  <!-- Removed all legacy jQuery plugins (flexslider, waypoints, magnific, etc.) -->
-  <!-- Legacy jQuery plugins you decided to keep -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>');
-  </script>
-  <script src="/js/jquery-migrate-1.2.1.min.js"></script>
-  <script src="/js/jquery.flexslider.js"></script>
-  <script src="/js/waypoints.js"></script>
-  <script src="/js/jquery.fittext.js"></script>
-  <script src="/js/init.js"></script>
 </body>
 </html>
