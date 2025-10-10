@@ -25,6 +25,17 @@ git checkout work
 
 If you already have a local clone, run `git pull` first to ensure it is up to date before fetching the branch.
 
+### Update this branch later
+
+When new commits land on the `work` branch and you want them locally:
+
+```bash
+git checkout work              # switch to the branch if you are not on it already
+git pull --ff-only origin work # download the newest commits from the remote
+```
+
+If you have local edits you are not ready to keep, either commit/stash them before running the pull or replace the second command with `git fetch origin work && git reset --hard origin/work` to discard your changes and match the remote exactly.
+
 ## Run the site locally
 1. Install dependencies with `npm install` (only required the first time or when dependencies change).
 2. Start the Vite development server with `npm run dev`.
