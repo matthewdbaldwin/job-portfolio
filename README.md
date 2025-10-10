@@ -3,6 +3,15 @@ A simple SPA Portfolio template for developer/designers built with React and Vit
 ## Preview
 ![Preview](https://matthewdbaldwin.com/images/preview.jpg)
 
+### Generate a fresh preview locally
+If you would like to grab an up-to-date screenshot of the site:
+
+1. Run `npm run dev -- --host 0.0.0.0` so the Vite server is reachable from the browser tooling in this repository.
+2. Open the printed local URL in your browser or automation tool of choice (the default is http://localhost:5173).
+3. Capture your screenshot. In this workspace we use Playwright to automate the browser and save an image artifact.
+
+Stop the dev server with <kbd>Ctrl</kbd>+<kbd>C</kbd> after you capture the preview.
+
 ## Prerequisites
 - [Node.js](https://nodejs.org/) 18 or newer (Vite 5+ requires Node 18). Using the latest LTS release is recommended.
 - npm (bundled with Node). Yarn, pnpm, or bun will also work if you prefer them—adjust the commands accordingly.
