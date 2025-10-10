@@ -35,5 +35,5 @@ If you already have a local clone, run `git pull` first to ensure it is up to da
 ## Build for production
 When you are ready to deploy, run `npm run build` to generate the static site in the `dist/` directory. You can preview the production build locally with `npm run preview` after running the build command.
 
-> **Note:** The preview server now binds to `0.0.0.0` by default so it works in environments that do not support IPv6 loopback addresses (which would otherwise trigger `EACCES: permission denied ::1:4173`). If you prefer to limit it to localhost only, run `npm run preview -- --host 127.0.0.1` instead.
+> **Note:** Some operating systems block the Vite preview server from binding to the IPv6 loopback interface, which produces an `EACCES: permission denied ::1:4173` error. The default preview command now pins the server to the IPv4 loopback (`127.0.0.1`) so it runs without special permissions. If you need to test on other devices on your network, use `npm run preview:lan` (binds to `0.0.0.0`) or pass a custom `--host` flag.
 
