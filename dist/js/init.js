@@ -17,16 +17,18 @@ jQuery(document).ready(function ($) {
   var $navWrap = $('#nav-wrap');
   var $navList = $('#nav');
 
-  $navWrap.on('click', 'a.mobile-btn', function (e) {
-    e.preventDefault();
-    $navWrap.toggleClass('open')
-            .attr('aria-expanded', $navWrap.hasClass('open') ? 'true' : 'false');
-  });
+  if ($navWrap.find('a.mobile-btn').length) {
+    $navWrap.on('click', 'a.mobile-btn', function (e) {
+      e.preventDefault();
+      $navWrap.toggleClass('open')
+              .attr('aria-expanded', $navWrap.hasClass('open') ? 'true' : 'false');
+    });
 
-  // collapse after clicking a link (mobile)
-  $navList.on('click', 'a', function () {
-    if ($navWrap.hasClass('open')) $navWrap.removeClass('open').attr('aria-expanded', 'false');
-  });
+    // collapse after clicking a link (mobile)
+    $navList.on('click', 'a', function () {
+      if ($navWrap.hasClass('open')) $navWrap.removeClass('open').attr('aria-expanded', 'false');
+    });
+  }
 
   /*----------------------------------------------------*/
   /* FitText Settings (guarded)                         */
@@ -93,7 +95,7 @@ jQuery(document).ready(function ($) {
   /* Fade In/Out Primary Navigation (guarded)           */
   /*----------------------------------------------------*/
   var $nav = $('#nav-wrap');
-  if ($nav.length) {
+  if ($nav.length && !$nav.find('button.mobile-toggle').length) {
     $(window).on('scroll', function () {
       var h = $header.length ? $header.height() : 0;
       var y = $(window).scrollTop();

@@ -721,18 +721,19 @@ properly.
 @media only screen and (max-width: 767px) {
 
    .row {
-	   width: 460px;
-	   margin: 0 auto;
-      padding: 0;
-	}
-   .column, .columns {
-	   width: auto !important;
-	   float: none;
-	   margin-left: 0;
-	   margin-right: 0;
-      padding: 0 30px;
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+      padding: 0 18px;
    }
-   .row .row { width: auto; max-width: none; margin: 0 -30px; }
+   .column, .columns {
+         width: auto !important;
+         float: none;
+         margin-left: 0;
+         margin-right: 0;
+      padding: 0 18px;
+   }
+   .row .row { width: auto; max-width: none; margin: 0 -18px; }
 
    [class*="column"] + [class*="column"]:last-child { float: none; }
    [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: none; }
@@ -755,7 +756,7 @@ properly.
 --------------------------------------------------------------- */
 @media only screen and (max-width: 460px) {
 
-   .row { width: auto; }
+   .row { max-width: 100%; padding: 0 16px; }
 
 }
 
