@@ -98,7 +98,7 @@
       top: 0;
       right: 0;
       left: 0;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       padding-inline: clamp(16px, 5vw, 28px);
    }
@@ -122,7 +122,6 @@
    /* Menu panel: hidden until open */
    #nav-wrap ul#nav {
       height: auto;
-      display: none;
       flex-direction: column;
       width: min(360px, calc(100vw - 40px));
       position: fixed;
@@ -138,9 +137,17 @@
       z-index: 1300;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-8px) scale(0.98);
+      transition: opacity .22s ease, transform .22s ease;
    }
    #nav-wrap.open ul#nav{
-      display: flex;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
    }
 
    ul#nav li {
