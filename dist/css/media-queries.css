@@ -109,13 +109,15 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      gap: 6px;
       width: 48px;
       height: 48px;
       background: rgba(14, 104, 183, 0.85);
       margin: 0 clamp(4px, 3vw, 12px) clamp(6px, 2.5vw, 12px) 0;
    }
    #nav-wrap > button.mobile-toggle .mobile-toggle__bar{
-      margin: 5px 0;
+      margin: 0;
    }
    #nav-wrap.open > button.mobile-toggle{
       background: rgba(31, 32, 36, 0.95);
