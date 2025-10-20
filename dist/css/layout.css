@@ -37,6 +37,11 @@
 /* a. General Styles                                                   */
 /* ------------------------------------------------------------------ */
 body { background: var(--bg-dark); }
+body.no-scroll {
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: contain;
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles                                                    */
@@ -74,17 +79,21 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'arial', sans-serif;
+   font-family: 'arial', sans-serif;
+   font-size: clamp(3.6rem, 7vw, 9rem);
+   line-height: 1.05;
    color: #fff;
-   letter-spacing: -2px;
+   letter-spacing: -0.2rem;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
+   font-family: 'librebaskerville-regular', serif;
+   font-size: clamp(1.6rem, 2.6vw, 1.8rem);
+   line-height: 1.9em;
    color: #A8A8A8;
    margin: 0 auto;
-   width: 70%;
+   width: min(70%, 60ch);
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }
 header .banner-text h3 span,
@@ -140,7 +149,7 @@ header .scrolldown a:hover { color: var(--brand); }
   background: rgba(20,20,20,0); /* transparent until scrolled (see .opaque) */
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  z-index: 1000;
+  z-index: 1200;
   transition: background .25s ease, box-shadow .25s ease, backdrop-filter .25s ease;
   -webkit-font-smoothing: antialiased; /* avoid Chrome blur over blur */
 }
@@ -155,6 +164,43 @@ header .scrolldown a:hover { color: var(--brand); }
 
 /* Hide legacy mobile buttons on desktop; your media query will re-enable */
 #nav-wrap > a.mobile-btn{ display:none; }
+#nav-wrap > button.mobile-toggle{
+  display:none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  border-radius: 8px;
+  transition: background .2s ease;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+#nav-wrap > button.mobile-toggle:focus-visible{
+  outline: 2px solid var(--brand);
+  outline-offset: 4px;
+}
+#nav-wrap > button.mobile-toggle .mobile-toggle__bar{
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 0;
+  background: #fff;
+  border-radius: 999px;
+  transition: transform .25s ease, opacity .2s ease;
+}
+#nav-wrap.open > button.mobile-toggle .mobile-toggle__bar:nth-child(1){
+  transform: translateY(7px) rotate(45deg);
+}
+#nav-wrap.open > button.mobile-toggle .mobile-toggle__bar:nth-child(2){
+  opacity: 0;
+}
+#nav-wrap.open > button.mobile-toggle .mobile-toggle__bar:nth-child(3){
+  transform: translateY(-7px) rotate(-45deg);
+}
 
 /* Menu list as flex (ditch inline-block quirks) */
 ul#nav{
@@ -212,6 +258,22 @@ section[id]{ scroll-margin-top: 84px; }   /* nav 68px + breathing room */
 
 /* Prevent horizontal scrollbars caused by sub-pixel rounding */
 html, body{ overflow-x: hidden; }
+
+/* Overlay used to dim the page when the drawer is open on small screens */
+.nav-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 16, 0.68);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 1100;
+  animation: navOverlayFade .24s ease forwards;
+}
+
+@keyframes navOverlayFade{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
 
 
 /* ------------------------------------------------------------------ */
