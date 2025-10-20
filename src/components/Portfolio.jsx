@@ -94,7 +94,9 @@ export default class Portfolio extends Component {
         {isOpen && (
           <Lightbox
             open={isOpen}
+            index={photoIndex}
             close={() => this.setState({ isOpen: false })}
+            on={{ view: ({ index }) => this.setState({ photoIndex: index }) }}
             slides={slides}
             plugins={[Captions, Thumbnails, Zoom]}
             // optional plugin configs:
