@@ -99,8 +99,10 @@
       right: 0;
       left: 0;
       justify-content: flex-end;
-      align-items: center;
-      padding-inline: clamp(16px, 5vw, 28px);
+      align-items: flex-start;
+      height: auto;
+      min-height: 0;
+      padding: clamp(10px, 3vw, 18px) clamp(16px, 5vw, 28px) 0;
    }
 
    #nav-wrap > button.mobile-toggle{
@@ -110,7 +112,7 @@
       width: 48px;
       height: 48px;
       background: rgba(14, 104, 183, 0.85);
-      margin-right: 4px;
+      margin: 0 clamp(4px, 3vw, 12px) clamp(6px, 2.5vw, 12px) 0;
    }
    #nav-wrap > button.mobile-toggle .mobile-toggle__bar{
       margin: 5px 0;
@@ -125,7 +127,7 @@
       flex-direction: column;
       width: min(360px, calc(100vw - 40px));
       position: fixed;
-      top: 80px;
+      top: clamp(68px, 12vw, 96px);
       right: clamp(16px, 6vw, 32px);
       margin: 0;
       padding: 12px 0;
@@ -327,7 +329,7 @@
    #nav-wrap ul#nav { width: auto; float: none; }
 
    /* header styles */
-   header .banner { padding-top: 24px; }
+   header .banner { padding-top: clamp(108px, 24vw, 144px); }
    header .banner-text h1 {
       font-size: clamp(3rem, 10vw, 4rem);
       line-height: 1.08;
