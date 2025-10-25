@@ -98,22 +98,26 @@
       top: 0;
       right: 0;
       left: 0;
-      justify-content: space-between;
-      align-items: center;
-      padding-inline: clamp(16px, 5vw, 28px);
+      justify-content: flex-end;
+      align-items: flex-start;
+      height: auto;
+      min-height: 0;
+      padding: clamp(10px, 3vw, 18px) clamp(16px, 5vw, 28px) 0;
    }
 
    #nav-wrap > button.mobile-toggle{
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      gap: 6px;
       width: 48px;
       height: 48px;
       background: rgba(14, 104, 183, 0.85);
-      margin-right: 4px;
+      margin: 0 clamp(4px, 3vw, 12px) clamp(6px, 2.5vw, 12px) 0;
    }
    #nav-wrap > button.mobile-toggle .mobile-toggle__bar{
-      margin: 5px 0;
+      margin: 0;
    }
    #nav-wrap.open > button.mobile-toggle{
       background: rgba(31, 32, 36, 0.95);
@@ -122,11 +126,10 @@
    /* Menu panel: hidden until open */
    #nav-wrap ul#nav {
       height: auto;
-      display: none;
       flex-direction: column;
       width: min(360px, calc(100vw - 40px));
       position: fixed;
-      top: 80px;
+      top: clamp(68px, 12vw, 96px);
       right: clamp(16px, 6vw, 32px);
       margin: 0;
       padding: 12px 0;
@@ -138,9 +141,17 @@
       z-index: 1300;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-8px) scale(0.98);
+      transition: opacity .22s ease, transform .22s ease;
    }
    #nav-wrap.open ul#nav{
-      display: flex;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
    }
 
    ul#nav li {
@@ -320,7 +331,7 @@
    #nav-wrap ul#nav { width: auto; float: none; }
 
    /* header styles */
-   header .banner { padding-top: 24px; }
+   header .banner { padding-top: clamp(108px, 24vw, 144px); }
    header .banner-text h1 {
       font-size: clamp(3rem, 10vw, 4rem);
       line-height: 1.08;

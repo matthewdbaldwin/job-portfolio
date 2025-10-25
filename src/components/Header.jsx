@@ -67,9 +67,9 @@ const Header = ({ resumeData = {} }) => {
   const navClassName = useMemo(() => {
     const classes = [];
     if (navOpaque) classes.push("opaque");
-    if (navOpen && isMobile) classes.push("open");
+    if (navOpen) classes.push("open");
     return classes.join(" ");
-  }, [isMobile, navOpen, navOpaque]);
+  }, [navOpen, navOpaque]);
 
   useEffect(() => {
     if (!navOpen) return undefined;
@@ -148,9 +148,10 @@ const Header = ({ resumeData = {} }) => {
       <header id="home">
         <nav
           id="nav-wrap"
-          className={navClassName}
           aria-expanded={isMobile ? navOpen : undefined}
           aria-label="Primary navigation"
+          className={navClassName || undefined}
+          aria-expanded={navOpen ? "true" : "false"}
         >
           {isMobile && (
             <button
@@ -171,7 +172,9 @@ const Header = ({ resumeData = {} }) => {
           <ul
             id="nav"
             className="nav"
-            aria-hidden={isMobile ? !navOpen : undefined}
+            aria-hidden={
+              isMobile ? (navOpen ? "false" : "true") : undefined
+            }
           >
             <li className="current">
               <a className="smoothscroll" href="#home" onClick={closeNav}>
