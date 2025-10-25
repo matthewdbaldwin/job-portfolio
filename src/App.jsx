@@ -13,12 +13,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+
         <Header resumeData={resumeData}/>
-        <About resumeData={resumeData}/>
-        <Portfolio resumeData={resumeData}/>
-        <Resume resumeData={resumeData}/>
-        <Testimonials resumeData={resumeData}/>
-        <ContactUs resumeData={resumeData}/>
+
+        <main id="main-content" tabIndex="-1">
+          <About resumeData={resumeData}/>
+          <Portfolio resumeData={resumeData}/>
+          <Resume resumeData={resumeData}/>
+          <Testimonials resumeData={resumeData}/>
+          <ContactUs resumeData={resumeData}/>
+        </main>
+
         <Footer resumeData={resumeData}/>
       </div>
     );
