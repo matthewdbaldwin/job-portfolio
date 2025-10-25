@@ -1,10 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Marketing Operations & Creative Strategy Leader",
+    "role": "Senior Marketing Operations & Website Strategy Leader",
     "linkedinId":"mattdbaldwin",
     "email": "hello@matthewdbaldwin.com",
-    "roleDescription": "I build scalable marketing systems, lead creative teams, and deliver campaigns that turn ideas into measurable growth.",
+    "roleDescription": "Driving Growth: Full-Stack Digital Ownership and Automation Architecture for B2B.",
     "socialLinks":[
         {
           "id":"linkedin",
@@ -21,15 +21,23 @@ let resumeData = {
 
       ],
       "aboutme": [
-      "I help organizations streamline marketing operations, elevate brand integrity, and launch go-to-market campaigns that convert. With over a decade of experience across healthcare, SaaS, and technology, I bring a rare blend of HubSpot & Salesforce automation, creative oversight, and cross-functional leadership.", 
+      "As a Senior Website Strategy and Marketing Operations Leader, I specialize in owning the end-to-end digital experience for B2B and enterprise technology brands. My mission is to ensure the website is the central engine for business growth and a scalable foundation for marketing automation, not just a content repository.",
+
+      "I bring a unique hybrid skillset to the table: deep analytical strategy combined with front-end technical fluency (HTML/CSS, JavaScript, React.js). This dual expertise allows me to effectively define the strategic roadmap, architect scalable automation workflows between the website and CRM, and communicate precise requirements to Engineering and external agencies.", 
       "My work consistently drives results, including:",
-      "• 425% increase in lead flow through custom WordPress & campaign development",
+      "• Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, assets, and GTM strategy across Sales and Marketing.",
 
-      "• 150% YoY traffic growth from SEO, PPC, and content strategy",
+      "• Lead Generation & Traffic: Drove a 425% increase in lead flow and 150% traffic growth by optimizing the full growth funnel and core site architecture.",
 
-      "• $12M+ in influenced revenue from multi-channel go-to-market campaigns",
+      "• Conversion Rate Optimization (CRO): Successfully boosted website conversion rates by 37% by improving UX/UI and implementing data-driven experimentation.",
 
-      "• 37% boost in engagement from UX/UI improvements",
+      "• Operational Scalability: Architected scalable automation workflows between the website and CRM, ensuring technical projects are completed efficiently and align with measurable business goals.",
+
+      "• Website & Front-End: HTML/CSS, JavaScript, React.js, PHP/MySQL, API Integrations, Headless CMS Principles, Git/GitHub, Jira/Asana",
+
+      "• MarTech & Automation: Salesforce, HubSpot, Pardot, Marketo, Eloqua, Lead Scoring, ABM, Scalable Automation Architecture",
+
+      "• Analytics & Performance: GA4 Certified, CRO, SEO/SEM, PPC Optimization ($200K+ Budgets), Data Governance, GDPR/CCPA Compliance",
 
       "Colleagues know me as a collaborative leader who simplifies complex systems, supports stakeholders, and ensures campaigns launch on time and on-brand."
       ] ,
