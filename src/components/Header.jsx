@@ -150,6 +150,7 @@ const Header = ({ resumeData = {} }) => {
           id="nav-wrap"
           className={navClassName}
           aria-expanded={isMobile ? navOpen : undefined}
+          aria-label="Primary navigation"
         >
           {isMobile && (
             <button
