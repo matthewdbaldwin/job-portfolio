@@ -824,6 +824,22 @@ header .social li a:hover{
   border-radius: 6px;
 }
 
+.skip-link{
+  position:absolute;
+  top:-40px;
+  left:16px;
+  padding:10px 16px;
+  background:#111;
+  color:#fff;
+  border-radius:6px;
+  z-index:1000;
+  transition: top .2s ease;
+}
+
+.skip-link:focus{
+  top:16px;
+}
+
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
@@ -1152,6 +1168,15 @@ footer .privacy { color: #9a9a9a; font-size: 0.9rem; }
 #testimonials .t-slide{ display:none; }
 #testimonials .t-slide.is-active{ display:block; }
 
+#testimonials .t-controls{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:16px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+
 #testimonials blockquote{
   margin:0 auto; max-width:700px; text-align:left;
 }
@@ -1170,6 +1195,24 @@ footer .privacy { color: #9a9a9a; font-size: 0.9rem; }
 #testimonials .t-dots button.is-active{ background:#fff; }
 #testimonials .t-dots button:focus-visible{
   outline:2px solid #79d1ff; outline-offset:2px;
+}
+
+#testimonials .t-pause{
+  border:0;
+  padding:10px 18px;
+  border-radius:999px;
+  background:#2a2a2a;
+  color:#fff;
+  font-size:0.95rem;
+  cursor:pointer;
+  transition: background .25s ease, color .25s ease, transform .15s ease;
+}
+
+#testimonials .t-pause:hover,
+#testimonials .t-pause:focus-visible{
+  background: var(--brand);
+  color:#0d0d0d;
+  transform: translateY(-1px);
 }
 
 /* helper to hide text for screen-reader-only content */

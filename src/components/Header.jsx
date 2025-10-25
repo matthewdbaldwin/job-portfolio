@@ -148,6 +148,8 @@ const Header = ({ resumeData = {} }) => {
       <header id="home">
         <nav
           id="nav-wrap"
+          aria-expanded={isMobile ? navOpen : undefined}
+          aria-label="Primary navigation"
           className={navClassName || undefined}
           aria-expanded={navOpen ? "true" : "false"}
         >
