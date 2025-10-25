@@ -1,10 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Marketing Operations & Creative Strategy Leader",
+    "role": "Senior Marketing Operations & Website Strategy Leader",
     "linkedinId":"mattdbaldwin",
     "email": "hello@matthewdbaldwin.com",
-    "roleDescription": "I build scalable marketing systems, lead creative teams, and deliver campaigns that turn ideas into measurable growth.",
+    "roleDescription": "Driving Growth: Full-Stack Digital Ownership and Automation Architecture for B2B.",
     "socialLinks":[
         {
           "id":"linkedin",
@@ -21,15 +21,23 @@ let resumeData = {
 
       ],
       "aboutme": [
-      "I help organizations streamline marketing operations, elevate brand integrity, and launch go-to-market campaigns that convert. With over a decade of experience across healthcare, SaaS, and technology, I bring a rare blend of HubSpot & Salesforce automation, creative oversight, and cross-functional leadership.", 
+      "As a Senior Website Strategy and Marketing Operations Leader, I specialize in owning the end-to-end digital experience for B2B and enterprise technology brands. My mission is to ensure the website is the central engine for business growth and a scalable foundation for marketing automation, not just a content repository.",
+
+      "I bring a unique hybrid skillset to the table: deep analytical strategy combined with front-end technical fluency (HTML/CSS, JavaScript, React.js). This dual expertise allows me to effectively define the strategic roadmap, architect scalable automation workflows between the website and CRM, and communicate precise requirements to Engineering and external agencies.", 
       "My work consistently drives results, including:",
-      "• 425% increase in lead flow through custom WordPress & campaign development",
+      "• Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, assets, and GTM strategy across Sales and Marketing.",
 
-      "• 150% YoY traffic growth from SEO, PPC, and content strategy",
+      "• Lead Generation & Traffic: Drove a 425% increase in lead flow and 150% traffic growth by optimizing the full growth funnel and core site architecture.",
 
-      "• $12M+ in influenced revenue from multi-channel go-to-market campaigns",
+      "• Conversion Rate Optimization (CRO): Successfully boosted website conversion rates by 37% by improving UX/UI and implementing data-driven experimentation.",
 
-      "• 37% boost in engagement from UX/UI improvements",
+      "• Operational Scalability: Architected scalable automation workflows between the website and CRM, ensuring technical projects are completed efficiently and align with measurable business goals.",
+
+      "• Website & Front-End: HTML/CSS, JavaScript, React.js, PHP/MySQL, API Integrations, Headless CMS Principles, Git/GitHub, Jira/Asana",
+
+      "• MarTech & Automation: Salesforce, HubSpot, Pardot, Marketo, Eloqua, Lead Scoring, ABM, Scalable Automation Architecture",
+
+      "• Analytics & Performance: GA4 Certified, CRO, SEO/SEM, PPC Optimization ($200K+ Budgets), Data Governance, GDPR/CCPA Compliance",
 
       "Colleagues know me as a collaborative leader who simplifies complex systems, supports stakeholders, and ensures campaigns launch on time and on-brand."
       ] ,
@@ -66,10 +74,10 @@ let resumeData = {
         "dateStarted":"October 2020",
         "MonthOfLeaving":"",
         "YearOfLeaving":"Present",
-        "Bullet1":`Orchestrating 200+ HubSpot GTM and ABM campaigns annually, improving targeting and driving a 60% YoY increase in user volume.`,
-        "Bullet2":`Aligning digital projects across sales, product, and marketing, ensuring KPIs matched business goals and accelerating campaign delivery timelines.`,
-        "Bullet3":`Optimizes WordPress UX/UI to strengthen lead capture and boosted conversion rates by 37%.`,
-        "Bullet4":`Managing $200K+ Google Ads budget, reducing CPC by 5% improving audience segmentation and ad spend.`
+        "Bullet1":`Owned the end-to-end lifecycle of 200+ global GTM and ABM campaigns, providing strategic requirements, development QA, and launch oversight in alignment with the annual website roadmap.`,
+        "Bullet2":`Partnered with cross-functional stakeholders (Product, Sales, Engineering) to define project scope and success metrics, accelerating campaign delivery timelines while ensuring high performance and technical stability.`,
+        "Bullet3":`Directly managed key web initiatives, optimizing WordPress UX/UI to strengthen lead capture that boosted conversion rates by 37%, demonstrating the ability to build select content directly.`,
+        "Bullet4":`Managed a $200K+ Google Ads budget, reducing cost-per-click (CPC) by 5% through advanced audience segmentation and performance analysis.`
       },
       {
         "id":"IQVIA",
@@ -79,11 +87,11 @@ let resumeData = {
         "dateStarted":"April 2013",
         "MonthOfLeaving":"October",
         "YearOfLeaving":"2020",
-        "Bullet1":`Planned and executed go-to-market campaigns for healthcare and life sciences software launches via Pardot, Salesforce, and Eloqua Engage driving 50M+ sends in 2019 and supporting $12M in business revenue.
+        "Bullet1":`Partnered with Sales and Product leadership to define GTM strategy for new healthcare and life sciences software launches, driving 50M+ annual email sends and directly supporting $12M in business revenue.
         `,
-        "Bullet2":` Directed marketing operations campaign data, assets, and communications for 6K+ employees.
+        "Bullet2":`Directed marketing operations for campaign data, assets, and communications across 6,000+ employees, functioning as the key internal resource for data governance and MarTech architecture.
         `,
-        "Bullet3":`Optimized Salesforce and Pardot databases, executing segmentation and reporting to enable targeted campaigns with 20% higher engagement.`
+        "Bullet3":`Optimized Salesforce and Pardot databases, executing sophisticated segmentation and reporting to enable targeted lifecycle campaigns with 20% higher engagement.`
       },
       {
         "id":"Ricoh",
@@ -93,10 +101,10 @@ let resumeData = {
         "dateStarted":"May 2010",
         "MonthOfLeaving":"April",
         "YearOfLeaving":"2013",
-        "Bullet1":`Increased website lead flow by 425% and traffic by 150% YoY through custom WordPress and PHP/MySQL development.`,
+        "Bullet1":`Drove the initial digital presence redesign, increasing website lead flow by 425% and traffic by 150% YoY through custom WordPress and PHP/MySQL development.`,
         "Bullet2":`Led Google Ads campaigns with $10.5K monthly PPC spend, improving ROI by 35%.
         `,
-        "Bullet3":`Managed multiple CMS platforms (HubSpot, MailChimp, WordPress), improving SEO rankings and driving stronger inbound discovery for DTG/DTF printers.`
+        "Bullet3":`Managed multiple CMS platforms, improving SEO rankings and inbound discovery through content and technical optimization (sitemaps, URL strategy).`
       }
     ],
     "skillsDescription":"",
