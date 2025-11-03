@@ -20,3 +20,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "arial",
     monospace;
 }
+
+.section-loading {
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  min-height: 35vh;
+  gap: 0.75rem;
+  text-align: center;
+  color: inherit;
+}
+
+.section-loading__spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.25rem solid currentColor;
+  border-right-color: transparent;
+  opacity: 0.75;
+  animation: section-loading-spin 1s linear infinite;
+}
+
+.section-loading__label {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@keyframes section-loading-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-loading__spinner {
+    animation: none;
+    border-right-color: currentColor;
+  }
+}

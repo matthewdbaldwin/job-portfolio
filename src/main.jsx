@@ -12,3 +12,13 @@ createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
+
+if (import.meta.env.PROD && "serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    import("./serviceWorkerRegistration.js")
+      .then(({ register }) => register())
+      .catch(() => {
+        // Service worker is optional; ignore registration failures.
+      });
+  });
+}
