@@ -18,7 +18,10 @@ export default function About({ resumeData = {} }) {
             className="profile-pic"
             src="images/profilepic.webp"
             alt={name ? `Profile picture of ${name}` : 'Profile picture'}
+            width="460"
+            height="460"
             loading="lazy"
+            decoding="async"
           />
         </div>
 
