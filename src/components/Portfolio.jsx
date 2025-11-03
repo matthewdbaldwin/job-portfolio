@@ -10,6 +10,27 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
+const IMAGE_DIMENSIONS = {
+  "images/portfolio/plcom.webp": { width: 800, height: 800 },
+  "images/portfolio/pjscom.webp": { width: 800, height: 800 },
+  "images/portfolio/winwin.webp": { width: 800, height: 800 },
+  "images/portfolio/onekey.webp": { width: 800, height: 800 },
+  "images/portfolio/Profoundlogic1.webp": { width: 800, height: 800 },
+  "images/portfolio/Profoundlogic2.webp": { width: 800, height: 800 },
+  "images/portfolio/Profoundlogic2-1.webp": { width: 800, height: 800 },
+  "images/portfolio/Profoundlogic2-2.webp": { width: 800, height: 800 },
+  "images/portfolio/Profoundlogic-whitepaper.webp": { width: 800, height: 800 },
+  "images/portfolio/IQVIA1.webp": { width: 800, height: 800 },
+  "images/portfolio/IQVIA2.webp": { width: 800, height: 800 },
+  "images/portfolio/IQVIA3.webp": { width: 800, height: 800 },
+};
+
+const getImageDimensions = (src) => {
+  const dimensions = IMAGE_DIMENSIONS[src];
+  if (dimensions) return dimensions;
+  return { width: 800, height: 600 };
+};
+
 export default class Portfolio extends Component {
   state = { isOpen: false, photoIndex: 0 };
 
@@ -45,7 +66,14 @@ export default class Portfolio extends Component {
                 >
                   <div className="columns portfolio-item">
                     <div className="item-wrap">
-                      <img src={item.imgurl} alt={item.alt} className="item-img" />
+                      <img
+                        src={item.imgurl}
+                        alt={item.alt}
+                        className="item-img"
+                        loading="lazy"
+                        decoding="async"
+                        {...getImageDimensions(item.imgurl)}
+                      />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
@@ -75,7 +103,14 @@ export default class Portfolio extends Component {
                 >
                   <div className="columns portfolio-item ">
                     <div className="item-wrap">
-                      <img src={item.imgurl} alt={item.alt} className="item-img" />
+                      <img
+                        src={item.imgurl}
+                        alt={item.alt}
+                        className="item-img"
+                        loading="lazy"
+                        decoding="async"
+                        {...getImageDimensions(item.imgurl)}
+                      />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
