@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaAngleDown,
 } from "react-icons/fa";
+import hero from "../data/hero.js";
 
 const ICONS = {
   linkedin: FaLinkedin,
@@ -57,10 +58,21 @@ function useMatchMedia(query) {
   return matches;
 }
 
-const Header = ({ resumeData = {} }) => {
+const SECTION_IDS = [
+  "home",
+  "about",
+  "portfolio",
+  "resume",
+  "testimonials",
+  "contact",
+];
+
+const Header = () => {
+  const resumeData = hero;
   const isMobile = useMatchMedia(MOBILE_MEDIA_QUERY);
   const [navOpen, setNavOpen] = useState(false);
   const [navOpaque, setNavOpaque] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const ticking = useRef(false);
   const scrollRafId = useRef(null);
 
@@ -133,6 +145,71 @@ const Header = ({ resumeData = {} }) => {
     };
   }, []);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return undefined;
+
+    const sectionElements = SECTION_IDS.map((id) =>
+      typeof document !== "undefined" ? document.getElementById(id) : null
+    ).filter(Boolean);
+
+    if (!sectionElements.length) return undefined;
+
+    const updateActiveSection = (scrollY) => {
+      const viewportHeight = window.innerHeight || 0;
+      const midpoint = scrollY + viewportHeight / 3;
+      let nextActive = "home";
+
+      for (const element of sectionElements) {
+        const rect = element.getBoundingClientRect();
+        const top = rect.top + scrollY;
+        const bottom = top + rect.height;
+        if (midpoint >= top && midpoint < bottom) {
+          nextActive = element.id;
+          break;
+        }
+      }
+
+      setActiveSection((prev) => (prev === nextActive ? prev : nextActive));
+    };
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+            .forEach((entry) => {
+              const id = entry.target.id;
+              if (id) {
+                setActiveSection((prev) => (prev === id ? prev : id));
+              }
+            });
+        },
+        {
+          rootMargin: "-45% 0px -45% 0px",
+          threshold: [0.1, 0.25, 0.5],
+        }
+      );
+
+      sectionElements.forEach((el) => observer.observe(el));
+
+      return () => {
+        observer.disconnect();
+      };
+    }
+
+    const handleScroll = () => updateActiveSection(window.scrollY || 0);
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
+
   const toggleNav = () => {
     setNavOpen((prev) => !prev);
   };
@@ -175,32 +252,32 @@ const Header = ({ resumeData = {} }) => {
               isMobile ? (navOpen ? "false" : "true") : undefined
             }
           >
-            <li className="current">
+            <li className={activeSection === "home" ? "current" : undefined}>
               <a className="smoothscroll" href="#home" onClick={closeNav}>
                 Home
               </a>
             </li>
-            <li>
+            <li className={activeSection === "about" ? "current" : undefined}>
               <a className="smoothscroll" href="#about" onClick={closeNav}>
                 About
               </a>
             </li>
-            <li>
+            <li className={activeSection === "portfolio" ? "current" : undefined}>
               <a className="smoothscroll" href="#portfolio" onClick={closeNav}>
                 Works
               </a>
             </li>
-            <li>
+            <li className={activeSection === "resume" ? "current" : undefined}>
               <a className="smoothscroll" href="#resume" onClick={closeNav}>
                 Resume
               </a>
             </li>
-            <li>
+            <li className={activeSection === "testimonials" ? "current" : undefined}>
               <a className="smoothscroll" href="#testimonials" onClick={closeNav}>
                 Testimonials
               </a>
             </li>
-            <li>
+            <li className={activeSection === "contact" ? "current" : undefined}>
               <a className="smoothscroll" href="#contact" onClick={closeNav}>
                 Contact
               </a>
@@ -215,10 +292,8 @@ const Header = ({ resumeData = {} }) => {
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">I am {resumeData.name}.</h1>
-            <h2 style={{ color: "#fff", fontFamily: "Arial" }}>{resumeData.role}</h2>
-            <h3 style={{ color: "#fff", fontFamily: "Arial" }}>
-              {resumeData.roleDescription}
-            </h3>
+            <h2>{resumeData.role}</h2>
+            <h3>{resumeData.roleDescription}</h3>
 
             <hr />
 

@@ -1,0 +1,96 @@
+import hero from "./hero.js";
+
+const resume = {
+  linkedinId: hero.linkedinId,
+  skillsDescription: "",
+  work: [
+    {
+      id: "Profound Logic",
+      companyName: "Profound Logic",
+      companyWeb: "https://profoundlogic.com/",
+      specialization: "Marketing Developer",
+      dateStarted: "October 2020",
+      MonthOfLeaving: "",
+      YearOfLeaving: "Present",
+      bullets: [
+        "Owned the end-to-end lifecycle of 200+ global GTM and ABM campaigns, providing strategic requirements, development QA, and launch oversight in alignment with the annual website roadmap.",
+        "Partnered with cross-functional stakeholders (Product, Sales, Engineering) to define project scope and success metrics, accelerating campaign delivery timelines while ensuring high performance and technical stability.",
+        "Directly managed key web initiatives, optimizing WordPress UX/UI to strengthen lead capture that boosted conversion rates by 37%, demonstrating the ability to build select content directly.",
+        "Managed a $200K+ Google Ads budget, reducing cost-per-click (CPC) by 5% through advanced audience segmentation and performance analysis.",
+      ],
+    },
+    {
+      id: "IQVIA",
+      companyName: "IQVIA",
+      companyWeb: "https://iqvia.com/",
+      specialization: "Marketing Manager",
+      dateStarted: "April 2013",
+      MonthOfLeaving: "October",
+      YearOfLeaving: "2020",
+      bullets: [
+        "Partnered with Sales and Product leadership to define GTM strategy for new healthcare and life sciences software launches, driving 50M+ annual email sends and directly supporting $12M in business revenue.",
+        "Directed marketing operations for campaign data, assets, and communications across 6,000+ employees, functioning as the key internal resource for data governance and MarTech architecture.",
+        "Optimized Salesforce and Pardot databases, executing sophisticated segmentation and reporting to enable targeted lifecycle campaigns with 20% higher engagement.",
+      ],
+    },
+    {
+      id: "Ricoh",
+      companyName: "Ricoh (formerly AnaJet)",
+      companyWeb: "https://ricohdtg.com/",
+      specialization: "Online Marketing Specialist",
+      dateStarted: "May 2010",
+      MonthOfLeaving: "April",
+      YearOfLeaving: "2013",
+      bullets: [
+        "Drove the initial digital presence redesign, increasing website lead flow by 425% and traffic by 150% YoY through custom WordPress and PHP/MySQL development.",
+        "Led Google Ads campaigns with $10.5K monthly PPC spend, improving ROI by 35%.",
+        "Managed multiple CMS platforms, improving SEO rankings and inbound discovery through content and technical optimization (sitemaps, URL strategy).",
+      ],
+    },
+  ],
+  education: [
+    {
+      id: "Cal",
+      universityName: "California State Polytechnic University Pomona",
+      specialization: "Business Administration",
+      MonthOfPassing: "June",
+      YearOfPassing: "2008",
+      Achievements: "Marketing",
+    },
+    {
+      id: "LF",
+      universityName: "Learning Fuze",
+      specialization:
+        "Full-stack development program is a 12-week intensive that teaches front-end and back-end subjects like JavaScript/jQuery, React, Node.js, PHP, MySQL, HTML, CSS, Amazon Web Services (AWS), Git/GitHub, and others.",
+      MonthOfPassing: "March",
+      YearOfPassing: "2020",
+      Achievements: "Completed Full-stack development courses.",
+    },
+  ],
+  skills: [
+    { id: "t1-automation", skillname: "Marketing Automation", tier: 1 },
+    { id: "t1-mops", skillname: "Marketing Operations", tier: 1 },
+    { id: "t1-email", skillname: "Email Marketing", tier: 1 },
+    { id: "t1-campaigns", skillname: "Campaign Management", tier: 1 },
+    { id: "t1-seo", skillname: "SEO", tier: 1 },
+    { id: "t1-semppc", skillname: "SEM/PPC", tier: 1 },
+    { id: "t1-ga", skillname: "Google Analytics", tier: 1 },
+    { id: "t1-leads", skillname: "Lead Generation", tier: 1 },
+    { id: "t1-crm", skillname: "CRM", tier: 1 },
+    { id: "t1-salesforce", skillname: "Salesforce", tier: 1 },
+    { id: "t1-hubspot", skillname: "HubSpot", tier: 1 },
+    { id: "t1-pardot", skillname: "Pardot", tier: 1 },
+    { id: "t2-content", skillname: "Content Marketing", tier: 2 },
+    { id: "t2-digital", skillname: "Digital Marketing", tier: 2 },
+    { id: "t2-strategy", skillname: "Marketing Strategy", tier: 2 },
+    { id: "t2-abm", skillname: "Account-Based Marketing (ABM)", tier: 2 },
+    { id: "t2-b2b", skillname: "B2B", tier: 2 },
+    { id: "t2-wp", skillname: "WordPress", tier: 2 },
+    { id: "t2-gads", skillname: "Google Ads", tier: 2 },
+    { id: "t2-canspam", skillname: "CAN-SPAM", tier: 2 },
+    { id: "t2-ecom", skillname: "E-commerce", tier: 2 },
+    { id: "t2-copy", skillname: "Copywriting", tier: 2 },
+  ],
+};
+
+export default resume;

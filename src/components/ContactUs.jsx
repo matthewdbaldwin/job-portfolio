@@ -1,69 +1,48 @@
-import React, { Component } from "react";
+import React from "react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import contactData from "../data/contact.js";
 
-export default class ContactUs extends Component {
-  render() {
-    const resumeData = this.props.resumeData || {};
-    const links = resumeData.socialLinks || [];
-    const linkedin = links.find(
-      (s) => (s.id || s.name || "").toLowerCase() === "linkedin"
-    );
-    const github = links.find(
-      (s) => (s.id || s.name || "").toLowerCase() === "github"
-    );
+const ICONS = {
+  linkedin: FaLinkedin,
+  github: FaGithub,
+  email: FaEnvelope,
+};
 
-    // Prefer an explicit email on resumeData for reliability
-    const email =
-      resumeData.email ||
-      (resumeData.linkedinId ? `${resumeData.linkedinId}@gmail.com` : null);
+const isExternal = (url) => /^https?:/i.test(url);
 
-    return (
-      <section id="contact">
-        <div className="row section-head">
-          <div className="twelve columns">
-            <h1><span>Let’s Connect</span></h1>
-            <p className="lead">
-              Let’s talk about how I can strengthen your marketing ops & brand strategy.
-            </p>
+export default function ContactUs() {
+  const { headline, message, links } = contactData;
 
-            <ul className="contact-links">
-              {linkedin && (
-                <li>
+  return (
+    <section id="contact">
+      <div className="row section-head">
+        <div className="twelve columns">
+          <h1>
+            <span>{headline}</span>
+          </h1>
+          <p className="lead">{message}</p>
+
+          <ul className="contact-links">
+            {links.map((link) => {
+              const Icon = ICONS[link.id] || FaLinkedin;
+              const external = isExternal(link.url);
+
+              return (
+                <li key={link.id}>
                   <a
-                    href={linkedin.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
+                    href={link.url}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noopener noreferrer" : undefined}
+                    aria-label={link.label}
                   >
-                    <FaLinkedin aria-hidden="true" /> LinkedIn
+                    <Icon aria-hidden="true" /> {link.label}
                   </a>
                 </li>
-              )}
-
-              {github && (
-                <li>
-                  <a
-                    href={github.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                  >
-                    <FaGithub aria-hidden="true" /> GitHub
-                  </a>
-                </li>
-              )}
-
-              {email && (
-                <li>
-                  <a href={`mailto:${email}`} aria-label="Email">
-                    <FaEnvelope aria-hidden="true" /> Email Me
-                  </a>
-                </li>
-              )}
-            </ul>
-          </div>
+              );
+            })}
+          </ul>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
 }
