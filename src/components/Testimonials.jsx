@@ -1,5 +1,6 @@
 // src/components/Testimonials.jsx
 import React, { useEffect, useState } from "react";
+import testimonialsData from "../data/testimonials.js";
 
 const QuoteIcon = (props) => (
   <svg viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" {...props}>
@@ -7,8 +8,8 @@ const QuoteIcon = (props) => (
   </svg>
 );
 
-export default function Testimonials({ resumeData }) {
-  const testimonials = resumeData?.testimonials || [];
+export default function Testimonials() {
+  const testimonials = testimonialsData || [];
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);

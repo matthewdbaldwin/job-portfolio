@@ -6,6 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
+import portfolioData from "../data/portfolio.js";
 
 const IMAGE_DIMENSIONS = {
   "images/portfolio/plcom.webp": { width: 800, height: 800 },
@@ -25,15 +26,15 @@ const IMAGE_DIMENSIONS = {
 const getImageDimensions = (src) =>
   IMAGE_DIMENSIONS[src] || { width: 800, height: 600 };
 
-const Portfolio = ({ resumeData = {} }) => {
+const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [lightboxComponent, setLightboxComponent] = useState(null);
   const [plugins, setPlugins] = useState([]);
   const loaderRef = useRef(null);
 
-  const listA = resumeData.portfolio0 || [];
-  const listB = resumeData.portfolio || [];
+  const listA = portfolioData.caseStudies || [];
+  const listB = portfolioData.websites || [];
 
   const slides = useMemo(
     () =>

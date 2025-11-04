@@ -1,14 +1,8 @@
 import React from 'react';
+import aboutData from '../data/about.js';
 
-export default function About({ resumeData = {} }) {
-  const { name, address, website, aboutme, aboutme2, aboutme3 } = resumeData;
-
-  // Normalize everything into an array of strings
-  const about = [
-    ...(Array.isArray(aboutme) ? aboutme : aboutme ? [aboutme] : []),
-    ...(aboutme2 ? [aboutme2] : []),
-    ...(aboutme3 ? [aboutme3] : []),
-  ];
+export default function About() {
+  const { name, address, website, intro, bulletPoints, closing } = aboutData;
 
   return (
     <section id="about">
@@ -28,18 +22,21 @@ export default function About({ resumeData = {} }) {
         <div className="nine columns main-col">
           <h2>About Me</h2>
 
-          {about.map((text, i) => {
-            // If it's a bullet line (starts with •), render as a list item
-            if (text.trim().startsWith("•")) {
-              return (
-                <ul key={`list-${i}`} className="about-list">
-                  <li>{text.replace("•", "").trim()}</li>
-                </ul>
-              );
-            }
-            // Otherwise, render as a paragraph
-            return <p key={i}>{text}</p>;
-          })}
+          {intro.map((text, i) => (
+            <p key={`intro-${i}`}>{text}</p>
+          ))}
+
+          {bulletPoints.length > 0 && (
+            <ul className="about-list">
+              {bulletPoints.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          )}
+
+          {closing.map((text, i) => (
+            <p key={`closing-${i}`}>{text}</p>
+          ))}
 
           <div className="row">
             <div className="columns contact-details">
