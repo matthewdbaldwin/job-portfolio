@@ -7,7 +7,6 @@ import {
   FaEnvelope,
   FaChevronUp,
 } from "react-icons/fa";
-import hero from "../data/hero.js";
 
 const ICONS = {
   linkedin: FaLinkedin,
@@ -18,10 +17,7 @@ const ICONS = {
 
 export default class Footer extends Component {
   render() {
-    const resumeData = {
-      socialLinks: hero.socialLinks || [],
-      address: hero.address,
-    };
+    const resumeData = this.props.resumeData || { socialLinks: [], address: "" };
     const year = new Date().getFullYear();
 
     return (
