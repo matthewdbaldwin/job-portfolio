@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import Header from './components/Header.jsx';
 import SectionFallback from './components/SectionFallback.jsx';
+import resumeData from './resumeData.jsx';
 
 const About = lazy(() => import('./components/About.jsx'));
 const Portfolio = lazy(() => import('./components/Portfolio.jsx'));
@@ -15,28 +16,28 @@ const App = () => (
       Skip to main content
     </a>
 
-    <Header />
+    <Header resumeData={resumeData} />
 
     <main id="main-content" tabIndex="-1">
       <Suspense fallback={<SectionFallback label="About" />}>
-        <About />
+        <About resumeData={resumeData} />
       </Suspense>
       <Suspense fallback={<SectionFallback label="Portfolio" />}>
-        <Portfolio />
+        <Portfolio resumeData={resumeData} />
       </Suspense>
       <Suspense fallback={<SectionFallback label="Resume" />}>
-        <Resume />
+        <Resume resumeData={resumeData} />
       </Suspense>
       <Suspense fallback={<SectionFallback label="Testimonials" />}>
-        <Testimonials />
+        <Testimonials resumeData={resumeData} />
       </Suspense>
       <Suspense fallback={<SectionFallback label="Contact" />}>
-        <ContactUs />
+        <ContactUs resumeData={resumeData} />
       </Suspense>
     </main>
 
     <Suspense fallback={<SectionFallback label="Footer" />}>
-      <Footer />
+      <Footer resumeData={resumeData} />
     </Suspense>
   </div>
 );
