@@ -214,7 +214,7 @@ let resumeData = {
       {
         "id":"IVQIA1",
         "name":"Prescriber Credentials",
-        "description":"IQVIA email sample I designed. Using the black and shite IQVIA 3d images provided from the in house team, I designed this in Illustrator and photoshop using company colors. Then I added it into an email about pharmaceutical prescriber data for a tradeshow.",
+        "description":"IQVIA email sample I designed. Using the black and white IQVIA 3d images provided from the in house team, I designed this in Illustrator and photoshop using company colors. Then I added it into an email about pharmaceutical prescriber data for a tradeshow.",
         "url":"images/portfolio/IQVIA1-large.webp",
         "imgurl":"images/portfolio/IQVIA1.webp",
         "alt":"prescriber-credentials"
