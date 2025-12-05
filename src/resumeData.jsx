@@ -1,10 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Senior Marketing Operations & Website Strategy Leader",
+    "role": "Senior Marketing Operations & Website Content Strategy Leader",
     "linkedinId":"mattdbaldwin",
     "email": "hello@matthewdbaldwin.com",
-    "roleDescription": "Driving Growth: Full-Stack Digital Ownership and Automation Architecture for B2B.",
+    "roleDescription": "Driving Growth: Full-Stack Digital Content Ownership and Automation Architecture for B2B.",
     "socialLinks":[
         {
           "id":"linkedin",
@@ -21,15 +21,15 @@ let resumeData = {
 
       ],
       "aboutme": [
-      "As a Senior Website Strategy and Marketing Operations Leader, I specialize in owning the end-to-end digital experience for B2B and enterprise technology brands. My mission is to ensure the website is the central engine for business growth and a scalable foundation for marketing automation, not just a content repository.",
+      "As a Senior Website Content Strategy and Marketing Operations Leader, I specialize in owning the end-to-end digital experience for B2B and enterprise technology brands. My mission is to ensure the website is the central engine for business growth and a scalable foundation for marketing strategies.",
 
-      "I bring a unique hybrid skillset to the table: deep analytical strategy combined with front-end technical fluency (HTML/CSS, JavaScript, React.js). This dual expertise allows me to effectively define the strategic roadmap, architect scalable automation workflows between the website and CRM, and communicate precise requirements to Engineering and external agencies.", 
+      "Combining analytical content strategy with technical fluency allows me to own the end-to-end process. I define strategic roadmaps, architect scalable automation, and precisely communicate requirements to technical teams and agencies.", 
       "My work consistently drives results, including:",
-      "• Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, assets, and GTM strategy across Sales and Marketing.",
+      "• Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, design assets, and GTM strategy across Sales and Marketing.",
 
       "• Lead Generation & Traffic: Drove a 425% increase in lead flow and 150% traffic growth by optimizing the full growth funnel and core site architecture.",
 
-      "• Conversion Rate Optimization (CRO): Successfully boosted website conversion rates by 37% by improving UX/UI and implementing data-driven experimentation.",
+      "• Conversion Rate Optimization (CRO): Successfully boosted website conversion rates by 37% by improving UX/UI, content  and implementing data-driven experimentation.",
 
       "• Operational Scalability: Architected scalable automation workflows between the website and CRM, ensuring technical projects are completed efficiently and align with measurable business goals.",
 
@@ -74,10 +74,10 @@ let resumeData = {
         "dateStarted":"October 2020",
         "MonthOfLeaving":"",
         "YearOfLeaving":"Present",
-        "Bullet1":`Owned the end-to-end lifecycle of 200+ global GTM and ABM campaigns, providing strategic requirements, development QA, and launch oversight in alignment with the annual website roadmap.`,
+        "Bullet1":`Owned the end-to-end lifecycle of 200+ global GTM and ABM campaigns, providing strategic requirements, development QA, and launch oversight.`,
         "Bullet2":`Partnered with cross-functional stakeholders (Product, Sales, Engineering) to define project scope and success metrics, accelerating campaign delivery timelines while ensuring high performance and technical stability.`,
-        "Bullet3":`Directly managed key web initiatives, optimizing WordPress UX/UI to strengthen lead capture that boosted conversion rates by 37%, demonstrating the ability to build select content directly.`,
-        "Bullet4":`Managed a $200K+ Google Ads budget, reducing cost-per-click (CPC) by 5% through advanced audience segmentation and performance analysis.`
+        "Bullet3":`Optimized the website's content architecture and UX/UI to strengthen lead capture, boosting conversion rates by 37%. This involved direct content creation and deployment for high-value landing pages and forms.`,
+        "Bullet4":`Partnered with stakeholders to define project scope and success metrics, ensuring all content and campaigns were aligned with editorial guidelines.`
       },
       {
         "id":"IQVIA",
@@ -87,11 +87,11 @@ let resumeData = {
         "dateStarted":"April 2013",
         "MonthOfLeaving":"October",
         "YearOfLeaving":"2020",
-        "Bullet1":`Partnered with Sales and Product leadership to define GTM strategy for new healthcare and life sciences software launches, driving 50M+ annual email sends and directly supporting $12M in business revenue.
+        "Bullet1":`Led end-to-end execution of 150+ multi-channel marketing campaigns, collaborating with cross-functional teams to align strategy, creative assets, and data for maximum impact.
         `,
-        "Bullet2":`Directed marketing operations for campaign data, assets, and communications across 6,000+ employees, functioning as the key internal resource for data governance and MarTech architecture.
+        "Bullet2":`Directed marketing operations campaign data, assets, and communications for 6K+ employees, ensuring all digital content adhered to regulatory compliance in the B2B sector.
         `,
-        "Bullet3":`Optimized Salesforce and Pardot databases, executing sophisticated segmentation and reporting to enable targeted lifecycle campaigns with 20% higher engagement.`
+        "Bullet3":`Enabled targeted campaigns within Salesforce and Pardot databases, executing strong segmentation and reporting to enable targeted lifecycle campaigns with 20% higher engagement.`
       },
       {
         "id":"Ricoh",
@@ -206,7 +206,7 @@ let resumeData = {
                   {
         "id":"Profoundlogic5",
         "name":"Profoundlogic.com Whitepaper",
-        "description":"Sample Whitepaper from Profound Logic Software, designed with the company specifications for bold hero images and design. I redesigned these whitepapers to give more expression by increasing the size of the image.",
+        "description":"Sample Whitepaper from Profound Logic Software, designed with the company specifications for bold hero images and design. I redesigned these whitepapers to give more expression by increasing the size of the image, and make the content more engaging.",
         "url":"images/portfolio/Profoundlogic-whitepaper-large.webp",
         "imgurl":"images/portfolio/Profoundlogic-whitepaper.webp",
         "alt":"profoundlogic.com-whitepaper"
