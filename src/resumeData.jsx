@@ -21,30 +21,31 @@ let resumeData = {
 
       ],
       "aboutme": [
-      "As a Senior Website Content Strategy and Marketing Operations Leader, I specialize in owning the end-to-end digital experience for B2B and enterprise technology brands. My mission is to ensure the website is the central engine for business growth and a scalable foundation for marketing strategies.",
+      "I specialize in owning the end-to-end digital experience for B2B and enterprise technology brands, ensuring the website is a scalable engine for business growth.",
 
-      "Combining analytical content strategy with technical fluency allows me to own the end-to-end process. I define strategic roadmaps, architect scalable automation, and precisely communicate requirements to technical teams and agencies.", 
-      "My work consistently drives results, including:",
-      "• Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, design assets, and GTM strategy across Sales and Marketing.",
+      "I bring a unique hybrid skillset, combining analytical content design and strategy with front-end technical fluency (HTML/CSS, JavaScript, React.js, PHP/MySQL). This allows me to define strategic roadmaps, architect scalable automation, and accurately communicate requirements to technical teams and agencies.", 
+      "Key Results:",
+      "• Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, design assets, and GTM strategy.",
 
-      "• Lead Generation & Traffic: Drove a 425% increase in lead flow and 150% traffic growth by optimizing the full growth funnel and core site architecture.",
+      "• Lead Generation & Traffic: Drove a 425% increase in lead flow and 150% traffic growth by optimizing the full growth funnel and site architecture.",
 
-      "• Conversion Rate Optimization (CRO): Successfully boosted website conversion rates by 37% by improving UX/UI, content  and implementing data-driven experimentation.",
+      "• Conversion Rate Optimization (CRO): Successfully boosted website conversion rates by 37% through UX/UI, content improvement, and data-driven experimentation.",
 
-      "• Operational Scalability: Architected scalable automation workflows between the website and CRM, ensuring technical projects are completed efficiently and align with measurable business goals.",
+      "• Operational Scalability: Architected scalable automation workflows between the website and CRM, ensuring projects align with measurable business goals.",
 
-      "• Website & Front-End: HTML/CSS, JavaScript, React.js, PHP/MySQL, API Integrations, Headless CMS Principles, Git/GitHub, Jira/Asana",
+      "Core Capabilities:",
 
-      "• MarTech & Automation: Salesforce, HubSpot, Pardot, Marketo, Eloqua, Lead Scoring, ABM, Scalable Automation Architecture",
+      "• Content Strategy & Ownership: Case Studies, Editorial Calendar Management, GTM/ABM Strategy, Personalized Email Content Delivery, Social Media Management(LinkedIn, Instagram, Facebook, Twitter, Reddit).",
 
-      "• Analytics & Performance: GA4 Certified, CRO, SEO/SEM, PPC Optimization ($200K+ Budgets), Data Governance, GDPR/CCPA Compliance",
+      "• MarTech & Automation: Salesforce, HubSpot, Pardot, Marketo, Eloqua, Lead Scoring, Scalable Automation Architecture.",
 
-      "Colleagues know me as a collaborative leader who simplifies complex systems, supports stakeholders, and ensures campaigns launch on time and on-brand."
-      ] ,
+      "• Analytics & Performance: GA4 Certified, SEO/SEM, PPC Optimization ($200K+ Budgets), Data Governance/Compliance.",
+
+      "• Website & Front-End: UX/UI Best Practices, HTML/CSS, JavaScript, React.js, API Integrations.",
+
+      ],
       "aboutme2": `
-      I started my career optimizing digital customer experiences through landing pages, content creation, and marketing automation tools like HubSpot, Eloqua, and Pardot. With over a decade of Adobe Creative Suite expertise, I built engaging creative assets while also managing corporate websites and front-end development in HTML, CSS, JavaScript, and PHP across platforms like WordPress and SharePoint. This mix of marketing execution, creativity, and technical development gave me a unique ability to bridge creative strategy with web performance. To strengthen my technical depth, I completed advanced training at LearningFuze, where I built React applications and expanded into back-end development with Node.js, Express, and database management. Today, I bring a full-stack perspective to digital marketing, blending campaign strategy, content, analytics, and technology to deliver measurable growth.`,
-      "aboutme3": `
-      Today, I bring a rare combination of skills: a background in digital marketing and customer engagement, paired with hands-on experience in web development and programming. I thrive in cross-functional environments and love building solutions that are both technically sound and user-centered. I'd be excited to bring this passion, dedication, and hybrid skill set to your team.`,
+      Colleagues know me as a collaborative, versatile leader who simplifies complex systems, supports stakeholders, and ensures campaigns launch on time and on-brand. I am ready to bring this full-stack perspective blending strategy, content, analytics, design, and technology. Delivering measurable growth for your team.`,
     "address":"Orange County, CA",
     "website":"https://github.com/matthewdbaldwin",
     "education":[
@@ -108,32 +109,36 @@ let resumeData = {
       }
     ],
     "skillsDescription":"",
-    // In resumeData.js — replace the entire `skills` array with this:
+    // Skills listed by tier to indicate size on resume
     "skills": [
       /* ===== TIER 1 (largest) ===== */
-      { "id": "t1-automation",  "skillname": "Marketing Automation",      "tier": 1 },
+      { "id": "t1-automation",  "skillname": "Digital Marketing",      "tier": 1 },
       { "id": "t1-mops",        "skillname": "Marketing Operations",      "tier": 1 },
       { "id": "t1-email",       "skillname": "Email Marketing",           "tier": 1 },
       { "id": "t1-campaigns",   "skillname": "Campaign Management",       "tier": 1 },
+      { "id": "t1-content",     "skillname": "Content Strategy",          "tier": 1 },
+      { "id": "t1-branding",    "skillname": "Branding",                  "tier": 1 },
+      { "id": "t1-publishing",  "skillname": "Publishing",                  "tier": 1 },
       { "id": "t1-seo",         "skillname": "SEO",                       "tier": 1 },
       { "id": "t1-semppc",      "skillname": "SEM/PPC",                   "tier": 1 },
       { "id": "t1-ga",          "skillname": "Google Analytics",          "tier": 1 },
       { "id": "t1-leads",       "skillname": "Lead Generation",           "tier": 1 },
-      { "id": "t1-crm",         "skillname": "CRM",                       "tier": 1 },
+      { "id": "t1-programmatic",         "skillname": "Programmatic Advertising",                       "tier": 1 },
       { "id": "t1-salesforce",  "skillname": "Salesforce",                "tier": 1 },
       { "id": "t1-hubspot",     "skillname": "HubSpot",                   "tier": 1 },
       { "id": "t1-pardot",      "skillname": "Pardot",                    "tier": 1 },
+      { "id": "t1-canva",       "skillname": "Canva",                     "tier": 1 },
 
       /* ===== TIER 2 (half-size) ===== */
-      { "id": "t2-content",     "skillname": "Content Marketing",         "tier": 2 },
-      { "id": "t2-digital",     "skillname": "Digital Marketing",         "tier": 2 },
-      { "id": "t2-strategy",    "skillname": "Marketing Strategy",        "tier": 2 },
+      { "id": "t2-social1",     "skillname": "LinkedIn",                  "tier": 2 },
+      { "id": "t2-social2",     "skillname": "Instagram",                  "tier": 2 },
+      { "id": "t2-social3",     "skillname": "Facebook",                  "tier": 2 },
+      { "id": "t2-crm",     "skillname": "CRM",         "tier": 2 },
+      { "id": "t2-b2b",       "skillname": "B2B",                       "tier": 2 },
       { "id": "t2-abm",         "skillname": "Account-Based Marketing (ABM)", "tier": 2 },
-      { "id": "t2-b2b",         "skillname": "B2B",                       "tier": 2 },
       { "id": "t2-wp",          "skillname": "WordPress",                 "tier": 2 },
       { "id": "t2-gads",        "skillname": "Google Ads",                "tier": 2 },
       { "id": "t2-canspam",     "skillname": "CAN-SPAM",                  "tier": 2 },
-      { "id": "t2-ecom",        "skillname": "E-commerce",                "tier": 2 },
       { "id": "t2-copy",        "skillname": "Copywriting",               "tier": 2 }
     ],
     "portfolio":[
