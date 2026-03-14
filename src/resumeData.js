@@ -48,12 +48,23 @@ let resumeData = {
     ],
     "work":[
       {
+        "id":"MicroPort",
+        "CompanyName":"MicroPort",
+        "specialization":"Senior Supervisor, Digital Product",
+        "dateStarted":"February 2026",
+        "MonthOfLeaving":"",
+        "YearOfLeaving":"Present",
+        "Bullet1":`Lead the redesign and launch of MicroPort's global corporate website in coordination with external vendors and internal stakeholders, defining the website roadmap including functionality, user experience, and performance targets.`,
+        "Bullet2":`Develop, document, and enforce digital governance guidelines covering accessibility, data privacy, and localization (GDPR, regional cybersecurity laws), and establish digital KPIs with regular performance reporting.`,
+        "Bullet3":`Drive digital translation of medical affairs initiatives into web-ready written and video content, and coordinate cross-platform digital standards across website, LinkedIn, and other digital presences.`
+      },
+      {
         "id":"Profound Logic",
         "CompanyName":"Profound Logic",
         "specialization":"Marketing Developer",
         "dateStarted":"October 2020",
-        "MonthOfLeaving":"",
-        "YearOfLeaving":"Present",
+        "MonthOfLeaving":"January",
+        "YearOfLeaving":"2026",
         "Bullet1":`Strategize and launch high-impact Go-To-Market and account-based campaigns in HubSpot, with timely performance reporting to drive data-informed decisions.`,
         "Bullet2":`Act as a key liaison between the web development team and cross-functional stakeholders in marketing, sales, and product, ensuring digital initiatives align with KPIs and deliver measurable value in HubSpot.`,
         "Bullet3":`Partner with sales and marketing teams to continuously track and optimize the sales funnel, aligning web strategies in WordPress UX/UI achieving lead generation and conversion objectives.`

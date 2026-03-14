@@ -9,6 +9,24 @@ import Footer from './components/Footer';
 import resumeData from './resumeData';
 
 class App extends Component {
+  componentDidMount() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('section').forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+  }
+
   render() {
     return (
       <div className="App">

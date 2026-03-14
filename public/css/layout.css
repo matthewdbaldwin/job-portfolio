@@ -282,127 +282,82 @@ ul#nav li.current a { color: #0e68b7; }
 }
 
 /*----------------------------------------------*/
-/*	Skill Bars
+/*	Skill Tags
 /*----------------------------------------------*/
 
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
+.skill-tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-top: 24px;
 }
-.bars .skills {
-  	margin-top: 36px;
-   list-style: none;
-}
-.bars li {
-   position: relative;
-  	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
-  	border-radius: 3px;
-}
-.bars li em {
-	font: 15px 'arial', sans-serif;
-   color: #313131;
-	text-transform: uppercase;
-   letter-spacing: 2px;
-	font-weight: normal;
-   position: relative;
-	top: -36px;
-}
-.bar-expand {
-   position: absolute;
-   left: 0;
-   top: 0;
-   margin: 0;
-   padding-right: 24px;
-  	background: #313131;
+
+.skill-tag {
    display: inline-block;
-  	height: 42px;
-   line-height: 42px;
-   border-radius: 3px 0 0 3px;
+   padding: 8px 18px;
+   background: #f5f7f8;
+   border: 1.5px solid #dce3e8;
+   border-radius: 20px;
+   font: 12px/1 'opensans-bold', sans-serif;
+   color: #555;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
+               border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.wordpress {
-  	width: 75%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.skill-tag:hover {
+   background: #0e68b7;
+   color: #fff;
+   border-color: #0e68b7;
+   transform: translateY(-2px);
 }
 
-.automation {
-  	width: 80%;
-  	-moz-animation: automation 2s ease;
-  	-webkit-animation: automation 2s ease;
+/*----------------------------------------------*/
+/*	Work Timeline
+/*----------------------------------------------*/
+
+.work .row.item {
+   position: relative;
+   padding-left: 16px;
+   border-left: 2px solid #e8e8e8;
+   margin-left: 4px;
+   transition: border-left-color 0.3s ease;
 }
 
-.adobe {
-  	width: 65%;
-  	-moz-animation: adobe 2s ease;
-  	-webkit-animation: adobe 2s ease;
+.work .row.item:hover {
+   border-left-color: #0e68b7;
 }
 
-.digital {
-  	width: 80%;
-  	-moz-animation: digital 2s ease;
-  	-webkit-animation: digital 2s ease;
+.work .row.item::before {
+   content: '';
+   position: absolute;
+   left: -5px;
+   top: 8px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: #0e68b7;
+   transition: transform 0.2s ease;
 }
 
-.marketing {
-  	width: 75%;
-  	-moz-animation: marketing 2s ease;
-  	-webkit-animation: marketing 2s ease;
+.work .row.item:hover::before {
+   transform: scale(1.4);
 }
 
-.website {
-   width: 70%;
-   -moz-animation: website 2s ease;
-   -webkit-animation: website 2s ease;
+/*----------------------------------------------*/
+/*	Scroll Fade-Up Animations
+/*----------------------------------------------*/
+
+.fade-up {
+   opacity: 0;
+   transform: translateY(28px);
+   transition: opacity 0.65s ease-out, transform 0.65s ease-out;
 }
 
-@-moz-keyframes adobe {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes automation {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes digital {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes marketing {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes website {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+.fade-up.is-visible {
+   opacity: 1;
+   transform: translateY(0);
 }
 
 /* ------------------------------------------------------------------ */
