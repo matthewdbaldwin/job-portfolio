@@ -1,9 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Frontend Developer and Marketer",
+    "role": "Senior Digital Product Leader",
     "linkedinId":"matthewdbaldwin",
-    "roleDescription": " I like dabbling in various parts of frontend development and like to learn about new technologies, make creative designs, and manage campaigns.",
+    "email": "hello@matthewdbaldwin.com",
+    "roleDescription": "Website strategy, digital governance, and full funnel marketing for global B2B brands.",
     "socialLinks":[
         {
           "id":"linkedin",
@@ -19,13 +20,13 @@ let resumeData = {
         },
 
       ],
-      "aboutme": `With 15 years of experience in the marketing field, Matthew brings deep expertise in marketing automation, web development, and campaign execution. His skill set spans creative design, copy editing, social media strategy, and email marketing—making him a versatile asset across digital channels. Beyond the tools and tactics, Matthew is a dependable leader known for his positive attitude and commitment to collaboration, always ensuring stakeholders are supported and deadlines are met with care.`,
+      "aboutme": `With 15 years of experience in marketing and digital product, Matthew brings deep expertise in website strategy, marketing automation, and campaign execution. His skill set spans content strategy, creative design, social media, and email marketing, making him a versatile asset across digital channels. Beyond the tools and tactics, Matthew is a dependable leader known for his collaborative approach and commitment to getting things done on time and on brand.`,
       "aboutme2": `
-      Early in my career, I focused on optimizing customer experiences through website landing pages, content creation, and marketing automation platforms like Pardot and Eloqua. I also drew on over a decade of experience with Adobe Creative Suite — Photoshop, Illustrator, and InDesign — to build high-quality creative assets. As my responsibilities expanded, I found myself managing corporate websites, diving into front-end code using HTML, CSS, JavaScript, and PHP, and working with various CMS platforms. This blend of creativity and technical work sparked a lasting passion for web development.`,
+      Early in my career, I focused on optimizing customer experiences through website landing pages, content creation, and marketing automation platforms like Pardot and Eloqua. I also drew on over a decade of experience with Adobe Creative Suite to build high-quality creative assets. As my responsibilities expanded, I found myself managing corporate websites, writing frontend code using HTML, CSS, JavaScript, and PHP, and working with various CMS platforms. This blend of creativity and technical work sparked a lasting passion for web development.`,
       "aboutme3": `
-      As I began taking on more coding responsibilities, I realized I wanted to go deeper. To challenge myself and accelerate my learning, I enrolled at LearningFuze — attending intensive night classes while continuing to work full-time. There, I tackled complex programming challenges and gained hands-on experience with JavaScript, jQuery, React, and Node.js. I built several front-end applications in React, and expanded into back-end development with Node.js, Express, and database management. That immersive experience solidified my identity as a developer.`,
+      As I took on more coding responsibilities, I wanted to go deeper. To challenge myself and accelerate my learning, I enrolled at LearningFuze, attending intensive night classes while continuing to work full time. There, I tackled complex programming challenges and gained hands-on experience with JavaScript, jQuery, React, and Node.js. I built several frontend applications in React and expanded into backend development with Node.js, Express, and database management.`,
       "aboutme4": `
-      Today, I bring a rare combination of skills: a background in digital marketing and customer engagement, paired with hands-on experience in web development and programming. I thrive in cross-functional environments and love building solutions that are both technically sound and user-centered. I'd be excited to bring this passion, dedication, and hybrid skill set to your team.`,
+      Today, I bring a rare combination of skills: a background in digital marketing and customer engagement paired with hands-on experience in web development and programming. I thrive in collaborative environments and love building solutions that are both technically sound and user centered. I would be excited to bring this passion, dedication, and hybrid skill set to your team.`,
     "address":"Orange County, CA",
     "website":"https://github.com/matthewdbaldwin",
     "education":[
@@ -40,10 +41,10 @@ let resumeData = {
       {
         "id":"LF",
         "UniversityName":"Learning Fuze",
-        "specialization":"Full-stack development program is a 12-week intensive that teaches front-end and back-end subjects like JavaScript/jQuery, React, Node.js, PHP, MySQL, HTML, CSS, Amazon Web Services (AWS), Git/GitHub, and others.",
+        "specialization":"Full stack development program covering JavaScript, React, Node.js, PHP, MySQL, HTML, CSS, AWS, and Git.",
         "MonthOfPassing":"March",
         "YearOfPassing":"2020",
-        "Achievements":"Completed Full-stack development courses"
+        "Achievements":"Completed Full Stack Development Program"
       }
     ],
     "work":[
@@ -54,9 +55,9 @@ let resumeData = {
         "dateStarted":"February 2026",
         "MonthOfLeaving":"",
         "YearOfLeaving":"Present",
-        "Bullet1":`Lead the redesign and launch of MicroPort's global corporate website in coordination with external vendors and internal stakeholders, defining the website roadmap including functionality, user experience, and performance targets.`,
-        "Bullet2":`Develop, document, and enforce digital governance guidelines covering accessibility, data privacy, and localization (GDPR, regional cybersecurity laws), and establish digital KPIs with regular performance reporting.`,
-        "Bullet3":`Drive digital translation of medical affairs initiatives into web-ready written and video content, and coordinate cross-platform digital standards across website, LinkedIn, and other digital presences.`
+        "Bullet1":`Leading the redesign and launch of MicroPort's global corporate website in coordination with external vendors and internal stakeholders, defining the roadmap for functionality, user experience, and performance.`,
+        "Bullet2":`Developing and enforcing digital governance guidelines covering accessibility, data privacy, and localization including GDPR and regional cybersecurity requirements, with regular KPI reporting on traffic, SEO, and engagement.`,
+        "Bullet3":`Translating medical affairs initiatives into polished web and video content, and coordinating brand aligned digital standards across the website, LinkedIn, and other digital channels.`
       },
       {
         "id":"Profound Logic",
@@ -65,10 +66,9 @@ let resumeData = {
         "dateStarted":"October 2020",
         "MonthOfLeaving":"January",
         "YearOfLeaving":"2026",
-        "Bullet1":`Strategize and launch high-impact Go-To-Market and account-based campaigns in HubSpot, with timely performance reporting to drive data-informed decisions.`,
-        "Bullet2":`Act as a key liaison between the web development team and cross-functional stakeholders in marketing, sales, and product, ensuring digital initiatives align with KPIs and deliver measurable value in HubSpot.`,
-        "Bullet3":`Partner with sales and marketing teams to continuously track and optimize the sales funnel, aligning web strategies in WordPress UX/UI achieving lead generation and conversion objectives.`
-
+        "Bullet1":`Launched and scaled GTM and account based campaigns in HubSpot across 200+ global initiatives, with performance reporting to drive data driven decisions.`,
+        "Bullet2":`Served as the bridge between the web development team and stakeholders across marketing, sales, and product to ensure digital initiatives aligned with KPIs and delivered measurable results.`,
+        "Bullet3":`Partnered with sales and marketing to track and optimize the sales funnel, aligning WordPress web strategy to achieve a 37% boost in lead generation and conversion.`
       },
       {
         "id":"IQVIA",
@@ -77,45 +77,58 @@ let resumeData = {
         "dateStarted":"April 2013",
         "MonthOfLeaving":"October",
         "YearOfLeaving":"2020",
-        "Bullet1":`Developed and deployed responsive HTML email campaigns via Pardot and Salesforce Eloqua Engage, totaling 50M+ sends in 2019.
-        `,
-        "Bullet2":`Supported Marketing and Sales Ops by managing campaign data, materials, and communications for 6,000+ team.`,
-        "Bullet3":`Managed customer databases in Salesforce and Pardot, handling segmentation, reporting, opt-outs, and extractions for targeted deployments.`
+        "Bullet1":`Developed and deployed responsive HTML email campaigns via Pardot and Salesforce Eloqua Engage, totaling 50M+ sends in 2019.`,
+        "Bullet2":`Supported Marketing and Sales Ops by managing campaign data, materials, and communications for a 6,000 person team.`,
+        "Bullet3":`Managed customer databases in Salesforce and Pardot, handling segmentation, reporting, and extractions to enable targeted lifecycle campaigns with 20% higher engagement.`
       },
       {
         "id":"Cegedim",
-        "CompanyName":"Ricoh(formerly AnaJet)",
+        "CompanyName":"Ricoh (formerly AnaJet)",
         "specialization":"Online Marketing Specialist",
         "dateStarted":"May 2010",
         "MonthOfLeaving":"April",
         "YearOfLeaving":"2013",
-        "Bullet1":`Designed and deployed email campaigns through Marketo.`,
-        "Bullet2":`Increased website lead flow by 425% and traffic by 150% year-over-year through custom WordPress development and PHP/MySQL management.`,
-        "Bullet3":`Led AdWords campaigns with keyword management and a monthly PPC budget of over $10,500.`
+        "Bullet1":`Designed and deployed email campaigns through Marketo, growing the subscriber base and improving open rates through segmentation and testing.`,
+        "Bullet2":`Increased website lead flow by 425% and traffic by 150% year over year through custom WordPress development and PHP and MySQL management.`,
+        "Bullet3":`Led Google Ads campaigns with a monthly PPC budget of over $10,500, improving ROI by 35% through keyword optimization and A/B testing.`
       }
     ],
-    "skillsDescription":"Your skills here",
+    "skillsDescription":"",
     "skills":[
-      {
-        "id":"Automation",
-        "skillname":"Marketing Automation"
-      },
-      {
-        "id":"Digital",
-        "skillname":"Digital Marketing"
-      },
-      {
-        "id":"Marketing",
-        "skillname":"Content Marketing"
-      },
-      {
-        "id":"Wordpress",
-        "skillname":"Wordpress"
-      },
-      {
-        "id":"Adobe",
-        "skillname":"Adobe Creative Cloud"
-      }
+      { "id":"WebsiteStrategy",      "skillname":"Website Strategy" },
+      { "id":"DigitalGovernance",    "skillname":"Digital Governance" },
+      { "id":"DigitalMarketing",     "skillname":"Digital Marketing" },
+      { "id":"ContentStrategy",      "skillname":"Content Strategy" },
+      { "id":"MarketingAutomation",  "skillname":"Marketing Automation" },
+      { "id":"CampaignManagement",   "skillname":"Campaign Management" },
+      { "id":"EmailMarketing",       "skillname":"Email Marketing" },
+      { "id":"LeadGeneration",       "skillname":"Lead Generation" },
+      { "id":"SEO",                  "skillname":"SEO" },
+      { "id":"SEMPPC",               "skillname":"SEM & PPC" },
+      { "id":"GA4",                  "skillname":"Google Analytics 4" },
+      { "id":"Salesforce",           "skillname":"Salesforce" },
+      { "id":"HubSpot",              "skillname":"HubSpot" },
+      { "id":"Pardot",               "skillname":"Pardot" },
+      { "id":"Marketo",              "skillname":"Marketo" },
+      { "id":"UX",                   "skillname":"UX & UI Design" },
+      { "id":"HTMLCSS",              "skillname":"HTML & CSS" },
+      { "id":"JavaScript",           "skillname":"JavaScript" },
+      { "id":"React",                "skillname":"React" },
+      { "id":"WordPress",            "skillname":"WordPress" },
+      { "id":"AdobeCC",              "skillname":"Adobe Creative Cloud" },
+      { "id":"BrandArchitecture",    "skillname":"Brand Architecture" },
+      { "id":"SocialMedia",          "skillname":"Social Media Management" },
+      { "id":"VideoContent",         "skillname":"Video Content" },
+      { "id":"Copywriting",          "skillname":"Copywriting" },
+      { "id":"GDPR",                 "skillname":"GDPR & Compliance" },
+      { "id":"Accessibility",        "skillname":"Web Accessibility" },
+      { "id":"Localization",         "skillname":"Localization" },
+      { "id":"VendorManagement",     "skillname":"Vendor Management" },
+      { "id":"KPIReporting",         "skillname":"KPI Reporting" },
+      { "id":"ProjectManagement",    "skillname":"Project Management" },
+      { "id":"B2BMarketing",         "skillname":"B2B Marketing" },
+      { "id":"CRO",                  "skillname":"Conversion Rate Optimization" },
+      { "id":"ABM",                  "skillname":"Account Based Marketing" }
     ],
     "portfolio":[
       {
@@ -174,8 +187,8 @@ let resumeData = {
         "role":"Software Engineer",
         "company":"Qualcomm Innovation"
       }
-      
+
     ]
   }
-  
+
   export default resumeData
