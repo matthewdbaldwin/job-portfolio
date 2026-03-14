@@ -412,8 +412,12 @@ html, body{ overflow-x: hidden; }
    overflow: hidden;
    position: relative;
    border-radius: 12px;
+   border: 2px solid #c8ced2;
    box-shadow: var(--shadow-soft);
    transition: all 0.3s ease-in-out;
+}
+.portfolio-item:hover .item-wrap {
+   border-color: #0e68b7;
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;

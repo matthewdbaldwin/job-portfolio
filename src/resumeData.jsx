@@ -1,10 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/matthewdbaldwin",
     "name": "Matthew Baldwin",
-    "role": "Senior Marketing Operations & Website Content Strategy Leader",
+    "role": "Senior Digital Product Leader",
     "linkedinId":"mattdbaldwin",
     "email": "hello@matthewdbaldwin.com",
-    "roleDescription": "Driving Growth: Full-Stack Digital Content Ownership and Automation Architecture for B2B.",
+    "roleDescription": "Website strategy, digital governance, and full funnel marketing for global B2B brands.",
     "socialLinks":[
         {
           "id":"linkedin",
@@ -21,31 +21,32 @@ let resumeData = {
 
       ],
       "aboutme": [
-      "I specialize in owning the end-to-end digital experience for B2B and enterprise technology brands, ensuring the website is a scalable engine for business growth.",
+      "I specialize in owning the full digital experience for B2B and enterprise brands, ensuring the website is a scalable engine for business growth.",
 
-      "I bring a unique hybrid skillset, combining analytical content design and strategy with front-end technical fluency (HTML/CSS, JavaScript, React.js, PHP/MySQL). This allows me to define strategic roadmaps, architect scalable automation, and accurately communicate requirements to technical teams and agencies.", 
+      "I bring a unique hybrid skill set, combining analytical content design and strategy with frontend technical fluency (HTML/CSS, JavaScript, React.js, PHP/MySQL). This allows me to define strategic roadmaps, architect scalable automation, and accurately communicate requirements to technical teams and agencies.",
+
       "Key Results:",
-      "• Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, design assets, and GTM strategy.",
+      "Revenue Leadership: Directly supported over $12M in revenue impact by aligning campaign data, design assets, and GTM strategy.",
 
-      "• Lead Generation & Traffic: Drove a 425% increase in lead flow and 150% traffic growth by optimizing the full growth funnel and site architecture.",
+      "Lead Generation and Traffic: Drove a 425% increase in lead flow and 150% traffic growth by optimizing the full growth funnel and site architecture.",
 
-      "• Conversion Rate Optimization (CRO): Successfully boosted website conversion rates by 37% through UX/UI, content improvement, and data-driven experimentation.",
+      "Conversion Rate Optimization: Successfully boosted website conversion rates by 37% through UX/UI, content improvement, and data driven experimentation.",
 
-      "• Operational Scalability: Architected scalable automation workflows between the website and CRM, ensuring projects align with measurable business goals.",
+      "Operational Scalability: Architected scalable automation workflows between the website and CRM, ensuring projects align with measurable business goals.",
 
       "Core Capabilities:",
 
-      "• Content Strategy & Ownership: Case Studies, Editorial Calendar Management, GTM/ABM Strategy, Personalized Email Content Delivery, Social Media Management(LinkedIn, Instagram, Facebook, Twitter, Reddit).",
+      "Content Strategy and Ownership: Case Studies, Editorial Calendar Management, GTM/ABM Strategy, Personalized Email Content Delivery, Social Media Management (LinkedIn, Instagram, Facebook, Twitter, Reddit).",
 
-      "• MarTech & Automation: Salesforce, HubSpot, Pardot, Marketo, Eloqua, Lead Scoring, Scalable Automation Architecture.",
+      "MarTech and Automation: Salesforce, HubSpot, Pardot, Marketo, Eloqua, Lead Scoring, Scalable Automation Architecture.",
 
-      "• Analytics & Performance: GA4 Certified, SEO/SEM, PPC Optimization ($200K+ Budgets), Data Governance/Compliance.",
+      "Analytics and Performance: GA4 Certified, SEO/SEM, PPC Optimization ($200K+ Budgets), Data Governance/Compliance.",
 
-      "• Website & Front-End: UX/UI Best Practices, HTML/CSS, JavaScript, React.js, API Integrations.",
+      "Website and Frontend: UX/UI Best Practices, HTML/CSS, JavaScript, React.js, API Integrations.",
 
       ],
       "aboutme2": `
-      Colleagues know me as a collaborative, versatile leader who simplifies complex systems, supports stakeholders, and ensures campaigns launch on time and on-brand. I am ready to bring this full-stack perspective blending strategy, content, analytics, design, and technology. Delivering measurable growth for your team.`,
+      Colleagues know me as a collaborative, versatile leader who simplifies complex systems, supports stakeholders, and ensures campaigns launch on time and on brand. I am ready to bring this full stack perspective blending strategy, content, analytics, design, and technology to deliver measurable growth for your team.`,
     "address":"Orange County, CA",
     "website":"https://github.com/matthewdbaldwin",
     "education":[
@@ -60,25 +61,36 @@ let resumeData = {
       {
         "id":"LF",
         "UniversityName":"Learning Fuze",
-        "specialization":"Full-stack development program is a 12-week intensive that teaches front-end and back-end subjects like JavaScript/jQuery, React, Node.js, PHP, MySQL, HTML, CSS, Amazon Web Services (AWS), Git/GitHub, and others.",
+        "specialization":"Full stack development program covering JavaScript/jQuery, React, Node.js, PHP, MySQL, HTML, CSS, Amazon Web Services, Git/GitHub, and more.",
         "MonthOfPassing":"March",
         "YearOfPassing":"2020",
-        "Achievements":"Completed Full-stack development courses."
+        "Achievements":"Completed Full Stack Development Program"
       }
     ],
     "work":[
+      {
+        "id":"MicroPort",
+        "CompanyName":"MicroPort",
+        "CompanyWeb":"https://www.microport.com/",
+        "specialization":"Senior Supervisor, Digital Product",
+        "dateStarted":"February 2026",
+        "MonthOfLeaving":"",
+        "YearOfLeaving":"Present",
+        "Bullet1":`Leading the redesign and launch of MicroPort's global corporate website in coordination with external vendors and internal stakeholders, defining the roadmap for functionality, user experience, and performance.`,
+        "Bullet2":`Developing and enforcing digital governance guidelines covering accessibility, data privacy, and localization including GDPR and regional cybersecurity requirements, with regular KPI reporting on traffic, SEO, and engagement.`,
+        "Bullet3":`Translating medical affairs initiatives into polished web and video content, and coordinating brand aligned digital standards across the website, LinkedIn, and other digital channels.`
+      },
       {
         "id":"Profound Logic",
         "CompanyName":"Profound Logic",
         "CompanyWeb":"https://profoundlogic.com/",
         "specialization":"Marketing Developer",
         "dateStarted":"October 2020",
-        "MonthOfLeaving":"",
-        "YearOfLeaving":"Present",
-        "Bullet1":`Owned the end-to-end lifecycle of 200+ global GTM and ABM campaigns, providing strategic requirements, development QA, and launch oversight.`,
-        "Bullet2":`Partnered with cross-functional stakeholders (Product, Sales, Engineering) to define project scope and success metrics, accelerating campaign delivery timelines while ensuring high performance and technical stability.`,
-        "Bullet3":`Optimized the website's content architecture and UX/UI to strengthen lead capture, boosting conversion rates by 37%. This involved direct content creation and deployment for high-value landing pages and forms.`,
-        "Bullet4":`Partnered with stakeholders to define project scope and success metrics, ensuring all content and campaigns were aligned with editorial guidelines.`
+        "MonthOfLeaving":"January",
+        "YearOfLeaving":"2026",
+        "Bullet1":`Launched and scaled GTM and account based campaigns in HubSpot across 200+ global initiatives, with performance reporting to drive data driven decisions.`,
+        "Bullet2":`Served as the bridge between the web development team and stakeholders across marketing, sales, and product to ensure digital initiatives aligned with KPIs and delivered measurable results.`,
+        "Bullet3":`Partnered with sales and marketing to track and optimize the sales funnel, aligning WordPress web strategy to achieve a 37% boost in lead generation and conversion.`
       },
       {
         "id":"IQVIA",
@@ -88,64 +100,73 @@ let resumeData = {
         "dateStarted":"April 2013",
         "MonthOfLeaving":"October",
         "YearOfLeaving":"2020",
-        "Bullet1":`Led end-to-end execution of 150+ multi-channel marketing campaigns, collaborating with cross-functional teams to align strategy, creative assets, and data for maximum impact.
-        `,
-        "Bullet2":`Directed marketing operations campaign data, assets, and communications for 6K+ employees, ensuring all digital content adhered to regulatory compliance in the B2B sector.
-        `,
-        "Bullet3":`Enabled targeted campaigns within Salesforce and Pardot databases, executing strong segmentation and reporting to enable targeted lifecycle campaigns with 20% higher engagement.`
+        "Bullet1":`Developed and deployed responsive HTML email campaigns via Pardot and Salesforce Eloqua Engage, totaling 50M+ sends in 2019.`,
+        "Bullet2":`Supported Marketing and Sales Ops by managing campaign data, materials, and communications for a 6,000 person team.`,
+        "Bullet3":`Managed customer databases in Salesforce and Pardot, handling segmentation, reporting, and extractions to enable targeted lifecycle campaigns with 20% higher engagement.`
       },
       {
         "id":"Ricoh",
-        "CompanyName":"Ricoh(formerly AnaJet)",
+        "CompanyName":"Ricoh (formerly AnaJet)",
         "CompanyWeb":"https://ricohdtg.com/",
         "specialization":"Online Marketing Specialist",
         "dateStarted":"May 2010",
         "MonthOfLeaving":"April",
         "YearOfLeaving":"2013",
-        "Bullet1":`Drove the initial digital presence redesign, increasing website lead flow by 425% and traffic by 150% YoY through custom WordPress and PHP/MySQL development.`,
-        "Bullet2":`Led Google Ads campaigns with $10.5K monthly PPC spend, improving ROI by 35%.
-        `,
-        "Bullet3":`Managed multiple CMS platforms, improving SEO rankings and inbound discovery through content and technical optimization (sitemaps, URL strategy).`
+        "Bullet1":`Designed and deployed email campaigns through Marketo, growing the subscriber base and improving open rates through segmentation and testing.`,
+        "Bullet2":`Increased website lead flow by 425% and traffic by 150% year over year through custom WordPress development and PHP/MySQL management.`,
+        "Bullet3":`Led Google Ads campaigns with a monthly PPC budget of over $10,500, improving ROI by 35% through keyword optimization and A/B testing.`
       }
     ],
     "skillsDescription":"",
-    // Skills listed by tier to indicate size on resume
     "skills": [
-      /* ===== TIER 1 (largest) ===== */
-      { "id": "t1-automation",  "skillname": "Digital Marketing",      "tier": 1 },
-      { "id": "t1-mops",        "skillname": "Marketing Operations",      "tier": 1 },
-      { "id": "t1-email",       "skillname": "Email Marketing",           "tier": 1 },
-      { "id": "t1-campaigns",   "skillname": "Campaign Management",       "tier": 1 },
-      { "id": "t1-content",     "skillname": "Content Strategy",          "tier": 1 },
-      { "id": "t1-branding",    "skillname": "Branding",                  "tier": 1 },
-      { "id": "t1-publishing",  "skillname": "Publishing",                  "tier": 1 },
-      { "id": "t1-seo",         "skillname": "SEO",                       "tier": 1 },
-      { "id": "t1-semppc",      "skillname": "SEM/PPC",                   "tier": 1 },
-      { "id": "t1-ga",          "skillname": "Google Analytics",          "tier": 1 },
-      { "id": "t1-leads",       "skillname": "Lead Generation",           "tier": 1 },
-      { "id": "t1-programmatic",         "skillname": "Programmatic Advertising",                       "tier": 1 },
-      { "id": "t1-salesforce",  "skillname": "Salesforce",                "tier": 1 },
-      { "id": "t1-hubspot",     "skillname": "HubSpot",                   "tier": 1 },
-      { "id": "t1-pardot",      "skillname": "Pardot",                    "tier": 1 },
-      { "id": "t1-canva",       "skillname": "Canva",                     "tier": 1 },
-
-      /* ===== TIER 2 (half-size) ===== */
-      { "id": "t2-social1",     "skillname": "LinkedIn",                  "tier": 2 },
-      { "id": "t2-social2",     "skillname": "Instagram",                  "tier": 2 },
-      { "id": "t2-social3",     "skillname": "Facebook",                  "tier": 2 },
-      { "id": "t2-crm",     "skillname": "CRM",         "tier": 2 },
-      { "id": "t2-b2b",       "skillname": "B2B",                       "tier": 2 },
-      { "id": "t2-abm",         "skillname": "Account-Based Marketing (ABM)", "tier": 2 },
-      { "id": "t2-wp",          "skillname": "WordPress",                 "tier": 2 },
-      { "id": "t2-gads",        "skillname": "Google Ads",                "tier": 2 },
-      { "id": "t2-canspam",     "skillname": "CAN-SPAM",                  "tier": 2 },
-      { "id": "t2-copy",        "skillname": "Copywriting",               "tier": 2 }
+      { "id": "WebsiteStrategy",      "skillname": "Website Strategy",               "tier": 1 },
+      { "id": "DigitalGovernance",    "skillname": "Digital Governance",             "tier": 1 },
+      { "id": "DigitalMarketing",     "skillname": "Digital Marketing",              "tier": 1 },
+      { "id": "ContentStrategy",      "skillname": "Content Strategy",               "tier": 1 },
+      { "id": "MarketingAutomation",  "skillname": "Marketing Automation",           "tier": 1 },
+      { "id": "CampaignManagement",   "skillname": "Campaign Management",            "tier": 1 },
+      { "id": "EmailMarketing",       "skillname": "Email Marketing",                "tier": 1 },
+      { "id": "LeadGeneration",       "skillname": "Lead Generation",                "tier": 1 },
+      { "id": "SEO",                  "skillname": "SEO",                            "tier": 1 },
+      { "id": "SEMPPC",               "skillname": "SEM & PPC",                      "tier": 1 },
+      { "id": "GA4",                  "skillname": "Google Analytics 4",             "tier": 1 },
+      { "id": "Salesforce",           "skillname": "Salesforce",                     "tier": 1 },
+      { "id": "HubSpot",              "skillname": "HubSpot",                        "tier": 1 },
+      { "id": "Pardot",               "skillname": "Pardot",                         "tier": 1 },
+      { "id": "Marketo",              "skillname": "Marketo",                        "tier": 1 },
+      { "id": "UX",                   "skillname": "UX & UI Design",                 "tier": 1 },
+      { "id": "HTMLCSS",              "skillname": "HTML & CSS",                     "tier": 2 },
+      { "id": "JavaScript",           "skillname": "JavaScript",                     "tier": 2 },
+      { "id": "React",                "skillname": "React",                          "tier": 2 },
+      { "id": "WordPress",            "skillname": "WordPress",                      "tier": 2 },
+      { "id": "AdobeCC",              "skillname": "Adobe Creative Cloud",           "tier": 2 },
+      { "id": "BrandArchitecture",    "skillname": "Brand Architecture",             "tier": 2 },
+      { "id": "SocialMedia",          "skillname": "Social Media Management",        "tier": 2 },
+      { "id": "VideoContent",         "skillname": "Video Content",                  "tier": 2 },
+      { "id": "Copywriting",          "skillname": "Copywriting",                    "tier": 2 },
+      { "id": "GDPR",                 "skillname": "GDPR & Compliance",              "tier": 2 },
+      { "id": "Accessibility",        "skillname": "Web Accessibility",              "tier": 2 },
+      { "id": "Localization",         "skillname": "Localization",                   "tier": 2 },
+      { "id": "VendorManagement",     "skillname": "Vendor Management",              "tier": 2 },
+      { "id": "KPIReporting",         "skillname": "KPI Reporting",                  "tier": 2 },
+      { "id": "ProjectManagement",    "skillname": "Project Management",             "tier": 2 },
+      { "id": "B2BMarketing",         "skillname": "B2B Marketing",                  "tier": 2 },
+      { "id": "CRO",                  "skillname": "Conversion Rate Optimization",   "tier": 2 },
+      { "id": "ABM",                  "skillname": "Account Based Marketing",        "tier": 2 }
     ],
     "portfolio":[
       {
+        "id":"microport",
+        "name":"MicroPort.com",
+        "description":"Global corporate website redesign and digital governance.",
+        "url":"https://www.microport.com",
+        "imgurl":"images/portfolio/microport.webp",
+        "alt":"MicroPort"
+      },
+      {
         "id":"Profoundlogic",
         "name":"Profoundlogic.com",
-        "description":"Profound Logic Software main site I redesigned in 2020. UI/UX redesign of the front page with fresh icons and a three part layout at the bottom with core features.",
+        "description":"Full site redesign increasing conversions by 37% and lead flow by 425%.",
         "url":"https://www.profoundlogic.com",
         "imgurl":"images/portfolio/plcom.webp",
         "alt":"profoundlogic.com"
@@ -153,7 +174,7 @@ let resumeData = {
       {
         "id":"Profoundjs",
         "name":"Profoundjs.com",
-        "description":"The ProfoundJs website I helped edit and developed the software in GitHub. I added in social logins to the site to use APIs to login through facebook, socials.",
+        "description":"Developer documentation site with social login API integrations.",
         "url":"https://www.profoundjs.com",
         "imgurl":"images/portfolio/pjscom.webp",
         "alt":"profoundjs.com"
@@ -161,7 +182,7 @@ let resumeData = {
       {
         "id":"winwin",
         "name":"winwinbrewery.com",
-        "description":"My hobby homebrew website where I track my recipes. I designed the look and feel of the website using free images without licenses.",
+        "description":"Personal hobby site designed and built from scratch.",
         "url":"https://winwinbrewery.com",
         "imgurl":"images/portfolio/winwin.webp",
         "alt":"Win Win Brewery"
@@ -169,7 +190,7 @@ let resumeData = {
       {
         "id":"onekeydata",
         "name":"onekeydata.com",
-        "description":"Onkey website at IQVIA.com. I designed the website in Expression Engine and created whitepapers from excel spreadsheets.",
+        "description":"IQVIA data platform site built in Expression Engine with whitepaper assets.",
         "url":"https://onekeydata.com",
         "imgurl":"images/portfolio/onekey.webp",
         "alt":"onekeydata.com"
@@ -184,34 +205,34 @@ let resumeData = {
         "imgurl":"images/portfolio/Profoundlogic1.webp",
         "alt":"profoundlogic.com-2020"
       },
-            {
+      {
         "id":"Profoundlogic2",
-        "name":"Profoundlogic.com Redesign 2022. ",
-        "description":"Sample of Profoundlogic.com website redesign in 2022. Redesigned the website again to add a more corporate look and feel with the core features in a vertical orientation with soft messaging for corporate IT leaders.",
+        "name":"Profoundlogic.com Redesign 2022",
+        "description":"Sample of Profoundlogic.com website redesign in 2022. Redesigned with a more corporate look and feel targeting IT leaders.",
         "url":"images/portfolio/Profoundlogic2-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2.webp",
         "alt":"profoundlogic.com-2022"
       },
-                  {
+      {
         "id":"Profoundlogic3",
         "name":"Profoundlogic.com Redesign Blog",
-        "description":"Sample of Profoundlogic.com Blog redesign completed in 2022. Redesigned the look and feel of the blog addiing in images from Canva and industry targeted keywords and copy targeting IT professionals.",
+        "description":"Blog redesign completed in 2022 with Canva imagery and industry targeted copy for IT professionals.",
         "url":"images/portfolio/Profoundlogic2-1-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2-1.webp",
         "alt":"profoundlogic.com-blog"
       },
-                  {
+      {
         "id":"Profoundlogic4",
         "name":"Profoundlogic.com Blog Post",
-        "description":"Sample of Profoundlogic.com Blog Post redesign completed in 2022. A blog post with copy for IT professionals and software engineers to show value in the copy with a word cloud to the right.",
+        "description":"Blog post redesign with targeted copy and a word cloud layout for software engineers and IT professionals.",
         "url":"images/portfolio/Profoundlogic2-2-large.webp",
         "imgurl":"images/portfolio/Profoundlogic2-2.webp",
         "alt":"profoundlogic.com-blogpost"
       },
-                  {
+      {
         "id":"Profoundlogic5",
         "name":"Profoundlogic.com Whitepaper",
-        "description":"Sample Whitepaper from Profound Logic Software, designed with the company specifications for bold hero images and design. I redesigned these whitepapers to give more expression by increasing the size of the image, and make the content more engaging.",
+        "description":"Whitepaper redesigned to increase visual impact with a larger hero image and more engaging content layout.",
         "url":"images/portfolio/Profoundlogic-whitepaper-large.webp",
         "imgurl":"images/portfolio/Profoundlogic-whitepaper.webp",
         "alt":"profoundlogic.com-whitepaper"
@@ -219,23 +240,23 @@ let resumeData = {
       {
         "id":"IVQIA1",
         "name":"Prescriber Credentials",
-        "description":"IQVIA email sample I designed. Using the black and white IQVIA 3d images provided from the in house team, I designed this in Illustrator and photoshop using company colors. Then I added it into an email about pharmaceutical prescriber data for a tradeshow.",
+        "description":"IQVIA email designed in Illustrator and Photoshop for a pharmaceutical prescriber data tradeshow campaign.",
         "url":"images/portfolio/IQVIA1-large.webp",
         "imgurl":"images/portfolio/IQVIA1.webp",
         "alt":"prescriber-credentials"
       },
-            {
+      {
         "id":"IVQIA2",
         "name":"Email Header Healthcare Leaders",
-        "description":"IQVIA Email header sample. I designed and created this piece with photoshop and adhered to company branding guidelines.",
+        "description":"IQVIA email header designed in Photoshop following company branding guidelines.",
         "url":"images/portfolio/IQVIA2-large.webp",
         "imgurl":"images/portfolio/IQVIA2.webp",
         "alt":"healthcare-leaders"
       },
-            {
+      {
         "id":"IVQIA3",
         "name":"IDN Whitepaper",
-        "description":"IQVIA Whitepaper sample I created from an excel spreadsheet and added in copy and tables with the data from the spreadsheet. I hand picked the image from an internal IQVIA library to show the top 25 integrated delivery networks.",
+        "description":"IQVIA whitepaper built from an Excel spreadsheet with curated copy and imagery showing the top 25 integrated delivery networks.",
         "url":"images/portfolio/IQVIA3-large.webp",
         "imgurl":"images/portfolio/IQVIA3.webp",
         "alt":"whitepaper"
@@ -249,7 +270,7 @@ let resumeData = {
         "role":"Marketing Director",
         "company":"Profound Logic Software"
       },
-            {
+      {
         "id":"BV",
         "description":"Leading in Marketing is your strength.",
         "name":"Eric Strickland",
@@ -263,8 +284,7 @@ let resumeData = {
         "role":"Software Engineer",
         "company":"Qualcomm Innovation"
       }
-      
     ]
   }
-  
+
   export default resumeData
