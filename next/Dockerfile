@@ -23,6 +23,9 @@ RUN addgroup --system --gid 1001 nodejs \
  && adduser --system --uid 1001 nextjs
 
 COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+# Font bytes read at request time by the OG image route (not traced by
+# Next's standalone output, since it's a runtime fs read).
+COPY --from=builder --chown=nextjs:nodejs /app/assets ./assets
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 

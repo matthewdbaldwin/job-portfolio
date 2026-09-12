@@ -12,10 +12,18 @@ export const dynamic = 'force-dynamic'
 
 export default async function OpenGraphImage() {
   // Inline the profile pic as base64 so Satori has the bytes directly.
+  // Must be PNG, not the site's WebP: Satori cannot decode WebP and fails at
+  // request time with "u2 is not iterable" (the build still succeeds).
   const profileBytes = await fs.readFile(
-    path.join(process.cwd(), 'public/images/profilepic.webp')
+    path.join(process.cwd(), 'assets/profilepic.png')
   )
-  const profileSrc = `data:image/webp;base64,${profileBytes.toString('base64')}`
+  const profileSrc = `data:image/png;base64,${profileBytes.toString('base64')}`
+
+  // Satori needs font bytes supplied explicitly; without a `fonts` array it
+  // throws "u2 is not iterable" at request time (the build still succeeds).
+  const fontData = await fs.readFile(
+    path.join(process.cwd(), 'assets/Geist-Regular.ttf')
+  )
 
   return new ImageResponse(
     (
@@ -31,7 +39,7 @@ export default async function OpenGraphImage() {
           background:
             'linear-gradient(135deg, #1e3a8a 0%, #581c87 35%, #831843 65%, #0f172a 100%)',
           color: 'white',
-          fontFamily: 'sans-serif',
+          fontFamily: 'Geist, sans-serif',
         }}
       >
         {/* Profile pic, circular */}
@@ -76,7 +84,7 @@ export default async function OpenGraphImage() {
               marginBottom: 18,
             }}
           >
-            ★ matthew.baldwin
+            matthew.baldwin
           </div>
           <div
             style={{
@@ -116,6 +124,16 @@ export default async function OpenGraphImage() {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [
+        {
+          name: 'Geist',
+          data: Uint8Array.from(fontData).buffer as ArrayBuffer,
+          weight: 400,
+          style: 'normal',
+        },
+      ],
+    }
   )
 }
