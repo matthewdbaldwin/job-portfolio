@@ -1,14 +1,18 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun } from 'lucide-react'
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => setMounted(true), [])
+  // false during SSR and hydration, true after — avoids a theme-icon mismatch
+  // without setting state inside an effect.
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  )
 
   const isDark = mounted && resolvedTheme === 'dark'
 

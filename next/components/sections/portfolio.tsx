@@ -9,7 +9,6 @@ import { SectionHeading } from '@/components/section-heading'
 import { RevealSection } from '@/components/reveal-section'
 
 const Lightbox = dynamic(() => import('yet-another-react-lightbox'), { ssr: false })
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 import 'yet-another-react-lightbox/styles.css'
 
 export function Portfolio() {
