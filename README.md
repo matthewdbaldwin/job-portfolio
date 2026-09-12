@@ -2,9 +2,6 @@
 
 Source for [matthewdbaldwin.com](https://matthewdbaldwin.com).
 
-| Directory | What it is |
-|---|---|
-| [`next/`](next/) | **The live site.** Next.js 16, deployed to Railway on every push to `main`. See [next/README.md](next/README.md). |
-| [`legacy/`](legacy/) | The retired Vite + React 18 site, kept for reference. Nothing deploys from it. |
+The site lives in [`next/`](next/): Next.js 16, deployed to Railway on every push to `main`. See [next/README.md](next/README.md) for local development.
 
-DNS is on Cloudflare; email and cPanel remain on HostGator.
+DNS is on Cloudflare; email and cPanel remain on HostGator. The original Vite site was retired in September 2026 and is recoverable from git history (`git checkout 859284b -- legacy/`).
