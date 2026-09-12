@@ -1,12 +1,10 @@
-A simple SPA Portfolio template for developer/designers built with React and Vite. Use it to showcase your work, testimonials and other information to clients. Updated for my own purposes.
+# Matthew Baldwin — Portfolio
 
-## Preview
-![Preview](https://matthewdbaldwin.com/images/preview.jpg)
+Source for [matthewdbaldwin.com](https://matthewdbaldwin.com).
 
-## How to use
-1. Clone/Download the repo.
-2. Run  ``` npm install ```.
-3. Change the values in ```src/resumeData.jsx``` to suit your use-case.
-4. Run ```npm run dev``` to start the Vite dev server (http://localhost:5173 by default).
-5. Make any additional updates in ```src/resumeData.jsx``` or the components to suit your needs.
+| Directory | What it is |
+|---|---|
+| [`next/`](next/) | **The live site.** Next.js 16, deployed to Railway on every push to `main`. See [next/README.md](next/README.md). |
+| [`legacy/`](legacy/) | The retired Vite + React 18 site, kept for reference. Nothing deploys from it. |
 
+DNS is on Cloudflare; email and cPanel remain on HostGator.
