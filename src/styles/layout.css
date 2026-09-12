@@ -87,11 +87,15 @@ header .banner-text h1 {
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
+header .banner-text h2 {
+   font-family: 'arial', sans-serif;
+   color: #fff;
+}
 header .banner-text h3 {
-   font-family: 'opensans-regular', serif;
+   font-family: 'arial', sans-serif;
    font-size: clamp(1.6rem, 2.6vw, 1.8rem);
    line-height: 1.9em;
-   color: #A8A8A8;
+   color: #fff;
    margin: 0 auto;
    width: min(70%, 60ch);
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -1062,6 +1066,8 @@ a:focus-visible, button:focus-visible{
 }
 
 .bubble-wrap{ display:block; }
+
+.skills-cta{ margin-top: 12px; color: #777; font-size: 14px; }
 
 .bubble{
   --size: 120px;

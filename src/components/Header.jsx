@@ -290,10 +290,8 @@ const Header = ({ resumeData = {} }) => {
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">I am {resumeData.name}.</h1>
-            <h2 style={{ color: "#fff", fontFamily: "Arial" }}>{resumeData.role}</h2>
-            <h3 style={{ color: "#fff", fontFamily: "Arial" }}>
-              {resumeData.roleDescription}
-            </h3>
+            <h2>{resumeData.role}</h2>
+            <h3>{resumeData.roleDescription}</h3>
 
             <hr />
 
