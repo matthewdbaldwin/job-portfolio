@@ -1,0 +1,570 @@
+@import "tailwindcss";
+
+/* === Design tokens (Tailwind v4 inline theme) === */
+@theme {
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* OKLCH palette — modern minimalist neutral + single accent */
+  --color-bg: oklch(99% 0.002 264);
+  --color-fg: oklch(18% 0.01 264);
+  --color-muted: oklch(55% 0.01 264);
+  --color-subtle: oklch(94% 0.005 264);
+  --color-border: oklch(90% 0.005 264);
+  --color-accent: oklch(58% 0.18 250);     /* electric blue, ~#1e6bff */
+  --color-accent-fg: oklch(99% 0.002 264);
+  --color-accent-soft: oklch(95% 0.04 250);
+
+  --radius-sm: 0.375rem;
+  --radius: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --shadow-soft: 0 1px 2px oklch(20% 0.02 264 / 0.04), 0 8px 24px oklch(20% 0.02 264 / 0.06);
+  --shadow-pop: 0 2px 4px oklch(20% 0.02 264 / 0.06), 0 18px 40px oklch(20% 0.02 264 / 0.12);
+}
+
+/* === Dark mode === */
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-bg: oklch(14% 0.01 264);
+    --color-fg: oklch(96% 0.005 264);
+    --color-muted: oklch(65% 0.01 264);
+    --color-subtle: oklch(20% 0.008 264);
+    --color-border: oklch(26% 0.008 264);
+    --color-accent: oklch(72% 0.18 250);
+    --color-accent-fg: oklch(14% 0.01 264);
+    --color-accent-soft: oklch(28% 0.06 250);
+  }
+}
+
+/* next-themes class override (when user manually toggles) */
+:root.dark {
+  --color-bg: oklch(14% 0.01 264);
+  --color-fg: oklch(96% 0.005 264);
+  --color-muted: oklch(65% 0.01 264);
+  --color-subtle: oklch(20% 0.008 264);
+  --color-border: oklch(26% 0.008 264);
+  --color-accent: oklch(72% 0.18 250);
+  --color-accent-fg: oklch(14% 0.01 264);
+  --color-accent-soft: oklch(28% 0.06 250);
+}
+:root.light {
+  --color-bg: oklch(99% 0.002 264);
+  --color-fg: oklch(18% 0.01 264);
+  --color-muted: oklch(55% 0.01 264);
+  --color-subtle: oklch(94% 0.005 264);
+  --color-border: oklch(90% 0.005 264);
+  --color-accent: oklch(58% 0.18 250);
+  --color-accent-fg: oklch(99% 0.002 264);
+  --color-accent-soft: oklch(95% 0.04 250);
+}
+
+/* === Base layer === */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-fg);
+  }
+
+  /* Focus ring */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Honor View Transitions cross-fade */
+  @view-transition { navigation: auto; }
+}
+
+/* === Utility helpers === */
+@utility container-page {
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility text-pretty {
+  text-wrap: pretty;
+}
+
+/* === Skip link === */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: 1rem;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 1rem;
+}
+
+/* === Scroll-driven section reveal (progressive enhancement) ===
+   Each `.reveal-on-scroll` section fades + slides + scales in as it enters
+   the viewport. Uses native CSS view() timeline — zero JS. Non-supporting
+   browsers see content fully visible (no flash). */
+@supports (animation-timeline: view()) {
+  .reveal-on-scroll {
+    animation-name: reveal-fade;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+  @keyframes reveal-fade {
+    from {
+      opacity: 0;
+      transform: translateY(60px) scale(0.97);
+      filter: blur(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
+}
+
+/* === Nebula background ===
+   Multi-color drifting gradient blobs + a faint memory layer of past work.
+   Pure CSS animation, scroll-reactive via animation-timeline, no JS,
+   honors prefers-reduced-motion. */
+
+/* Typed custom property — registered so it can be animated/interpolated */
+@property --nebula-hue {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+/* Register theme color vars so they can crossfade smoothly via scroll-timeline */
+@property --color-bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(99% 0.002 264);
+}
+@property --color-fg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(18% 0.01 264);
+}
+@property --color-muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(55% 0.01 264);
+}
+@property --color-subtle {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(94% 0.005 264);
+}
+@property --color-border {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: oklch(90% 0.005 264);
+}
+
+/* Scroll-velocity amplifier (set by ScrollVelocity client component) */
+@property --scroll-velocity {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.nebula {
+  isolation: isolate;
+  /* Transparent so the heritage backdrop (z-index -30) and the black-wipe
+     (z-index -20) show through. The blobs paint on top. */
+  background: transparent;
+}
+
+/* Scroll-velocity → subtle hue nudge. Kept gentle (±15deg) so fast scrolling
+   gives a tiny color shift, not a dramatic swirl. Springs back via JS. */
+:root {
+  --velocity-hue: calc(var(--scroll-velocity, 0) * 15deg);
+}
+
+@property --velocity-hue {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+/* Light mode: 60% white scrim sits ABOVE all the nebula color layers so the
+   saturated OKLCH paints get softened into pastels — fades out as the
+   black wipe takes over (driven by --scrim-alpha via scroll-timeline). */
+.nebula::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: oklch(99% 0.002 264 / var(--scrim-alpha, 0.6));
+  pointer-events: none;
+  z-index: 5;
+}
+:root.dark .nebula::after,
+.dark .nebula::after {
+  background: transparent;
+}
+
+/* === Meteor shower ===
+   Many small streaks, each rotated 135deg so they sweep upper-right
+   to bottom-left. Each meteor's `top`, `left`, `width`, duration, delay,
+   --meteor-hue, --meteor-alpha are set inline. Translucent gradients keep
+   the heritage image visible through every trail. */
+.nebula .meteor {
+  position: absolute;
+  height: 1.5px;
+  border-radius: 999px;
+  transform-origin: right center;
+  transform: rotate(135deg) translateX(0);
+  opacity: 0;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  will-change: transform, opacity;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    oklch(72% 0.28 calc(250deg + var(--nebula-hue-seed, 0deg) + var(--meteor-hue, 0deg)) / var(--meteor-alpha, 0.65)) 78%,
+    oklch(96% 0.06 calc(250deg + var(--nebula-hue-seed, 0deg) + var(--meteor-hue, 0deg))) 100%
+  );
+  filter: drop-shadow(0 0 4px oklch(72% 0.28 calc(250deg + var(--nebula-hue-seed, 0deg) + var(--meteor-hue, 0deg)) / 0.45));
+  animation-name: meteor-fall;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+:root.dark .nebula .meteor,
+.dark .nebula .meteor {
+  mix-blend-mode: plus-lighter;
+}
+
+@keyframes meteor-fall {
+  0%   { opacity: 0; transform: rotate(135deg) translateX(0); }
+  8%   { opacity: 1; }
+  88%  { opacity: 1; }
+  100% { opacity: 0; transform: rotate(135deg) translateX(150vw); }
+}
+
+
+/* Scroll-driven motion — modern browsers only, progressive enhancement.
+   Whole nebula rotates as user scrolls; hues drift around the wheel.
+   --nebula-hue is animated on :root so both nebula AND text-clipped gradients
+   sample the same hue at the same moment, keeping them in sync. */
+@supports (animation-timeline: scroll()) {
+  :root {
+    animation-name: nebula-hue-shift, theme-to-cosmic, scrim-fade;
+    animation-duration: 1s, 1s, 1s;
+    animation-timing-function: linear, ease-out, linear;
+    animation-fill-mode: both, both, both;
+    animation-timeline: scroll(root), scroll(root), scroll(root);
+    animation-range: 0 100%, 0 90vh, 0 70vh;
+  }
+
+  /* Split into long-hand so animation shorthand doesn't reset timeline */
+  .nebula .heritage-bg {
+    animation-name: heritage-drift, heritage-parallax;
+    animation-duration: 60s, 1s;
+    animation-timing-function: ease-in-out, linear;
+    animation-iteration-count: infinite, 1;
+    animation-direction: alternate, normal;
+    animation-fill-mode: none, both;
+    animation-timeline: auto, scroll(root);
+    animation-range: auto, 0 100%;
+  }
+
+  /* Slow color creep over the page — full scroll moves the wheel ~40deg,
+     so colors evolve gently as you read down. */
+  @keyframes nebula-hue-shift {
+    to { --nebula-hue: 40deg; }
+  }
+
+  /* Crossfade theme vars to cosmic-dark as the black wipe completes,
+     so text stays legible (light on the new black bg). */
+  @keyframes theme-to-cosmic {
+    to {
+      --color-bg: oklch(8% 0.012 264);
+      --color-fg: oklch(96% 0.005 264);
+      --color-muted: oklch(70% 0.012 264);
+      --color-subtle: oklch(16% 0.01 264);
+      --color-border: oklch(28% 0.01 264);
+    }
+  }
+
+  /* Light-mode 60% white scrim fades out as the wipe takes over */
+  @keyframes scrim-fade {
+    to { --scrim-alpha: 0; }
+  }
+}
+
+@property --scrim-alpha {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0.6;
+}
+
+/* === Nebula-clipped text ===
+   Text reveals a multi-color OKLCH gradient that pans with scroll.
+   Lightness tuned per-theme so colors stay vivid against the background.
+   Hue rotates with the nebula via --nebula-hue. */
+.nebula-text {
+  /* Vivid mid-tone colors for light mode */
+  background-image:
+    radial-gradient(ellipse 70% 90% at 12% 25%,
+      oklch(52% 0.26 calc(250deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 70% 90% at 80% 22%,
+      oklch(54% 0.24 calc(320deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 80% 80% at 50% 95%,
+      oklch(58% 0.22 calc(200deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 60% 80% at 95% 78%,
+      oklch(55% 0.24 calc(30deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 60% 80% at 5% 82%,
+      oklch(56% 0.20 calc(150deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  /* Default: render text in fg color so it stays visible if bg-clip:text
+     is unsupported or fails to composite (e.g., known mobile Safari bugs
+     with bg-clip:text + scroll-timeline). */
+  color: var(--color-fg);
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .nebula-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+:root.dark .nebula-text,
+.dark .nebula-text {
+  /* Brighter colors for dark mode */
+  background-image:
+    radial-gradient(ellipse 70% 90% at 12% 25%,
+      oklch(78% 0.22 calc(250deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 70% 90% at 80% 22%,
+      oklch(80% 0.20 calc(320deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 80% 80% at 50% 95%,
+      oklch(82% 0.18 calc(200deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 60% 80% at 95% 78%,
+      oklch(80% 0.20 calc(30deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 60% 80% at 5% 82%,
+      oklch(82% 0.18 calc(150deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg))) 0%,
+      transparent 60%);
+}
+
+/* (Removed scroll-timeline background-position pan on .nebula-text — it
+   triggered an iOS Safari compositing bug with bg-clip:text. Colors still
+   shift via the inherited --nebula-hue + --velocity-hue vars.) */
+
+/* Each blob creeps a long way across the screen at its own slow pace.
+   Different directions + different durations = randomized-feeling swirl. */
+
+/* === Heritage backdrop — the old hero image, pinned to the top of viewport.
+   Sits at z-index -30, beneath the black wipe. Subtle scale-breath only,
+   no parallax translation (it stays at the top until the wipe covers it). */
+.heritage-backdrop {
+  background: url('/images/header-background.webp') center top / cover no-repeat;
+  will-change: scale;
+  scale: 1.05;
+  animation: heritage-breath 30s ease-in-out infinite alternate;
+}
+
+@keyframes heritage-breath {
+  0%   { scale: 1.05; }
+  100% { scale: 1.12; }
+}
+
+/* === Black wipe panel ===
+   Starts below the viewport. As the user scrolls down through the hero,
+   it slides up to cover the heritage image. After the wipe, this panel
+   becomes the visible background and the nebula colors paint on top.
+   Uses dvh so the iOS URL-bar collapse doesn't leave the panel mispositioned. */
+.black-wipe {
+  background: oklch(5% 0.008 264);
+  translate: 0 100dvh;
+  will-change: translate;
+}
+
+@supports (animation-timeline: scroll()) {
+  .black-wipe {
+    animation-name: wipe-up;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 95dvh;
+  }
+  @keyframes wipe-up {
+    from { translate: 0 100dvh; }
+    to   { translate: 0 0; }
+  }
+}
+
+/* === Fallback when scroll-driven animations aren't supported ===
+   Older Safari (≤17.3) and current Firefox don't run the wipe / theme
+   crossfade. Without a scroll-driven dark backdrop, sections sit on top
+   of the bright nebula + heritage image and become unreadable. Give each
+   below-the-fold section its own translucent surface so text contrast
+   is guaranteed regardless of browser. */
+@supports not (animation-timeline: scroll()) {
+  #about,
+  #work,
+  #skills,
+  #portfolio,
+  #testimonials,
+  #contact {
+    position: relative;
+    isolation: isolate;
+  }
+  #about::before,
+  #work::before,
+  #skills::before,
+  #portfolio::before,
+  #testimonials::before,
+  #contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: color-mix(in oklch, var(--color-bg) 78%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* === Testimonials section background ===
+   Layered behind the cards using the old site's testimonials-bg.webp. */
+.testimonials-bg-layer {
+  position: absolute;
+  inset: -2rem 0;
+  z-index: -1;
+  background: url('/images/testimonials-bg.webp') center / cover no-repeat;
+  opacity: 0.22;
+  filter: saturate(1.1) blur(1px);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.testimonials-bg-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    var(--color-bg) 0%,
+    transparent 20%,
+    transparent 80%,
+    var(--color-bg) 100%
+  );
+}
+:root.dark .testimonials-bg-layer,
+.dark .testimonials-bg-layer {
+  opacity: 0.28;
+  mix-blend-mode: screen;
+  filter: saturate(1.3) blur(1px) brightness(0.7);
+}
+
+/* === Grain texture (CSS-only, no asset) === */
+.grain {
+  background-image:
+    radial-gradient(rgba(255,255,255,0.55) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.45) 1px, transparent 1px);
+  background-size: 3px 3px, 4px 4px;
+  background-position: 0 0, 1px 2px;
+  opacity: 0.08;
+}
+:root.dark .grain,
+.dark .grain {
+  opacity: 0.12;
+}
+
+/* === Aurora ribbon === */
+/* A slow-rotating conic gradient producing the curved aurora-curtain look. */
+.aurora-ribbon {
+  position: absolute;
+  inset: -25%;
+  background: conic-gradient(
+    from calc(0deg + var(--nebula-hue-seed, 0deg)) at 50% 50%,
+    transparent 0deg,
+    oklch(72% 0.26 calc(250deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg)) / 0.45) 60deg,
+    transparent 110deg,
+    oklch(70% 0.28 calc(320deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg)) / 0.55) 170deg,
+    transparent 230deg,
+    oklch(76% 0.24 calc(200deg + var(--nebula-hue) + var(--nebula-hue-seed, 0deg) + var(--velocity-hue, 0deg)) / 0.4) 290deg,
+    transparent 360deg
+  );
+  filter: blur(60px);
+  opacity: 0.65;
+  mix-blend-mode: plus-lighter;
+  will-change: rotate;
+  animation: aurora-spin 90s linear infinite;
+}
+:root.dark .aurora-ribbon,
+.dark .aurora-ribbon {
+  opacity: 0.85;
+  filter: blur(70px);
+}
+
+@keyframes aurora-spin {
+  to { rotate: 360deg; }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .nebula,
+  .nebula .meteor,
+  .nebula .heritage-bg,
+  .nebula .aurora-ribbon {
+    animation: none !important;
+    opacity: 0;
+  }
+}
