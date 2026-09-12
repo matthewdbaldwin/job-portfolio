@@ -32,8 +32,8 @@ const Portfolio = ({ resumeData = {} }) => {
   const [plugins, setPlugins] = useState([]);
   const loaderRef = useRef(null);
 
-  const listA = resumeData.portfolio0 || [];
-  const listB = resumeData.portfolio || [];
+  const listA = useMemo(() => resumeData.portfolio0 || [], [resumeData.portfolio0]);
+  const listB = useMemo(() => resumeData.portfolio || [], [resumeData.portfolio]);
 
   const slides = useMemo(
     () =>
@@ -120,7 +120,7 @@ const Portfolio = ({ resumeData = {} }) => {
       try {
         await ensureLightbox();
         setIsOpen(true);
-      } catch (error) {
+      } catch {
         setIsOpen(false);
       }
     },
