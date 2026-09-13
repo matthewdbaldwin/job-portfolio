@@ -6,7 +6,7 @@ import { RevealSection } from '@/components/reveal-section'
 export function Work() {
   return (
     <RevealSection id="work" className="container-page py-24 md:py-32">
-      <SectionHeading eyebrow="02 — Experience" title="Sixteen years building digital growth engines." />
+      <SectionHeading eyebrow="02 — Experience" title="Eighteen years building digital growth engines." />
 
       <ol className="relative space-y-12 border-l border-[var(--color-border)] pl-8 md:space-y-16">
         {resume.work.map((job) => (

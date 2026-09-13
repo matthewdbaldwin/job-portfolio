@@ -23,7 +23,7 @@ const SITE_URL =
 const SITE_NAME = `${resume.name} — Portfolio`
 const TITLE = `${resume.name} — ${resume.role}`
 const DESCRIPTION =
-  `${resume.tagline} 16 years driving $12M+ revenue impact, 425% lead-flow growth, ` +
+  `${resume.tagline} 18 years driving $12M+ revenue impact, 425% lead-flow growth, ` +
   `and 37% conversion lift across global B2B brands.`
 
 export const metadata: Metadata = {
